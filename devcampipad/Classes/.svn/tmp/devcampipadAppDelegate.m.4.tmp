@@ -1,0 +1,420 @@
+//
+//  devcampipadAppDelegate.m
+//  devcampipad
+//
+//  Created by Brad Smith on 4/16/10.
+//  Copyright Clixtr 2010. All rights reserved.
+//
+
+#import "devcampipadAppDelegate.h"
+#import <GameKit/GameKit.h>
+#import "PlayerView.h"
+#import "Bullet.h"
+#import "SlaveBoard.h"
+
+@implementation devcampipadAppDelegate
+
+@synthesize window, serverPeerID;
+@synthesize session;
+@synthesize bullets;
+@synthesize lastTicked;
+
+- (void)dealloc {
+	[bullets release];
+	[connectedPeers release];
+    [window release];
+    [super dealloc];
+}
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
+	[UIApplication sharedApplication].idleTimerDisabled = YES;
+	loadingView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"loading0.png"]];
+	loadingView.animationDuration = 1;
+	[loadingView setAnimationImages:[NSArray arrayWithObjects:[UIImage imageNamed:@"loading1.png"], 
+																		[UIImage imageNamed:@"loading2.png"],
+									 [UIImage imageNamed:@"loading3.png"],
+									 [UIImage imageNamed:@"loading4.png"],
+									 [UIImage imageNamed:@"loading5.png"],
+									 [UIImage imageNamed:@"loading6.png"],
+									 [UIImage imageNamed:@"loading7.png"],
+									 [UIImage imageNamed:@"loading8.png"],
+									 [UIImage imageNamed:@"loading9.png"],
+									 [UIImage imageNamed:@"loading10.png"],
+									 [UIImage imageNamed:@"loading11.png"],
+									 [UIImage imageNamed:@"loading12.png"],
+									 [UIImage imageNamed:@"loading13.png"],
+									 [UIImage imageNamed:@"loading14.png"],
+									 [UIImage imageNamed:@"loading15.png"],
+									 [UIImage imageNamed:@"loading16.png"],
+									 [UIImage imageNamed:@"loading17.png"],
+									                               nil]];
+	[loadingView startAnimating];
+	
+	[window addSubview:loadingView];
+	loadingView.center = window.center;
+		
+	
+	[NSTimer scheduledTimerWithTimeInterval:FRAMERATE target:self selector:@selector(timerFired) userInfo:nil repeats:YES];
+	stopButton.hidden = YES;
+	
+	[self setBullets:[NSMutableArray arrayWithCapacity:100]];
+	
+	connectedBoards = [[NSMutableDictionary alloc] init];
+	connectedPeers = [[NSMutableDictionary alloc] init];
+	
+	peerCountLabel.text = @"0";
+	
+	[self setLastTicked:[NSDate date]];
+	
+	clientModeSessionHandler = [[ClientModeSessionHandler alloc] init];
+	
+	//Adversie as a server
+	
+    [window makeKeyAndVisible];
+    
+    return YES;
+}
+
+- (void)applicationWillTerminate:(UIApplication *)application {
+	[session disconnectFromAllPeers];
+	session.available = NO;
+	[session setDataReceiveHandler: nil withContext: nil];
+	session.delegate = nil;
+	[session release];
+}
+
+
+
+-(void) timerFired {
+	static int occasionally = 0;
+	if (++occasionally == 100) {
+		NSLog(@"timer fired 100th time: peers=%d", [connectedPeers count]);
+	}
+	NSTimeInterval dt = [[NSDate date] timeIntervalSinceDate:lastTicked];
+	
+	for(NSString *aKey in connectedPeers) {
+		[[connectedPeers valueForKey:aKey] update:dt];
+	}
+	
+	for (int i = 0; i < [bullets count]; i++) {
+		Bullet *bullet = [bullets objectAtIndex:i];
+		[bullet update:dt];
+		if ([bullet isHidden]) {
+			//[bullet removeFromSuperview];
+			//[bullets removeObjectAtIndex:i];
+		}
+	}
+	[self setLastTicked:[NSDate date]];
+}
+
+/* Notifies delegate that a connection type was chosen by the user.
+ */
+- (void)peerPickerController:(GKPeerPickerController *)picker didSelectConnectionType:(GKPeerPickerConnectionType)type{
+	//NSLOG(
+}
+
+/* Notifies delegate that the connection type is requesting a GKSession object.
+ 
+ You should return a valid GKSession object for use by the picker. If this method is not implemented or returns 'nil', a default GKSession is created on the delegate's behalf.
+ */
+- (GKSession *)peerPickerController:(GKPeerPickerController *)picker sessionForConnectionType:(GKPeerPickerConnectionType)type{
+	if (actingAsServer) {
+		return nil;
+	}
+	// we're a client to another ipad server
+	session = [[[GKSession alloc] initWithSessionID:@"wangchung" displayName:nil sessionMode:GKSessionModePeer] autorelease];
+	[session setDelegate:self];
+	[session setDataReceiveHandler:self withContext:nil];
+	return session;
+}
+
+/* Notifies delegate that the peer was connected to a GKSession.
+ */
+- (void)peerPickerController:(GKPeerPickerController *)picker didConnectPeer:(NSString *)peerID toSession:(GKSession *)session{
+	if (actingAsServer) {
+		return;
+	}
+	[peerPicker dismiss];
+}
+
+
+/* Notifies delegate that the user cancelled the picker.
+ */
+- (void)peerPickerControllerDidCancel:(GKPeerPickerController *)picker{
+}
+
+- (void)session:(GKSession *)session didReceiveConnectionRequestFromPeer:(NSString *)peerID {
+	if (actingAsServer) {
+		[session acceptConnectionFromPeer:peerID error:nil];	
+	}
+}
+
+
+- (void)session:(GKSession *)session peer:(NSString *)peerID didChangeState:(GKPeerConnectionState)state {
+	if (actingAsServer) {
+		switch (state) {
+			case GKPeerStateAvailable:
+				break;
+			case GKPeerStateUnavailable:
+				break;
+			case GKPeerStateConnected: {
+				//TODO 'send data to peer (old test button')
+				[self requestConnectingClientIdentity];
+				break;
+			}
+			case GKPeerStateDisconnected:
+				[[connectedPeers objectForKey:peerID] removeFromSuperview];
+				[connectedPeers removeObjectForKey:peerID];
+				[connectedBoards removeObjectForKey:peerID];
+				[self updateLabels];
+				
+				break;
+			case GKPeerStateConnecting:
+				break;
+			default:
+				break;
+		}
+		return;
+	}
+	lastBoard = [[SlaveBoard alloc] initWithPeerId:peerID];
+	[connectedBoards setObject:lastBoard forKey:peerID];
+}
+
+- (void) updateLabels {
+	peerCountLabel.text = [NSString stringWithFormat:@"%i",connectedPeers.count];
+	boardCountLabel.text = [NSString stringWithFormat:@"%i",connectedBoards.count];
+}
+
+-(void) receiveData:(NSData *)data fromPeer:(NSString *)peerId inSession:(GKSession *)session context:(id)context {
+	PlayerView *player = [connectedPeers objectForKey:peerId];
+    
+	NSString *command = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+	NSArray *argv = [command componentsSeparatedByString:@":"];
+	
+	//NSLog(@"argv0: %@",[argv objectAtIndex:0]);
+	//NSLog(@"command: %@",command);
+	//NSLog(@"args", argv);
+	
+	
+	if ([command isEqualToString:@"confirmiPad"]) {
+		[self confirmiPad:peerId];
+		return;
+	}
+<<<<<<< .mine
+	if ([[argv objectAtIndex:0] isEqualToString:@"confirmiPhone"]) {
+		[self confirmiPhone:peerId withTankID:[argv objectAtIndex:1]];
+		return;
+	}
+	if ([command isEqualToString:@"spawnPortal"]) {
+=======
+	if ([[argv objectAtIndex:0] isEqualToString:@"spawnPortal"]) {
+>>>>>>> .r113
+		NSLog(@"spawn portal ... arg count = %d", [argv count]);
+		[self spawnPortal:[argv objectAtIndex:1]];
+		return;
+	}
+	if ([[argv objectAtIndex:0] isEqualToString:@"spawnPlayer"]) {
+		[self spawnPlayer:[argv objectAtIndex:1]];
+		return;
+	}
+	
+	SEL selector = NSSelectorFromString([NSString stringWithFormat:@"%@:",[argv objectAtIndex:0]]);
+	
+	if ([player respondsToSelector:selector]) {
+		if (!player.inLocalBoard) {
+			NSError *error;
+			NSLog(@"I'm not supposed to update this player, so sending it off to the one who should.");
+			NSData *forward = [[NSString stringWithFormat:@"forward: %@ %@", peerId, command] dataUsingEncoding:NSUTF8StringEncoding];
+			if (![session sendData:forward toPeers:[NSArray arrayWithObject:player.board.peerID] withDataMode:GKSendDataUnreliable error:&error]) {
+				NSLog(@"ERROR: %@",error);
+			}
+		} else {
+			if (argv.count == 1)
+				[player performSelector:selector];
+			if (argv.count == 2)
+				[player performSelector:selector withObject:[argv objectAtIndex:1]];
+		}
+	}
+	else if ([self respondsToSelector:selector]) {
+		[self performSelector:selector withObject:peerId];
+	}
+	else if ([clientModeSessionHandler respondsToSelector:selector]) {
+		if (argv.count == 1)
+			[clientModeSessionHandler performSelector:selector];
+		if (argv.count == 2)
+			[clientModeSessionHandler performSelector:selector withObject:[argv objectAtIndex:1]];
+	}	
+	else {
+		NSLog(@"PROTOCAL ERROR command = (%@)",command);
+	}
+}
+
+-(void) confirmiPad:(NSString *) peerId {
+	if (!peerId) {
+		NSLog(@"in confirmiPad I have no peerID argument!!!");
+		return; 
+	}
+	
+	SlaveBoard *newSlave = [[SlaveBoard alloc] initWithPeerId:peerId];
+	[lastBoard attachBoard:newSlave inDirection:arc4random()%4];
+	lastBoard = newSlave;
+	[connectedBoards setObject:newSlave forKey:peerId];
+	[newSlave release];
+	[self updateLabels];
+}
+
+-(void) confirmiPhone:(NSString *)peerID withTankID:(NSString *)tankID {
+	if (loadingView) {
+		[UIView beginAnimations:@"" context:nil];
+		[UIView setAnimationDuration:.66];
+		loadingView.alpha = 0;
+		[UIView commitAnimations];
+		[loadingView removeFromSuperview];
+		loadingView = nil;
+	}
+		
+	NSLog(@"confirm: %@", peerID);
+	if (!peerID) {
+		NSLog(@"no peerId");
+		return; 
+	}
+	
+	if ([connectedPeers objectForKey:peerID]) {
+		NSLog(@"peer is connected: %@", peerID);
+		return;
+	}
+	
+	NSLog(@"making peer: %@", peerID);
+
+
+	PlayerView *p = [[PlayerView alloc] initWithBoard:lastBoard ID:peerID];
+	[p setTank:tankID];
+	[connectedPeers setObject:p forKey:peerID];
+	[window addSubview:p];
+	[p release];
+	[self updateLabels];
+}
+
+#pragma mark Buttons
+-(IBAction) joinButtonPressed:(id)sender {
+	NSLog(@"join pressed");
+	actingAsServer = NO;
+	//first thing they need to do is find other players
+	peerPicker = [[GKPeerPickerController alloc] init];
+	[peerPicker setDelegate:self];
+	[peerPicker setConnectionTypesMask:GKPeerPickerConnectionTypeNearby /*|GKPeerPickerConnectionTypeOnline*/];
+	[peerPicker show];
+}
+
+-(void)initGameServer {
+	actingAsServer = YES;
+	session = [[GKSession alloc] initWithSessionID:@"wangchung" displayName:nil sessionMode:GKSessionModeServer];
+	session.delegate = self;
+	session.available = YES; 
+	[session setDataReceiveHandler:self withContext:nil];
+	newButton.hidden = YES;
+	stopButton.hidden = NO;
+	SlaveBoard *mainBoard = [[SlaveBoard alloc] initWithPeerId:nil];
+	[mainBoard setXOffset:0 YOffset:0];
+	lastBoard = mainBoard;
+	[connectedBoards setObject:mainBoard forKey:session.peerID];
+	[mainBoard release];
+}
+
+-(IBAction) newButtonPressed:(id)sender {
+	NSLog(@"new pressed");
+	[self initGameServer];
+}
+
+-(IBAction) stopButtonPressed:(id)sender {
+	session.available = NO; 
+	session.delegate = nil;
+	[session setDataReceiveHandler:nil withContext:nil];
+	session = nil;
+	newButton.hidden = NO;
+	stopButton.hidden = YES;
+	for (NSString *pid in connectedPeers) {
+		[[connectedPeers objectForKey:pid] removeFromSuperview];
+	}
+	[connectedPeers removeAllObjects];
+	[connectedBoards removeAllObjects];
+}
+
+#pragma mark Multipad code
+
+- (void) forward: (NSString *)args {
+	NSMutableArray *argv = [NSMutableArray arrayWithArray:[args componentsSeparatedByString:@" "]];
+	NSString *peerID = [argv objectAtIndex:0];
+	[argv removeObjectAtIndex:0];
+	NSLog(@"*** forwarding for peer %@, command = %@", peerID, [argv componentsJoinedByString:@" "]);
+	NSData *data = [[argv componentsJoinedByString:@" "] dataUsingEncoding:NSUTF8StringEncoding];
+	[self receiveData: data fromPeer:peerID inSession:session context:nil];
+	//-(void) receiveData:(NSData *)data fromPeer:(NSString *)peerId inSession:(GKSession *)session context:(id)context {
+	
+}
+
+- (void) spawnPortal:(NSString *)args {
+	int dir = [args intValue];
+	NSLog(@"Spawn portal in dir %@ => %d", args, dir);
+	UILabel *p = [[UILabel alloc] initWithFrame:CGRectMake((float)GET_PORTAL_POS_X(dir), (float)GET_PORTAL_POS_Y(dir),
+														   150.f, 50.f)];
+	[p setText:@"here be dragons"];
+	[window addSubview:p];
+	[p release];
+}
+
+- (void) spawnPlayer:(NSString *)args {
+	NSLog(@"Spawning a player! args = %@", args);
+	NSArray *argv = [args componentsSeparatedByString:@" "];
+	if ([argv count] != 2) {
+		NSLog(@"*** ERROR (ARG = %@) IN SPAWN PLAYER -- ARGV COUNT IS NOT 2 ***", args);
+		//return;
+	}
+	
+	PlayerView *p = [[PlayerView alloc] initWithBoard:lastBoard ID:[argv objectAtIndex:0]];
+	[connectedPeers setObject:p forKey:[argv objectAtIndex:0]];
+	[window addSubview:p];
+	[p release];
+	[self updateLabels];
+}
+
+-(void) relocatePlayer:(PlayerView *)ply inDir:(int)dir {
+	NSLog(@"Relocating player %@ towards %d", ply.peerID, dir);
+	NSData *data = [[NSString stringWithFormat:@"spawnPlayer: %@ %d", ply.peerID, dir] dataUsingEncoding:NSUTF8StringEncoding];
+	NSError *error;
+	SlaveBoard *toBoard = [[ply board] connectionAt:dir];
+	ply.board = toBoard;
+	if (![session sendData:data toPeers:[NSArray arrayWithObject:toBoard.peerID] withDataMode:GKSendDataUnreliable error:&error]) {
+		NSLog(@"ERROR: %@",error);
+	}
+}
+
+#pragma mark -
+
+//This is to ask all peers that have connected to send theit IDs
+-(IBAction) testPressed:(id)sender {
+	[self requestConnectingClientIdentity];
+}
+
+-(void) requestConnectingClientIdentity {
+	NSString *string = [NSString stringWithFormat:@"sendID: %@",session.peerID];
+	NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
+	//[session sendData:data toPeers:[NSArray arrayWithObject:peerID] withDataMode:GKSendDataUnreliable error:nil];
+	NSError *error;
+	if (![session sendDataToAllPeers:data withDataMode:GKSendDataUnreliable error:&error]) {
+		NSLog(@"ERROR: %@",error);
+	}
+	
+}
+
+-(void)player:(PlayerView *)thePlayer didFire:(Bullet *)theBullet {
+	[bullets addObject:theBullet];
+	[window addSubview:theBullet];
+	[theBullet release];
+	//[window addSubview:theBullet];
+	//[bullets setObject:thePlayer forKey:theBullet];
+	
+	
+}
+
+@end

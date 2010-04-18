@@ -1,0 +1,1117 @@
+Tdevcampipad
+v7
+r0
+t293267393.101956
+cCheck dependencies
+cProcessInfoPlistFile /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/Info.plist devcampipad-Info.plist
+cCompileXIB /Users/brad/Code/devcampipad/MainWindow.xib
+cCpResource build/Debug-iphonesimulator/devcampipad.app/airplane.jpg airplane.jpg
+cCpResource build/Debug-iphonesimulator/devcampipad.app/tanktank_bg.png tanktank_bg.png
+cCpResource build/Debug-iphonesimulator/devcampipad.app/tank_04.png tank_04.png
+cCpResource build/Debug-iphonesimulator/devcampipad.app/tank_03.png tank_03.png
+cCpResource build/Debug-iphonesimulator/devcampipad.app/tank_02.png tank_02.png
+cCpResource build/Debug-iphonesimulator/devcampipad.app/tank_01.png tank_01.png
+cCpResource build/Debug-iphonesimulator/devcampipad.app/tank_bullet.png tank_bullet.png
+cCpResource build/Debug-iphonesimulator/devcampipad.app/bang0001.png bang0001.png
+cCpResource build/Debug-iphonesimulator/devcampipad.app/bang0002.png bang0002.png
+cCpResource build/Debug-iphonesimulator/devcampipad.app/bang0003.png bang0003.png
+cCpResource build/Debug-iphonesimulator/devcampipad.app/bang0004.png bang0004.png
+cCpResource build/Debug-iphonesimulator/devcampipad.app/bang0005.png bang0005.png
+cCpResource build/Debug-iphonesimulator/devcampipad.app/bang0006.png bang0006.png
+cCpResource build/Debug-iphonesimulator/devcampipad.app/bang0007.png bang0007.png
+cCpResource build/Debug-iphonesimulator/devcampipad.app/bang0008.png bang0008.png
+cCpResource build/Debug-iphonesimulator/devcampipad.app/bang0009.png bang0009.png
+cCpResource build/Debug-iphonesimulator/devcampipad.app/bang0010.png bang0010.png
+cCpResource build/Debug-iphonesimulator/devcampipad.app/bang0011.png bang0011.png
+cCpResource build/Debug-iphonesimulator/devcampipad.app/Default-Portrait.png Default-Portrait.png
+cCpResource build/Debug-iphonesimulator/devcampipad.app/Default-Landscape.png Default-Landscape.png
+cCpResource build/Debug-iphonesimulator/devcampipad.app/tanktank_bg-1.png tanktank_bg-1.png
+cCpResource build/Debug-iphonesimulator/devcampipad.app/Icon.png Icon.png
+cCpResource build/Debug-iphonesimulator/devcampipad.app/loading0.png loadingSequence/loading0.png
+cCpResource build/Debug-iphonesimulator/devcampipad.app/loading1.png loadingSequence/loading1.png
+cCpResource build/Debug-iphonesimulator/devcampipad.app/loading10.png loadingSequence/loading10.png
+cCpResource build/Debug-iphonesimulator/devcampipad.app/loading11.png loadingSequence/loading11.png
+cCpResource build/Debug-iphonesimulator/devcampipad.app/loading12.png loadingSequence/loading12.png
+cCpResource build/Debug-iphonesimulator/devcampipad.app/loading13.png loadingSequence/loading13.png
+cCpResource build/Debug-iphonesimulator/devcampipad.app/loading14.png loadingSequence/loading14.png
+cCpResource build/Debug-iphonesimulator/devcampipad.app/loading15.png loadingSequence/loading15.png
+cCpResource build/Debug-iphonesimulator/devcampipad.app/loading16.png loadingSequence/loading16.png
+cCpResource build/Debug-iphonesimulator/devcampipad.app/loading17.png loadingSequence/loading17.png
+cCpResource build/Debug-iphonesimulator/devcampipad.app/loading2.png loadingSequence/loading2.png
+cCpResource build/Debug-iphonesimulator/devcampipad.app/loading3.png loadingSequence/loading3.png
+cCpResource build/Debug-iphonesimulator/devcampipad.app/loading4.png loadingSequence/loading4.png
+cCpResource build/Debug-iphonesimulator/devcampipad.app/loading5.png loadingSequence/loading5.png
+cCpResource build/Debug-iphonesimulator/devcampipad.app/loading6.png loadingSequence/loading6.png
+cCpResource build/Debug-iphonesimulator/devcampipad.app/loading7.png loadingSequence/loading7.png
+cCpResource build/Debug-iphonesimulator/devcampipad.app/loading8.png loadingSequence/loading8.png
+cCpResource build/Debug-iphonesimulator/devcampipad.app/loading9.png loadingSequence/loading9.png
+cProcessPCH /var/folders/QR/QRu8PwqwGQ8hSBbrfF5C5k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/devcampipad_Prefix-foscnoqiceefkwgrcmcynxcjekjc/devcampipad_Prefix.pch.gch devcampipad_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/Objects-normal/i386/main.o /Users/brad/Code/devcampipad/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/Objects-normal/i386/devcampipadAppDelegate.o /Users/brad/Code/devcampipad/Classes/devcampipadAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/Objects-normal/i386/PlayerView.o /Users/brad/Code/devcampipad/Classes/PlayerView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/Objects-normal/i386/ClientModeSessionHandler.o /Users/brad/Code/devcampipad/Classes/ClientModeSessionHandler.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/Objects-normal/i386/SlaveBoard.o /Users/brad/Code/devcampipad/Classes/SlaveBoard.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/Objects-normal/i386/Bullet.o /Users/brad/Code/devcampipad/Classes/Bullet.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/devcampipad normal i386
+cGenerateDSYMFile /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app.dSYM /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/devcampipad
+cTouch /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app
+
+N/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk
+c000000004BB0E9C90000000000000110
+t1269885385
+s272
+
+N/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004BA03AB3000000000026F020
+t1268791987
+s2551840
+
+N/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004B9F1DE40000000000289C20
+t1268719076
+s2661408
+
+N/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004B9F1DD60000000000001355
+t1268719062
+s4949
+
+N/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/GameKit.framework/GameKit
+c000000004B9F31EA00000000000AA630
+t1268724202
+s697904
+
+N/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/GameKit.framework/Headers/GameKit.h
+c000000004B9F31E20000000000000112
+t1268724194
+s274
+
+N/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004BA6CAEC000000000000098F
+t1269222124
+s2447
+
+N/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004BA6CB31000000000214E400
+t1269222193
+s34923520
+
+N/Users/brad/Code/devcampipad/Classes/Bullet.h
+c000000004BCA8F2A0000000000000275
+t1271566122
+s629
+i<Foundation/Foundation.h>
+
+N/Users/brad/Code/devcampipad/Classes/Bullet.m
+c000000004BCAA84A0000000000000991
+t1271572554
+s2449
+i"Bullet.h"
+
+N/Users/brad/Code/devcampipad/Classes/ClientModeSessionHandler.h
+c000000004BCA3C3700000000000000FA
+t1271544887
+s250
+i<Foundation/Foundation.h>
+
+N/Users/brad/Code/devcampipad/Classes/ClientModeSessionHandler.m
+c000000004BCAA7E200000000000003E6
+t1271572450
+s998
+i<GameKit/GameKit.h>
+i"ClientModeSessionHandler.h"
+i"devcampipadAppDelegate.h"
+
+N/Users/brad/Code/devcampipad/Classes/PlayerView.h
+c000000004BCAA84A00000000000003F4
+t1271572554
+s1012
+i<UIKit/UIKit.h>
+
+N/Users/brad/Code/devcampipad/Classes/PlayerView.m
+c000000004BCAA84A0000000000001BEA
+t1271572554
+s7146
+i"devcampipadAppDelegate.h"
+i"PlayerView.h"
+i"Bullet.h"
+
+N/Users/brad/Code/devcampipad/Classes/SlaveBoard.h
+c000000004BCAA7E200000000000004A2
+t1271572450
+s1186
+i<Foundation/Foundation.h>
+
+N/Users/brad/Code/devcampipad/Classes/SlaveBoard.m
+c000000004BCAA7E200000000000009AF
+t1271572450
+s2479
+i"SlaveBoard.h"
+i"devcampipadAppDelegate.h"
+
+N/Users/brad/Code/devcampipad/Classes/devcampipadAppDelegate.h
+c000000004BCAA7E200000000000006A3
+t1271572450
+s1699
+i<UIKit/UIKit.h>
+i<GameKit/GameKit.h>
+i"ClientModeSessionHandler.h"
+i"SlaveBoard.h"
+
+N/Users/brad/Code/devcampipad/Classes/devcampipadAppDelegate.m
+c000000004BCAB03C0000000000002A1D
+t1271574588
+s10781
+i"devcampipadAppDelegate.h"
+i<GameKit/GameKit.h>
+i"PlayerView.h"
+i"Bullet.h"
+i"SlaveBoard.h"
+
+N/Users/brad/Code/devcampipad/Default-Landscape.png
+c000000004BCA710A000000000004E12B
+t1271558410
+s319787
+
+N/Users/brad/Code/devcampipad/Default-Portrait.png
+c000000004BCA710D000000000004C26D
+t1271558413
+s311917
+
+N/Users/brad/Code/devcampipad/Icon.png
+c000000004BCAA5EB0000000000001DE8
+t1271571947
+s7656
+
+N/Users/brad/Code/devcampipad/MainWindow.xib
+c000000004BCA8F1B000000000000816F
+t1271566107
+s33135
+
+N/Users/brad/Code/devcampipad/airplane.jpg
+c000000004BCA31180000000000000838
+t1271542040
+s2104
+
+N/Users/brad/Code/devcampipad/bang0001.png
+c000000004BCA743400000000000019A6
+t1271559220
+s6566
+
+N/Users/brad/Code/devcampipad/bang0002.png
+c000000004BCA74340000000000001B01
+t1271559220
+s6913
+
+N/Users/brad/Code/devcampipad/bang0003.png
+c000000004BCA74340000000000001A2B
+t1271559220
+s6699
+
+N/Users/brad/Code/devcampipad/bang0004.png
+c000000004BCA74340000000000001FA5
+t1271559220
+s8101
+
+N/Users/brad/Code/devcampipad/bang0005.png
+c000000004BCA74340000000000002459
+t1271559220
+s9305
+
+N/Users/brad/Code/devcampipad/bang0006.png
+c000000004BCA743400000000000030AE
+t1271559220
+s12462
+
+N/Users/brad/Code/devcampipad/bang0007.png
+c000000004BCA74340000000000002D4A
+t1271559220
+s11594
+
+N/Users/brad/Code/devcampipad/bang0008.png
+c000000004BCA743400000000000031DC
+t1271559220
+s12764
+
+N/Users/brad/Code/devcampipad/bang0009.png
+c000000004BCA74340000000000002C11
+t1271559220
+s11281
+
+N/Users/brad/Code/devcampipad/bang0010.png
+c000000004BCA74340000000000001C51
+t1271559220
+s7249
+
+N/Users/brad/Code/devcampipad/bang0011.png
+c000000004BCA74340000000000001065
+t1271559220
+s4197
+
+N/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app
+t1271574593
+s1564
+
+N/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app.dSYM
+t1271574593
+s102
+
+N/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/Default-Landscape.png
+t1271574589
+s319787
+
+N/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/Default-Portrait.png
+t1271574589
+s311917
+
+N/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/Icon.png
+t1271574589
+s7656
+
+N/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/Info.plist
+t1271574589
+s836
+
+N/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/MainWindow.nib
+t1271574589
+s3060
+
+N/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/PkgInfo
+t1271574589
+s8
+
+N/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/airplane.jpg
+t1271574589
+s2104
+
+N/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/bang0001.png
+t1271574589
+s6566
+
+N/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/bang0002.png
+t1271574589
+s6913
+
+N/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/bang0003.png
+t1271574589
+s6699
+
+N/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/bang0004.png
+t1271574589
+s8101
+
+N/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/bang0005.png
+t1271574589
+s9305
+
+N/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/bang0006.png
+t1271574589
+s12462
+
+N/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/bang0007.png
+t1271574589
+s11594
+
+N/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/bang0008.png
+t1271574589
+s12764
+
+N/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/bang0009.png
+t1271574589
+s11281
+
+N/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/bang0010.png
+t1271574589
+s7249
+
+N/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/bang0011.png
+t1271574589
+s4197
+
+N/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/devcampipad
+t1271574593
+s52192
+
+N/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/loading0.png
+t1271574589
+s173490
+
+N/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/loading1.png
+t1271574589
+s173482
+
+N/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/loading10.png
+t1271574589
+s173461
+
+N/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/loading11.png
+t1271574589
+s173444
+
+N/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/loading12.png
+t1271574589
+s173434
+
+N/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/loading13.png
+t1271574589
+s174272
+
+N/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/loading14.png
+t1271574589
+s174272
+
+N/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/loading15.png
+t1271574589
+s176175
+
+N/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/loading16.png
+t1271574589
+s177937
+
+N/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/loading17.png
+t1271574589
+s177937
+
+N/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/loading2.png
+t1271574589
+s173507
+
+N/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/loading3.png
+t1271574589
+s173455
+
+N/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/loading4.png
+t1271574589
+s173488
+
+N/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/loading5.png
+t1271574589
+s173462
+
+N/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/loading6.png
+t1271574589
+s173450
+
+N/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/loading7.png
+t1271574589
+s173470
+
+N/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/loading8.png
+t1271574589
+s173461
+
+N/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/loading9.png
+t1271574589
+s173488
+
+N/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/tank_01.png
+t1271574589
+s5879
+
+N/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/tank_02.png
+t1271574589
+s6726
+
+N/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/tank_03.png
+t1271574589
+s6834
+
+N/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/tank_04.png
+t1271574589
+s6485
+
+N/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/tank_bullet.png
+t1271574589
+s793
+
+N/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/tanktank_bg-1.png
+t1271574589
+s351925
+
+N/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/tanktank_bg.png
+t1271574589
+s837742
+
+N/Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/Objects-normal/i386/Bullet.o
+t1271574592
+s20372
+
+N/Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/Objects-normal/i386/ClientModeSessionHandler.o
+t1271574592
+s18868
+
+N/Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/Objects-normal/i386/PlayerView.o
+t1271574592
+s38660
+
+N/Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/Objects-normal/i386/SlaveBoard.o
+t1271574592
+s25260
+
+N/Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/Objects-normal/i386/devcampipad.LinkFileList
+c000000004BCAB03D0000000000000304
+t1271574589
+s772
+
+N/Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/Objects-normal/i386/devcampipadAppDelegate.o
+t1271574592
+s55048
+
+N/Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/Objects-normal/i386/main.o
+t1271574591
+s5944
+
+N/Users/brad/Code/devcampipad/devcampipad_Prefix.pch
+c000000004BCA8F2A00000000000000DD
+t1271566122
+s221
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/brad/Code/devcampipad/loadingSequence/loading0.png
+c000000004BCA7DD2000000000002A5B2
+t1271561682
+s173490
+
+N/Users/brad/Code/devcampipad/loadingSequence/loading1.png
+c000000004BCA7DD5000000000002A5AA
+t1271561685
+s173482
+
+N/Users/brad/Code/devcampipad/loadingSequence/loading10.png
+c000000004BCA7DEB000000000002A595
+t1271561707
+s173461
+
+N/Users/brad/Code/devcampipad/loadingSequence/loading11.png
+c000000004BCA7DEE000000000002A584
+t1271561710
+s173444
+
+N/Users/brad/Code/devcampipad/loadingSequence/loading12.png
+c000000004BCA7DF2000000000002A57A
+t1271561714
+s173434
+
+N/Users/brad/Code/devcampipad/loadingSequence/loading13.png
+c000000004BCA7DF3000000000002A8C0
+t1271561715
+s174272
+
+N/Users/brad/Code/devcampipad/loadingSequence/loading14.png
+c000000004BCA7DF5000000000002A8C0
+t1271561717
+s174272
+
+N/Users/brad/Code/devcampipad/loadingSequence/loading15.png
+c000000004BCA7DF6000000000002B02F
+t1271561718
+s176175
+
+N/Users/brad/Code/devcampipad/loadingSequence/loading16.png
+c000000004BCA7DF8000000000002B711
+t1271561720
+s177937
+
+N/Users/brad/Code/devcampipad/loadingSequence/loading17.png
+c000000004BCA7DFA000000000002B711
+t1271561722
+s177937
+
+N/Users/brad/Code/devcampipad/loadingSequence/loading2.png
+c000000004BCA7DD8000000000002A5C3
+t1271561688
+s173507
+
+N/Users/brad/Code/devcampipad/loadingSequence/loading3.png
+c000000004BCA7DDA000000000002A58F
+t1271561690
+s173455
+
+N/Users/brad/Code/devcampipad/loadingSequence/loading4.png
+c000000004BCA7DDD000000000002A5B0
+t1271561693
+s173488
+
+N/Users/brad/Code/devcampipad/loadingSequence/loading5.png
+c000000004BCA7DDF000000000002A596
+t1271561695
+s173462
+
+N/Users/brad/Code/devcampipad/loadingSequence/loading6.png
+c000000004BCA7DE2000000000002A58A
+t1271561698
+s173450
+
+N/Users/brad/Code/devcampipad/loadingSequence/loading7.png
+c000000004BCA7DE5000000000002A59E
+t1271561701
+s173470
+
+N/Users/brad/Code/devcampipad/loadingSequence/loading8.png
+c000000004BCA7DE7000000000002A595
+t1271561703
+s173461
+
+N/Users/brad/Code/devcampipad/loadingSequence/loading9.png
+c000000004BCA7DEA000000000002A5B0
+t1271561706
+s173488
+
+N/Users/brad/Code/devcampipad/main.m
+c000000004BC971D90000000000000160
+t1271493081
+s352
+i<UIKit/UIKit.h>
+
+N/Users/brad/Code/devcampipad/tank_01.png
+c000000004BCA56A100000000000016F7
+t1271551649
+s5879
+
+N/Users/brad/Code/devcampipad/tank_02.png
+c000000004BCA56A40000000000001A46
+t1271551652
+s6726
+
+N/Users/brad/Code/devcampipad/tank_03.png
+c000000004BCA56A80000000000001AB2
+t1271551656
+s6834
+
+N/Users/brad/Code/devcampipad/tank_04.png
+c000000004BCA56AC0000000000001955
+t1271551660
+s6485
+
+N/Users/brad/Code/devcampipad/tank_bullet.png
+c000000004BCA74340000000000000319
+t1271559220
+s793
+
+N/Users/brad/Code/devcampipad/tanktank_bg-1.png
+c000000004BCA8EC10000000000055EB5
+t1271566017
+s351925
+
+N/Users/brad/Code/devcampipad/tanktank_bg.png
+c000000004BCA55FA00000000000CC86E
+t1271551482
+s837742
+
+N/var/folders/QR/QRu8PwqwGQ8hSBbrfF5C5k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/devcampipad_Prefix-foscnoqiceefkwgrcmcynxcjekjc/devcampipad_Prefix.pch.gch
+t1271574591
+s13805456
+
+Ndevcampipad-Info.plist
+c000000004BCAB03C00000000000004B2
+t1271574588
+s1202
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies293267388#293267389#0(0"0(0#1#0"4300739032#0"0#
+
+CCompileC build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/Objects-normal/i386/Bullet.o /Users/brad/Code/devcampipad/Classes/Bullet.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s293267392.325076
+e293267392.409908
+r1
+xCompileC
+xbuild/devcampipad.build/Debug-iphonesimulator/devcampipad.build/Objects-normal/i386/Bullet.o
+x/Users/brad/Code/devcampipad/Classes/Bullet.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@53"Compile /Users/brad/Code/devcampipad/Classes/Bullet.m293267392#293267392#0(0"0(0#0#45"/Users/brad/Code/devcampipad/Classes/Bullet.m4300739032#1867"    cd /Users/brad/Code/devcampipad    setenv LANG en_US.US-ASCII    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/devcampipad-generated-files.hmap -I/Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/devcampipad-own-target-headers.hmap -I/Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/devcampipad-all-target-headers.hmap -iquote /Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/devcampipad-project-headers.hmap -F/Users/brad/Code/devcampipad/build/Debug-iphonesimulator -I/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/include -I/Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/DerivedSources/i386 -I/Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/DerivedSources -include /var/folders/QR/QRu8PwqwGQ8hSBbrfF5C5k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/devcampipad_Prefix-foscnoqiceefkwgrcmcynxcjekjc/devcampipad_Prefix.pch -c /Users/brad/Code/devcampipad/Classes/Bullet.m -o /Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/Objects-normal/i386/Bullet.o0#
+
+CCompileC build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/Objects-normal/i386/ClientModeSessionHandler.o /Users/brad/Code/devcampipad/Classes/ClientModeSessionHandler.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s293267392.183182
+e293267392.328934
+r1
+xCompileC
+xbuild/devcampipad.build/Debug-iphonesimulator/devcampipad.build/Objects-normal/i386/ClientModeSessionHandler.o
+x/Users/brad/Code/devcampipad/Classes/ClientModeSessionHandler.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@71"Compile /Users/brad/Code/devcampipad/Classes/ClientModeSessionHandler.m293267392#293267392#0(0"0(0#0#63"/Users/brad/Code/devcampipad/Classes/ClientModeSessionHandler.m4300739032#1903"    cd /Users/brad/Code/devcampipad    setenv LANG en_US.US-ASCII    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/devcampipad-generated-files.hmap -I/Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/devcampipad-own-target-headers.hmap -I/Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/devcampipad-all-target-headers.hmap -iquote /Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/devcampipad-project-headers.hmap -F/Users/brad/Code/devcampipad/build/Debug-iphonesimulator -I/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/include -I/Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/DerivedSources/i386 -I/Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/DerivedSources -include /var/folders/QR/QRu8PwqwGQ8hSBbrfF5C5k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/devcampipad_Prefix-foscnoqiceefkwgrcmcynxcjekjc/devcampipad_Prefix.pch -c /Users/brad/Code/devcampipad/Classes/ClientModeSessionHandler.m -o /Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/Objects-normal/i386/ClientModeSessionHandler.o0#
+
+CCompileC build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/Objects-normal/i386/PlayerView.o /Users/brad/Code/devcampipad/Classes/PlayerView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s293267391.754196
+e293267392.183060
+r1
+xCompileC
+xbuild/devcampipad.build/Debug-iphonesimulator/devcampipad.build/Objects-normal/i386/PlayerView.o
+x/Users/brad/Code/devcampipad/Classes/PlayerView.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/brad/Code/devcampipad/Classes/PlayerView.m:156:3: warning: #warning Not sure what to do here yet...
+lSLF07#2@57"Compile /Users/brad/Code/devcampipad/Classes/PlayerView.m293267391#293267392#0(107"/Users/brad/Code/devcampipad/Classes/PlayerView.m:156:3: warning: #warning Not sure what to do here yet...1(22@40"#warning Not sure what to do here yet...293267392#0#107#0(6@49"/Users/brad/Code/devcampipad/Classes/PlayerView.m293265354#156#0#156#0#10"#warning *0(0#0#49"/Users/brad/Code/devcampipad/Classes/PlayerView.m4300739032#1875"    cd /Users/brad/Code/devcampipad    setenv LANG en_US.US-ASCII    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/devcampipad-generated-files.hmap -I/Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/devcampipad-own-target-headers.hmap -I/Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/devcampipad-all-target-headers.hmap -iquote /Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/devcampipad-project-headers.hmap -F/Users/brad/Code/devcampipad/build/Debug-iphonesimulator -I/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/include -I/Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/DerivedSources/i386 -I/Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/DerivedSources -include /var/folders/QR/QRu8PwqwGQ8hSBbrfF5C5k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/devcampipad_Prefix-foscnoqiceefkwgrcmcynxcjekjc/devcampipad_Prefix.pch -c /Users/brad/Code/devcampipad/Classes/PlayerView.m -o /Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/Objects-normal/i386/PlayerView.o0#
+
+CCompileC build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/Objects-normal/i386/SlaveBoard.o /Users/brad/Code/devcampipad/Classes/SlaveBoard.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s293267392.184831
+e293267392.324967
+r1
+xCompileC
+xbuild/devcampipad.build/Debug-iphonesimulator/devcampipad.build/Objects-normal/i386/SlaveBoard.o
+x/Users/brad/Code/devcampipad/Classes/SlaveBoard.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@57"Compile /Users/brad/Code/devcampipad/Classes/SlaveBoard.m293267392#293267392#0(0"0(0#0#49"/Users/brad/Code/devcampipad/Classes/SlaveBoard.m4300739032#1875"    cd /Users/brad/Code/devcampipad    setenv LANG en_US.US-ASCII    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/devcampipad-generated-files.hmap -I/Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/devcampipad-own-target-headers.hmap -I/Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/devcampipad-all-target-headers.hmap -iquote /Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/devcampipad-project-headers.hmap -F/Users/brad/Code/devcampipad/build/Debug-iphonesimulator -I/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/include -I/Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/DerivedSources/i386 -I/Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/DerivedSources -include /var/folders/QR/QRu8PwqwGQ8hSBbrfF5C5k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/devcampipad_Prefix-foscnoqiceefkwgrcmcynxcjekjc/devcampipad_Prefix.pch -c /Users/brad/Code/devcampipad/Classes/SlaveBoard.m -o /Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/Objects-normal/i386/SlaveBoard.o0#
+
+CCompileC build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/Objects-normal/i386/devcampipadAppDelegate.o /Users/brad/Code/devcampipad/Classes/devcampipadAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s293267391.470660
+e293267392.184742
+r1
+xCompileC
+xbuild/devcampipad.build/Debug-iphonesimulator/devcampipad.build/Objects-normal/i386/devcampipadAppDelegate.o
+x/Users/brad/Code/devcampipad/Classes/devcampipadAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/brad/Code/devcampipad/Classes/devcampipadAppDelegate.m: In function '-[devcampipadAppDelegate application:didFinishLaunchingWithOptions:]':
+o/Users/brad/Code/devcampipad/Classes/devcampipadAppDelegate.m:31: warning: incompatible Objective-C types 'struct NSString *', expected 'struct UIImage *' when passing argument 1 of 'initWithImage:' from distinct Objective-C type
+o/Users/brad/Code/devcampipad/Classes/devcampipadAppDelegate.m: In function '-[devcampipadAppDelegate session:didReceiveConnectionRequestFromPeer:]':
+o/Users/brad/Code/devcampipad/Classes/devcampipadAppDelegate.m:128: warning: local declaration of 'session' hides instance variable
+o/Users/brad/Code/devcampipad/Classes/devcampipadAppDelegate.m: In function '-[devcampipadAppDelegate receiveData:fromPeer:inSession:context:]':
+o/Users/brad/Code/devcampipad/Classes/devcampipadAppDelegate.m:194: warning: local declaration of 'session' hides instance variable
+lSLF07#2@69"Compile /Users/brad/Code/devcampipad/Classes/devcampipadAppDelegate.m293267391#293267392#0(932"/Users/brad/Code/devcampipad/Classes/devcampipadAppDelegate.m: In function '-[devcampipadAppDelegate application:didFinishLaunchingWithOptions:]':/Users/brad/Code/devcampipad/Classes/devcampipadAppDelegate.m:31: warning: incompatible Objective-C types 'struct NSString *', expected 'struct UIImage *' when passing argument 1 of 'initWithImage:' from distinct Objective-C type/Users/brad/Code/devcampipad/Classes/devcampipadAppDelegate.m: In function '-[devcampipadAppDelegate session:didReceiveConnectionRequestFromPeer:]':/Users/brad/Code/devcampipad/Classes/devcampipadAppDelegate.m:128: warning: local declaration of 'session' hides instance variable/Users/brad/Code/devcampipad/Classes/devcampipadAppDelegate.m: In function '-[devcampipadAppDelegate receiveData:fromPeer:inSession:context:]':/Users/brad/Code/devcampipad/Classes/devcampipadAppDelegate.m:194: warning: local declaration of 'session' hides instance variable3(22@154"Incompatible Objective-C types 'struct NSString *', expected 'struct UIImage *' when passing argument 1 of 'initWithImage:' from distinct Objective-C type293267392#147#230#0(6@61"/Users/brad/Code/devcampipad/Classes/devcampipadAppDelegate.m293267388#31#0#31#0#0"0(22@54"Local declaration of 'session' hides instance variable293267392#526#131#0(6@61"/Users/brad/Code/devcampipad/Classes/devcampipadAppDelegate.m293267388#128#0#128#0#0"0(22@54"Local declaration of 'session' hides instance variable293267392#801#131#0(6@61"/Users/brad/Code/devcampipad/Classes/devcampipadAppDelegate.m293267388#194#0#194#0#0"0(0#0#61"/Users/brad/Code/devcampipad/Classes/devcampipadAppDelegate.m4300739032#1899"    cd /Users/brad/Code/devcampipad    setenv LANG en_US.US-ASCII    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/devcampipad-generated-files.hmap -I/Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/devcampipad-own-target-headers.hmap -I/Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/devcampipad-all-target-headers.hmap -iquote /Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/devcampipad-project-headers.hmap -F/Users/brad/Code/devcampipad/build/Debug-iphonesimulator -I/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/include -I/Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/DerivedSources/i386 -I/Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/DerivedSources -include /var/folders/QR/QRu8PwqwGQ8hSBbrfF5C5k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/devcampipad_Prefix-foscnoqiceefkwgrcmcynxcjekjc/devcampipad_Prefix.pch -c /Users/brad/Code/devcampipad/Classes/devcampipadAppDelegate.m -o /Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/Objects-normal/i386/devcampipadAppDelegate.o0#
+
+CCompileC build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/Objects-normal/i386/main.o /Users/brad/Code/devcampipad/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s293267391.469342
+e293267391.754085
+r1
+xCompileC
+xbuild/devcampipad.build/Debug-iphonesimulator/devcampipad.build/Objects-normal/i386/main.o
+x/Users/brad/Code/devcampipad/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@43"Compile /Users/brad/Code/devcampipad/main.m293267391#293267391#0(0"0(0#0#35"/Users/brad/Code/devcampipad/main.m4300739032#1855"    cd /Users/brad/Code/devcampipad    setenv LANG en_US.US-ASCII    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/devcampipad-generated-files.hmap -I/Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/devcampipad-own-target-headers.hmap -I/Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/devcampipad-all-target-headers.hmap -iquote /Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/devcampipad-project-headers.hmap -F/Users/brad/Code/devcampipad/build/Debug-iphonesimulator -I/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/include -I/Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/DerivedSources/i386 -I/Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/DerivedSources -include /var/folders/QR/QRu8PwqwGQ8hSBbrfF5C5k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/devcampipad_Prefix-foscnoqiceefkwgrcmcynxcjekjc/devcampipad_Prefix.pch -c /Users/brad/Code/devcampipad/main.m -o /Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/Objects-normal/i386/main.o0#
+
+CCompileXIB /Users/brad/Code/devcampipad/MainWindow.xib
+s293267389.199905
+e293267389.999345
+r1
+xCompileXIB
+x/Users/brad/Code/devcampipad/MainWindow.xib
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+lSLF07#2@25"CompileXIB MainWindow.xib293267389#293267389#0(84"Couldn't open shared capabilities memory GSCapabilities (No such file or directory)0(0#0#43"/Users/brad/Code/devcampipad/MainWindow.xib4300739032#475"    cd /Users/brad/Code/devcampipad    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/MainWindow.nib /Users/brad/Code/devcampipad/MainWindow.xib0#
+
+CCpResource build/Debug-iphonesimulator/devcampipad.app/Default-Landscape.png Default-Landscape.png
+s293267389.311931
+e293267389.406966
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampipad.app/Default-Landscape.png
+xDefault-Landscape.png
+lSLF07#2@26"Copy Default-Landscape.png293267389#293267389#0(0"0(0#0#50"/Users/brad/Code/devcampipad/Default-Landscape.png4300739032#460"    cd /Users/brad/Code/devcampipad    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampipad/Default-Landscape.png /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampipad.app/Default-Portrait.png Default-Portrait.png
+s293267389.308404
+e293267389.423264
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampipad.app/Default-Portrait.png
+xDefault-Portrait.png
+lSLF07#2@25"Copy Default-Portrait.png293267389#293267389#0(0"0(0#0#49"/Users/brad/Code/devcampipad/Default-Portrait.png4300739032#459"    cd /Users/brad/Code/devcampipad    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampipad/Default-Portrait.png /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampipad.app/Icon.png Icon.png
+s293267389.334047
+e293267389.388765
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampipad.app/Icon.png
+xIcon.png
+lSLF07#2@13"Copy Icon.png293267389#293267389#0(0"0(0#0#37"/Users/brad/Code/devcampipad/Icon.png4300739032#447"    cd /Users/brad/Code/devcampipad    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampipad/Icon.png /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampipad.app/airplane.jpg airplane.jpg
+s293267389.200858
+e293267389.254157
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampipad.app/airplane.jpg
+xairplane.jpg
+lSLF07#2@17"Copy airplane.jpg293267389#293267389#0(0"0(0#0#41"/Users/brad/Code/devcampipad/airplane.jpg4300739032#451"    cd /Users/brad/Code/devcampipad    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampipad/airplane.jpg /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampipad.app/bang0001.png bang0001.png
+s293267389.220401
+e293267389.286684
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampipad.app/bang0001.png
+xbang0001.png
+lSLF07#2@17"Copy bang0001.png293267389#293267389#0(0"0(0#0#41"/Users/brad/Code/devcampipad/bang0001.png4300739032#451"    cd /Users/brad/Code/devcampipad    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampipad/bang0001.png /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampipad.app/bang0002.png bang0002.png
+s293267389.236945
+e293267389.263461
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampipad.app/bang0002.png
+xbang0002.png
+lSLF07#2@17"Copy bang0002.png293267389#293267389#0(0"0(0#0#41"/Users/brad/Code/devcampipad/bang0002.png4300739032#451"    cd /Users/brad/Code/devcampipad    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampipad/bang0002.png /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampipad.app/bang0003.png bang0003.png
+s293267389.250600
+e293267389.308163
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampipad.app/bang0003.png
+xbang0003.png
+lSLF07#2@17"Copy bang0003.png293267389#293267389#0(0"0(0#0#41"/Users/brad/Code/devcampipad/bang0003.png4300739032#451"    cd /Users/brad/Code/devcampipad    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampipad/bang0003.png /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampipad.app/bang0004.png bang0004.png
+s293267389.254261
+e293267389.286162
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampipad.app/bang0004.png
+xbang0004.png
+lSLF07#2@17"Copy bang0004.png293267389#293267389#0(0"0(0#0#41"/Users/brad/Code/devcampipad/bang0004.png4300739032#451"    cd /Users/brad/Code/devcampipad    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampipad/bang0004.png /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampipad.app/bang0005.png bang0005.png
+s293267389.263551
+e293267389.307881
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampipad.app/bang0005.png
+xbang0005.png
+lSLF07#2@17"Copy bang0005.png293267389#293267389#0(0"0(0#0#41"/Users/brad/Code/devcampipad/bang0005.png4300739032#451"    cd /Users/brad/Code/devcampipad    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampipad/bang0005.png /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampipad.app/bang0006.png bang0006.png
+s293267389.283544
+e293267389.308318
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampipad.app/bang0006.png
+xbang0006.png
+lSLF07#2@17"Copy bang0006.png293267389#293267389#0(0"0(0#0#41"/Users/brad/Code/devcampipad/bang0006.png4300739032#451"    cd /Users/brad/Code/devcampipad    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampipad/bang0006.png /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampipad.app/bang0007.png bang0007.png
+s293267389.286767
+e293267389.307461
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampipad.app/bang0007.png
+xbang0007.png
+lSLF07#2@17"Copy bang0007.png293267389#293267389#0(0"0(0#0#41"/Users/brad/Code/devcampipad/bang0007.png4300739032#451"    cd /Users/brad/Code/devcampipad    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampipad/bang0007.png /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampipad.app/bang0008.png bang0008.png
+s293267389.290839
+e293267389.307728
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampipad.app/bang0008.png
+xbang0008.png
+lSLF07#2@17"Copy bang0008.png293267389#293267389#0(0"0(0#0#41"/Users/brad/Code/devcampipad/bang0008.png4300739032#451"    cd /Users/brad/Code/devcampipad    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampipad/bang0008.png /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampipad.app/bang0009.png bang0009.png
+s293267389.295268
+e293267389.308037
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampipad.app/bang0009.png
+xbang0009.png
+lSLF07#2@17"Copy bang0009.png293267389#293267389#0(0"0(0#0#41"/Users/brad/Code/devcampipad/bang0009.png4300739032#451"    cd /Users/brad/Code/devcampipad    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampipad/bang0009.png /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampipad.app/bang0010.png bang0010.png
+s293267389.298831
+e293267389.388910
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampipad.app/bang0010.png
+xbang0010.png
+lSLF07#2@17"Copy bang0010.png293267389#293267389#0(0"0(0#0#41"/Users/brad/Code/devcampipad/bang0010.png4300739032#451"    cd /Users/brad/Code/devcampipad    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampipad/bang0010.png /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampipad.app/bang0011.png bang0011.png
+s293267389.304675
+e293267389.389032
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampipad.app/bang0011.png
+xbang0011.png
+lSLF07#2@17"Copy bang0011.png293267389#293267389#0(0"0(0#0#41"/Users/brad/Code/devcampipad/bang0011.png4300739032#451"    cd /Users/brad/Code/devcampipad    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampipad/bang0011.png /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampipad.app/loading0.png loadingSequence/loading0.png
+s293267389.350727
+e293267389.407110
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampipad.app/loading0.png
+xloadingSequence/loading0.png
+lSLF07#2@33"Copy loadingSequence/loading0.png293267389#293267389#0(0"0(0#0#57"/Users/brad/Code/devcampipad/loadingSequence/loading0.png4300739032#467"    cd /Users/brad/Code/devcampipad    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampipad/loadingSequence/loading0.png /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampipad.app/loading1.png loadingSequence/loading1.png
+s293267389.358437
+e293267389.407232
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampipad.app/loading1.png
+xloadingSequence/loading1.png
+lSLF07#2@33"Copy loadingSequence/loading1.png293267389#293267389#0(0"0(0#0#57"/Users/brad/Code/devcampipad/loadingSequence/loading1.png4300739032#467"    cd /Users/brad/Code/devcampipad    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampipad/loadingSequence/loading1.png /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampipad.app/loading10.png loadingSequence/loading10.png
+s293267389.389115
+e293267389.423532
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampipad.app/loading10.png
+xloadingSequence/loading10.png
+lSLF07#2@34"Copy loadingSequence/loading10.png293267389#293267389#0(0"0(0#0#58"/Users/brad/Code/devcampipad/loadingSequence/loading10.png4300739032#468"    cd /Users/brad/Code/devcampipad    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampipad/loadingSequence/loading10.png /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampipad.app/loading11.png loadingSequence/loading11.png
+s293267389.391191
+e293267389.423655
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampipad.app/loading11.png
+xloadingSequence/loading11.png
+lSLF07#2@34"Copy loadingSequence/loading11.png293267389#293267389#0(0"0(0#0#58"/Users/brad/Code/devcampipad/loadingSequence/loading11.png4300739032#468"    cd /Users/brad/Code/devcampipad    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampipad/loadingSequence/loading11.png /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampipad.app/loading12.png loadingSequence/loading12.png
+s293267389.399747
+e293267389.423810
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampipad.app/loading12.png
+xloadingSequence/loading12.png
+lSLF07#2@34"Copy loadingSequence/loading12.png293267389#293267389#0(0"0(0#0#58"/Users/brad/Code/devcampipad/loadingSequence/loading12.png4300739032#468"    cd /Users/brad/Code/devcampipad    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampipad/loadingSequence/loading12.png /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampipad.app/loading13.png loadingSequence/loading13.png
+s293267389.407315
+e293267389.449262
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampipad.app/loading13.png
+xloadingSequence/loading13.png
+lSLF07#2@34"Copy loadingSequence/loading13.png293267389#293267389#0(0"0(0#0#58"/Users/brad/Code/devcampipad/loadingSequence/loading13.png4300739032#468"    cd /Users/brad/Code/devcampipad    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampipad/loadingSequence/loading13.png /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampipad.app/loading14.png loadingSequence/loading14.png
+s293267389.414190
+e293267389.450027
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampipad.app/loading14.png
+xloadingSequence/loading14.png
+lSLF07#2@34"Copy loadingSequence/loading14.png293267389#293267389#0(0"0(0#0#58"/Users/brad/Code/devcampipad/loadingSequence/loading14.png4300739032#468"    cd /Users/brad/Code/devcampipad    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampipad/loadingSequence/loading14.png /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampipad.app/loading15.png loadingSequence/loading15.png
+s293267389.420807
+e293267389.450153
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampipad.app/loading15.png
+xloadingSequence/loading15.png
+lSLF07#2@34"Copy loadingSequence/loading15.png293267389#293267389#0(0"0(0#0#58"/Users/brad/Code/devcampipad/loadingSequence/loading15.png4300739032#468"    cd /Users/brad/Code/devcampipad    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampipad/loadingSequence/loading15.png /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampipad.app/loading16.png loadingSequence/loading16.png
+s293267389.423897
+e293267389.449116
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampipad.app/loading16.png
+xloadingSequence/loading16.png
+lSLF07#2@34"Copy loadingSequence/loading16.png293267389#293267389#0(0"0(0#0#58"/Users/brad/Code/devcampipad/loadingSequence/loading16.png4300739032#468"    cd /Users/brad/Code/devcampipad    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampipad/loadingSequence/loading16.png /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampipad.app/loading17.png loadingSequence/loading17.png
+s293267389.430679
+e293267389.449884
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampipad.app/loading17.png
+xloadingSequence/loading17.png
+lSLF07#2@34"Copy loadingSequence/loading17.png293267389#293267389#0(0"0(0#0#58"/Users/brad/Code/devcampipad/loadingSequence/loading17.png4300739032#468"    cd /Users/brad/Code/devcampipad    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampipad/loadingSequence/loading17.png /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampipad.app/loading2.png loadingSequence/loading2.png
+s293267389.432982
+e293267389.481601
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampipad.app/loading2.png
+xloadingSequence/loading2.png
+lSLF07#2@33"Copy loadingSequence/loading2.png293267389#293267389#0(0"0(0#0#57"/Users/brad/Code/devcampipad/loadingSequence/loading2.png4300739032#467"    cd /Users/brad/Code/devcampipad    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampipad/loadingSequence/loading2.png /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampipad.app/loading3.png loadingSequence/loading3.png
+s293267389.440283
+e293267389.481723
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampipad.app/loading3.png
+xloadingSequence/loading3.png
+lSLF07#2@33"Copy loadingSequence/loading3.png293267389#293267389#0(0"0(0#0#57"/Users/brad/Code/devcampipad/loadingSequence/loading3.png4300739032#467"    cd /Users/brad/Code/devcampipad    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampipad/loadingSequence/loading3.png /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampipad.app/loading4.png loadingSequence/loading4.png
+s293267389.442697
+e293267389.481849
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampipad.app/loading4.png
+xloadingSequence/loading4.png
+lSLF07#2@33"Copy loadingSequence/loading4.png293267389#293267389#0(0"0(0#0#57"/Users/brad/Code/devcampipad/loadingSequence/loading4.png4300739032#467"    cd /Users/brad/Code/devcampipad    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampipad/loadingSequence/loading4.png /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampipad.app/loading5.png loadingSequence/loading5.png
+s293267389.450385
+e293267389.481186
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampipad.app/loading5.png
+xloadingSequence/loading5.png
+lSLF07#2@33"Copy loadingSequence/loading5.png293267389#293267389#0(0"0(0#0#57"/Users/brad/Code/devcampipad/loadingSequence/loading5.png4300739032#467"    cd /Users/brad/Code/devcampipad    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampipad/loadingSequence/loading5.png /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampipad.app/loading6.png loadingSequence/loading6.png
+s293267389.452627
+e293267389.481465
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampipad.app/loading6.png
+xloadingSequence/loading6.png
+lSLF07#2@33"Copy loadingSequence/loading6.png293267389#293267389#0(0"0(0#0#57"/Users/brad/Code/devcampipad/loadingSequence/loading6.png4300739032#467"    cd /Users/brad/Code/devcampipad    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampipad/loadingSequence/loading6.png /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampipad.app/loading7.png loadingSequence/loading7.png
+s293267389.464459
+e293267389.484622
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampipad.app/loading7.png
+xloadingSequence/loading7.png
+lSLF07#2@33"Copy loadingSequence/loading7.png293267389#293267389#0(0"0(0#0#57"/Users/brad/Code/devcampipad/loadingSequence/loading7.png4300739032#467"    cd /Users/brad/Code/devcampipad    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampipad/loadingSequence/loading7.png /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampipad.app/loading8.png loadingSequence/loading8.png
+s293267389.468311
+e293267389.486491
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampipad.app/loading8.png
+xloadingSequence/loading8.png
+lSLF07#2@33"Copy loadingSequence/loading8.png293267389#293267389#0(0"0(0#0#57"/Users/brad/Code/devcampipad/loadingSequence/loading8.png4300739032#467"    cd /Users/brad/Code/devcampipad    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampipad/loadingSequence/loading8.png /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampipad.app/loading9.png loadingSequence/loading9.png
+s293267389.472414
+e293267389.490776
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampipad.app/loading9.png
+xloadingSequence/loading9.png
+lSLF07#2@33"Copy loadingSequence/loading9.png293267389#293267389#0(0"0(0#0#57"/Users/brad/Code/devcampipad/loadingSequence/loading9.png4300739032#467"    cd /Users/brad/Code/devcampipad    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampipad/loadingSequence/loading9.png /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampipad.app/tank_01.png tank_01.png
+s293267389.216086
+e293267389.250474
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampipad.app/tank_01.png
+xtank_01.png
+lSLF07#2@16"Copy tank_01.png293267389#293267389#0(0"0(0#0#40"/Users/brad/Code/devcampipad/tank_01.png4300739032#450"    cd /Users/brad/Code/devcampipad    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampipad/tank_01.png /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampipad.app/tank_02.png tank_02.png
+s293267389.212368
+e293267389.286435
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampipad.app/tank_02.png
+xtank_02.png
+lSLF07#2@16"Copy tank_02.png293267389#293267389#0(0"0(0#0#40"/Users/brad/Code/devcampipad/tank_02.png4300739032#450"    cd /Users/brad/Code/devcampipad    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampipad/tank_02.png /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampipad.app/tank_03.png tank_03.png
+s293267389.210462
+e293267389.263317
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampipad.app/tank_03.png
+xtank_03.png
+lSLF07#2@16"Copy tank_03.png293267389#293267389#0(0"0(0#0#40"/Users/brad/Code/devcampipad/tank_03.png4300739032#450"    cd /Users/brad/Code/devcampipad    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampipad/tank_03.png /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampipad.app/tank_04.png tank_04.png
+s293267389.206814
+e293267389.286305
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampipad.app/tank_04.png
+xtank_04.png
+lSLF07#2@16"Copy tank_04.png293267389#293267389#0(0"0(0#0#40"/Users/brad/Code/devcampipad/tank_04.png4300739032#450"    cd /Users/brad/Code/devcampipad    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampipad/tank_04.png /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampipad.app/tank_bullet.png tank_bullet.png
+s293267389.218452
+e293267389.286560
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampipad.app/tank_bullet.png
+xtank_bullet.png
+lSLF07#2@20"Copy tank_bullet.png293267389#293267389#0(0"0(0#0#44"/Users/brad/Code/devcampipad/tank_bullet.png4300739032#454"    cd /Users/brad/Code/devcampipad    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampipad/tank_bullet.png /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampipad.app/tanktank_bg-1.png tanktank_bg-1.png
+s293267389.318374
+e293267389.423404
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampipad.app/tanktank_bg-1.png
+xtanktank_bg-1.png
+lSLF07#2@22"Copy tanktank_bg-1.png293267389#293267389#0(0"0(0#0#46"/Users/brad/Code/devcampipad/tanktank_bg-1.png4300739032#456"    cd /Users/brad/Code/devcampipad    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampipad/tanktank_bg-1.png /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampipad.app/tanktank_bg.png tanktank_bg.png
+s293267389.204940
+e293267389.481338
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampipad.app/tanktank_bg.png
+xtanktank_bg.png
+lSLF07#2@20"Copy tanktank_bg.png293267389#293267389#0(0"0(0#0#44"/Users/brad/Code/devcampipad/tanktank_bg.png4300739032#454"    cd /Users/brad/Code/devcampipad    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampipad/tanktank_bg.png /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app0#
+
+CGenerateDSYMFile /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app.dSYM /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/devcampipad
+s293267393.076050
+e293267393.095309
+r1
+xGenerateDSYMFile
+x/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app.dSYM
+x/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/devcampipad
+lSLF07#2@121"GenerateDSYMFile build/Debug-iphonesimulator/devcampipad.app.dSYM build/Debug-iphonesimulator/devcampipad.app/devcampipad293267393#293267393#0(0"0(0#0#84"/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/devcampipad4300739032#386"    cd /Users/brad/Code/devcampipad    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/usr/bin/dsymutil /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/devcampipad -o /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app.dSYM0#
+
+CLd /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/devcampipad normal i386
+s293267392.410015
+e293267393.075879
+r1
+xLd
+x/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/devcampipad
+xnormal
+xi386
+lSLF07#2@89"Link /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/devcampipad293267392#293267393#0(0"0(0#0#0"4300739032#879"    cd /Users/brad/Code/devcampipad    setenv MACOSX_DEPLOYMENT_TARGET 10.5    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -L/Users/brad/Code/devcampipad/build/Debug-iphonesimulator -F/Users/brad/Code/devcampipad/build/Debug-iphonesimulator -filelist /Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/Objects-normal/i386/devcampipad.LinkFileList -mmacosx-version-min=10.5 -framework Foundation -framework UIKit -framework CoreGraphics -framework GameKit -o /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/devcampipad0#
+
+CProcessInfoPlistFile /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/Info.plist devcampipad-Info.plist
+s293267389.160226
+e293267389.199806
+r1
+xProcessInfoPlistFile
+x/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/Info.plist
+xdevcampipad-Info.plist
+lSLF07#2@30"Process devcampipad-Info.plist293267389#293267389#0(0"0(0#0#51"/Users/brad/Code/devcampipad/devcampipad-Info.plist4300739032#475"    cd /Users/brad/Code/devcampipad    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility devcampipad-Info.plist -genpkginfo /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app/Info.plist0#
+
+CProcessPCH /var/folders/QR/QRu8PwqwGQ8hSBbrfF5C5k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/devcampipad_Prefix-foscnoqiceefkwgrcmcynxcjekjc/devcampipad_Prefix.pch.gch devcampipad_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s293267389.999484
+e293267391.469133
+r1
+xProcessPCH
+x/var/folders/QR/QRu8PwqwGQ8hSBbrfF5C5k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/devcampipad_Prefix-foscnoqiceefkwgrcmcynxcjekjc/devcampipad_Prefix.pch.gch
+xdevcampipad_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@33"Precompile devcampipad_Prefix.pch293267389#293267391#0(0"0(0#0#51"/Users/brad/Code/devcampipad/devcampipad_Prefix.pch4300739032#1753"    cd /Users/brad/Code/devcampipad    setenv LANG en_US.US-ASCII    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/devcampipad-generated-files.hmap -I/Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/devcampipad-own-target-headers.hmap -I/Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/devcampipad-all-target-headers.hmap -iquote /Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/devcampipad-project-headers.hmap -F/Users/brad/Code/devcampipad/build/Debug-iphonesimulator -I/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/include -I/Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/DerivedSources/i386 -I/Users/brad/Code/devcampipad/build/devcampipad.build/Debug-iphonesimulator/devcampipad.build/DerivedSources -c /Users/brad/Code/devcampipad/devcampipad_Prefix.pch -o /var/folders/QR/QRu8PwqwGQ8hSBbrfF5C5k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/devcampipad_Prefix-foscnoqiceefkwgrcmcynxcjekjc/devcampipad_Prefix.pch.gch0#
+
+CTouch /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app
+s293267393.095425
+e293267393.101898
+r1
+xTouch
+x/Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app
+lSLF07#2@78"Touch /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app293267393#293267393#0(0"0(0#0#0"4300739032#276"    cd /Users/brad/Code/devcampipad    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/brad/Code/devcampipad/build/Debug-iphonesimulator/devcampipad.app0#
+

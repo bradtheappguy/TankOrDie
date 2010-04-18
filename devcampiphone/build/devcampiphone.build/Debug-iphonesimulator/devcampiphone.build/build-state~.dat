@@ -1,0 +1,685 @@
+Tdevcampiphone
+v7
+r0
+t293254114.692605
+cCheck dependencies
+
+N/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk
+c000000004B99753100000000000000EE
+t1268348209
+s238
+
+N/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004B2B4CC3000000000026DB60
+t1261128899
+s2546528
+
+N/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004B2B4DC8000000000027D5E0
+t1261129160
+s2610656
+
+N/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004B2B4DAE0000000000001355
+t1261129134
+s4949
+
+N/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/GameKit.framework/GameKit
+c000000004B2B635000000000000A7060
+t1261134672
+s684128
+
+N/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/GameKit.framework/Headers/GameKit.h
+c000000004B2B633D0000000000000112
+t1261134653
+s274
+
+N/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004B2B61620000000000000788
+t1261134178
+s1928
+
+N/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004B2B62B50000000001670F70
+t1261134517
+s23531376
+
+N/Users/brad/Code/devcampiphone/Classes/TankPickerController.h
+c000000004BCA78AA00000000000001DA
+t1271560362
+s474
+i<UIKit/UIKit.h>
+
+N/Users/brad/Code/devcampiphone/Classes/TankPickerController.m
+c000000004BCA78AA0000000000000835
+t1271560362
+s2101
+i"TankPickerController.h"
+i"devcampiphoneAppDelegate.h"
+
+N/Users/brad/Code/devcampiphone/Classes/TankPickerController.xib
+c000000004BCA78AA0000000000008840
+t1271560362
+s34880
+
+N/Users/brad/Code/devcampiphone/Classes/devcampiphoneAppDelegate.h
+c000000004BCA78AA0000000000000466
+t1271560362
+s1126
+i<UIKit/UIKit.h>
+i<GameKit/GameKit.h>
+
+N/Users/brad/Code/devcampiphone/Classes/devcampiphoneAppDelegate.m
+c000000004BCA7BE7000000000000206C
+t1271561191
+s8300
+i"devcampiphoneAppDelegate.h"
+i"ControlsViewController.h"
+i"TankPickerController.h"
+
+N/Users/brad/Code/devcampiphone/ControlsViewController.h
+c000000004BCA78AA0000000000000282
+t1271560362
+s642
+i<UIKit/UIKit.h>
+i"devcampiphoneAppDelegate.h"
+
+N/Users/brad/Code/devcampiphone/ControlsViewController.m
+c000000004BCA78AA0000000000000D00
+t1271560362
+s3328
+i"ControlsViewController.h"
+i"devcampiphoneAppDelegate.h"
+
+N/Users/brad/Code/devcampiphone/ControlsViewController.xib
+c000000004BCA78AA0000000000006A07
+t1271560362
+s27143
+
+N/Users/brad/Code/devcampiphone/Default.png
+c000000004BCA711400000000000298B8
+t1271558420
+s170168
+
+N/Users/brad/Code/devcampiphone/Images/button_fire_down.png
+c000000004BCA79B100000000000045B2
+t1271560625
+s17842
+
+N/Users/brad/Code/devcampiphone/Images/button_fire_up.png
+c000000004BCA79B10000000000003866
+t1271560625
+s14438
+
+N/Users/brad/Code/devcampiphone/Images/controller_background.png
+c000000004BCA79B1000000000001E58B
+t1271560625
+s124299
+
+N/Users/brad/Code/devcampiphone/Images/controller_header.png
+c000000004BCA79B10000000000000787
+t1271560625
+s1927
+
+N/Users/brad/Code/devcampiphone/Images/controller_healthbar.png
+c000000004BCA79B10000000000000CA7
+t1271560625
+s3239
+
+N/Users/brad/Code/devcampiphone/Images/tanks/tank_01.png
+c000000004BCA79B100000000000016F7
+t1271560625
+s5879
+
+N/Users/brad/Code/devcampiphone/Images/tanks/tank_02.png
+c000000004BCA79B10000000000001A46
+t1271560625
+s6726
+
+N/Users/brad/Code/devcampiphone/Images/tanks/tank_03.png
+c000000004BCA79B10000000000001AB2
+t1271560625
+s6834
+
+N/Users/brad/Code/devcampiphone/Images/tanks/tank_04.png
+c000000004BCA79B10000000000001955
+t1271560625
+s6485
+
+N/Users/brad/Code/devcampiphone/Images/tanks/tank_05.png
+c000000004BCA79B100000000000016C8
+t1271560625
+s5832
+
+N/Users/brad/Code/devcampiphone/Images/tanks/tank_06.png
+c000000004BCA79B1000000000000183D
+t1271560625
+s6205
+
+N/Users/brad/Code/devcampiphone/Images/tanks/tank_07.png
+c000000004BCA79B100000000000017FC
+t1271560625
+s6140
+
+N/Users/brad/Code/devcampiphone/Images/tanks/tank_08.png
+c000000004BCA79B1000000000000192E
+t1271560625
+s6446
+
+N/Users/brad/Code/devcampiphone/Images/tanks/tank_09.png
+c000000004BCA79B100000000000014C3
+t1271560625
+s5315
+
+N/Users/brad/Code/devcampiphone/Images/tanks/tank_10.png
+c000000004BCA79B100000000000016F7
+t1271560625
+s5879
+
+N/Users/brad/Code/devcampiphone/Images/tanks/tank_11.png
+c000000004BCA79B10000000000001C71
+t1271560625
+s7281
+
+N/Users/brad/Code/devcampiphone/Images/tanks/tank_12.png
+c000000004BCA79B1000000000000118B
+t1271560625
+s4491
+
+N/Users/brad/Code/devcampiphone/Images/txt_chooseTank.png
+c000000004BCA79B100000000000034A8
+t1271560625
+s13480
+
+N/Users/brad/Code/devcampiphone/Images/uiSlider_thumb.png
+c000000004BCA79B10000000000002289
+t1271560625
+s8841
+
+N/Users/brad/Code/devcampiphone/Images/uiSlider_track.png
+c000000004BCA79B100000000000000CE
+t1271560625
+s206
+
+N/Users/brad/Code/devcampiphone/MainWindow.xib
+c000000004BCA78AA0000000000004643
+t1271560362
+s17987
+
+N/Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app
+t2
+s0
+
+N/Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app.dSYM
+t2
+s0
+
+N/Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app/ControlsViewController.nib
+t2
+s0
+
+N/Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app/Default.png
+t2
+s0
+
+N/Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app/Info.plist
+t2
+s0
+
+N/Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app/MainWindow.nib
+t2
+s0
+
+N/Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app/PkgInfo
+t2
+s0
+
+N/Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app/TankPickerController.nib
+t2
+s0
+
+N/Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app/button_fire_down.png
+t2
+s0
+
+N/Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app/button_fire_up.png
+t2
+s0
+
+N/Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app/controller_background.png
+t2
+s0
+
+N/Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app/controller_header.png
+t2
+s0
+
+N/Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app/controller_healthbar.png
+t2
+s0
+
+N/Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app/devcampiphone
+t2
+s0
+
+N/Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app/tank_01.png
+t2
+s0
+
+N/Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app/tank_02.png
+t2
+s0
+
+N/Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app/tank_03.png
+t2
+s0
+
+N/Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app/tank_04.png
+t2
+s0
+
+N/Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app/tank_05.png
+t2
+s0
+
+N/Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app/tank_06.png
+t2
+s0
+
+N/Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app/tank_07.png
+t2
+s0
+
+N/Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app/tank_08.png
+t2
+s0
+
+N/Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app/tank_09.png
+t2
+s0
+
+N/Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app/tank_10.png
+t2
+s0
+
+N/Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app/tank_11.png
+t2
+s0
+
+N/Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app/tank_12.png
+t2
+s0
+
+N/Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app/txt_chooseTank.png
+t2
+s0
+
+N/Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app/uiSlider_thumb.png
+t2
+s0
+
+N/Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app/uiSlider_track.png
+t2
+s0
+
+N/Users/brad/Code/devcampiphone/build/devcampiphone.build/Debug-iphonesimulator/devcampiphone.build/Objects-normal/i386/ControlsViewController.o
+t2
+s0
+
+N/Users/brad/Code/devcampiphone/build/devcampiphone.build/Debug-iphonesimulator/devcampiphone.build/Objects-normal/i386/TankPickerController.o
+t2
+s0
+
+N/Users/brad/Code/devcampiphone/build/devcampiphone.build/Debug-iphonesimulator/devcampiphone.build/Objects-normal/i386/devcampiphone.LinkFileList
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/brad/Code/devcampiphone/build/devcampiphone.build/Debug-iphonesimulator/devcampiphone.build/Objects-normal/i386/devcampiphoneAppDelegate.o
+t2
+s0
+
+N/Users/brad/Code/devcampiphone/build/devcampiphone.build/Debug-iphonesimulator/devcampiphone.build/Objects-normal/i386/main.o
+t2
+s0
+
+N/Users/brad/Code/devcampiphone/devcampiphone_Prefix.pch
+c000000004BC9814D00000000000000C3
+t1271497037
+s195
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/brad/Code/devcampiphone/main.m
+c000000004BC9814D0000000000000162
+t1271497037
+s354
+i<UIKit/UIKit.h>
+
+N/var/folders/QR/QRu8PwqwGQ8hSBbrfF5C5k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/devcampiphone_Prefix-flncmldpiguyggbbkpkbmcaauunb/devcampiphone_Prefix.pch.gch
+t2
+s0
+
+Ndevcampiphone-Info.plist
+c000000004BCA78AA00000000000003F1
+t1271560362
+s1009
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies293254114#293254114#0(0"0(0#1#0"4300739032#0"0#
+
+CCompileC build/devcampiphone.build/Debug-iphonesimulator/devcampiphone.build/Objects-normal/i386/ControlsViewController.o /Users/brad/Code/devcampiphone/ControlsViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s293253689.229349
+e293253689.357157
+r1
+xCompileC
+xbuild/devcampiphone.build/Debug-iphonesimulator/devcampiphone.build/Objects-normal/i386/ControlsViewController.o
+x/Users/brad/Code/devcampiphone/ControlsViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@63"Compile /Users/brad/Code/devcampiphone/ControlsViewController.m293253689#293253689#0(0"0(0#0#55"/Users/brad/Code/devcampiphone/ControlsViewController.m4300739032#1955"    cd /Users/brad/Code/devcampiphone    setenv LANG en_US.US-ASCII    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/brad/Code/devcampiphone/build/devcampiphone.build/Debug-iphonesimulator/devcampiphone.build/devcampiphone-generated-files.hmap -I/Users/brad/Code/devcampiphone/build/devcampiphone.build/Debug-iphonesimulator/devcampiphone.build/devcampiphone-own-target-headers.hmap -I/Users/brad/Code/devcampiphone/build/devcampiphone.build/Debug-iphonesimulator/devcampiphone.build/devcampiphone-all-target-headers.hmap -iquote /Users/brad/Code/devcampiphone/build/devcampiphone.build/Debug-iphonesimulator/devcampiphone.build/devcampiphone-project-headers.hmap -F/Users/brad/Code/devcampiphone/build/Debug-iphonesimulator -I/Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/include -I/Users/brad/Code/devcampiphone/build/devcampiphone.build/Debug-iphonesimulator/devcampiphone.build/DerivedSources/i386 -I/Users/brad/Code/devcampiphone/build/devcampiphone.build/Debug-iphonesimulator/devcampiphone.build/DerivedSources -include /var/folders/QR/QRu8PwqwGQ8hSBbrfF5C5k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/devcampiphone_Prefix-flncmldpiguyggbbkpkbmcaauunb/devcampiphone_Prefix.pch -c /Users/brad/Code/devcampiphone/ControlsViewController.m -o /Users/brad/Code/devcampiphone/build/devcampiphone.build/Debug-iphonesimulator/devcampiphone.build/Objects-normal/i386/ControlsViewController.o0#
+
+CCompileC build/devcampiphone.build/Debug-iphonesimulator/devcampiphone.build/Objects-normal/i386/TankPickerController.o /Users/brad/Code/devcampiphone/Classes/TankPickerController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s293253689.357273
+e293253689.477702
+r1
+xCompileC
+xbuild/devcampiphone.build/Debug-iphonesimulator/devcampiphone.build/Objects-normal/i386/TankPickerController.o
+x/Users/brad/Code/devcampiphone/Classes/TankPickerController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@69"Compile /Users/brad/Code/devcampiphone/Classes/TankPickerController.m293253689#293253689#0(0"0(0#0#61"/Users/brad/Code/devcampiphone/Classes/TankPickerController.m4300739032#1959"    cd /Users/brad/Code/devcampiphone    setenv LANG en_US.US-ASCII    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/brad/Code/devcampiphone/build/devcampiphone.build/Debug-iphonesimulator/devcampiphone.build/devcampiphone-generated-files.hmap -I/Users/brad/Code/devcampiphone/build/devcampiphone.build/Debug-iphonesimulator/devcampiphone.build/devcampiphone-own-target-headers.hmap -I/Users/brad/Code/devcampiphone/build/devcampiphone.build/Debug-iphonesimulator/devcampiphone.build/devcampiphone-all-target-headers.hmap -iquote /Users/brad/Code/devcampiphone/build/devcampiphone.build/Debug-iphonesimulator/devcampiphone.build/devcampiphone-project-headers.hmap -F/Users/brad/Code/devcampiphone/build/Debug-iphonesimulator -I/Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/include -I/Users/brad/Code/devcampiphone/build/devcampiphone.build/Debug-iphonesimulator/devcampiphone.build/DerivedSources/i386 -I/Users/brad/Code/devcampiphone/build/devcampiphone.build/Debug-iphonesimulator/devcampiphone.build/DerivedSources -include /var/folders/QR/QRu8PwqwGQ8hSBbrfF5C5k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/devcampiphone_Prefix-flncmldpiguyggbbkpkbmcaauunb/devcampiphone_Prefix.pch -c /Users/brad/Code/devcampiphone/Classes/TankPickerController.m -o /Users/brad/Code/devcampiphone/build/devcampiphone.build/Debug-iphonesimulator/devcampiphone.build/Objects-normal/i386/TankPickerController.o0#
+
+CCompileC build/devcampiphone.build/Debug-iphonesimulator/devcampiphone.build/Objects-normal/i386/devcampiphoneAppDelegate.o /Users/brad/Code/devcampiphone/Classes/devcampiphoneAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s293254083.456169
+e293254083.650095
+r1
+xCompileC
+xbuild/devcampiphone.build/Debug-iphonesimulator/devcampiphone.build/Objects-normal/i386/devcampiphoneAppDelegate.o
+x/Users/brad/Code/devcampiphone/Classes/devcampiphoneAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@73"Compile /Users/brad/Code/devcampiphone/Classes/devcampiphoneAppDelegate.m293254083#293254083#0(0"0(0#0#65"/Users/brad/Code/devcampiphone/Classes/devcampiphoneAppDelegate.m4300739032#1967"    cd /Users/brad/Code/devcampiphone    setenv LANG en_US.US-ASCII    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/brad/Code/devcampiphone/build/devcampiphone.build/Debug-iphonesimulator/devcampiphone.build/devcampiphone-generated-files.hmap -I/Users/brad/Code/devcampiphone/build/devcampiphone.build/Debug-iphonesimulator/devcampiphone.build/devcampiphone-own-target-headers.hmap -I/Users/brad/Code/devcampiphone/build/devcampiphone.build/Debug-iphonesimulator/devcampiphone.build/devcampiphone-all-target-headers.hmap -iquote /Users/brad/Code/devcampiphone/build/devcampiphone.build/Debug-iphonesimulator/devcampiphone.build/devcampiphone-project-headers.hmap -F/Users/brad/Code/devcampiphone/build/Debug-iphonesimulator -I/Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/include -I/Users/brad/Code/devcampiphone/build/devcampiphone.build/Debug-iphonesimulator/devcampiphone.build/DerivedSources/i386 -I/Users/brad/Code/devcampiphone/build/devcampiphone.build/Debug-iphonesimulator/devcampiphone.build/DerivedSources -include /var/folders/QR/QRu8PwqwGQ8hSBbrfF5C5k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/devcampiphone_Prefix-flncmldpiguyggbbkpkbmcaauunb/devcampiphone_Prefix.pch -c /Users/brad/Code/devcampiphone/Classes/devcampiphoneAppDelegate.m -o /Users/brad/Code/devcampiphone/build/devcampiphone.build/Debug-iphonesimulator/devcampiphone.build/Objects-normal/i386/devcampiphoneAppDelegate.o0#
+
+CCompileC build/devcampiphone.build/Debug-iphonesimulator/devcampiphone.build/Objects-normal/i386/main.o /Users/brad/Code/devcampiphone/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s293253689.121116
+e293253689.229231
+r1
+xCompileC
+xbuild/devcampiphone.build/Debug-iphonesimulator/devcampiphone.build/Objects-normal/i386/main.o
+x/Users/brad/Code/devcampiphone/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@45"Compile /Users/brad/Code/devcampiphone/main.m293253689#293253689#0(0"0(0#0#37"/Users/brad/Code/devcampiphone/main.m4300739032#1919"    cd /Users/brad/Code/devcampiphone    setenv LANG en_US.US-ASCII    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/brad/Code/devcampiphone/build/devcampiphone.build/Debug-iphonesimulator/devcampiphone.build/devcampiphone-generated-files.hmap -I/Users/brad/Code/devcampiphone/build/devcampiphone.build/Debug-iphonesimulator/devcampiphone.build/devcampiphone-own-target-headers.hmap -I/Users/brad/Code/devcampiphone/build/devcampiphone.build/Debug-iphonesimulator/devcampiphone.build/devcampiphone-all-target-headers.hmap -iquote /Users/brad/Code/devcampiphone/build/devcampiphone.build/Debug-iphonesimulator/devcampiphone.build/devcampiphone-project-headers.hmap -F/Users/brad/Code/devcampiphone/build/Debug-iphonesimulator -I/Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/include -I/Users/brad/Code/devcampiphone/build/devcampiphone.build/Debug-iphonesimulator/devcampiphone.build/DerivedSources/i386 -I/Users/brad/Code/devcampiphone/build/devcampiphone.build/Debug-iphonesimulator/devcampiphone.build/DerivedSources -include /var/folders/QR/QRu8PwqwGQ8hSBbrfF5C5k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/devcampiphone_Prefix-flncmldpiguyggbbkpkbmcaauunb/devcampiphone_Prefix.pch -c /Users/brad/Code/devcampiphone/main.m -o /Users/brad/Code/devcampiphone/build/devcampiphone.build/Debug-iphonesimulator/devcampiphone.build/Objects-normal/i386/main.o0#
+
+CCompileXIB /Users/brad/Code/devcampiphone/Classes/TankPickerController.xib
+s293253687.657259
+e293253688.184899
+r1
+xCompileXIB
+x/Users/brad/Code/devcampiphone/Classes/TankPickerController.xib
+lSLF07#2@43"CompileXIB Classes/TankPickerController.xib293253687#293253688#0(0"0(0#0#63"/Users/brad/Code/devcampiphone/Classes/TankPickerController.xib4300739032#513"    cd /Users/brad/Code/devcampiphone    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.3    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app/TankPickerController.nib /Users/brad/Code/devcampiphone/Classes/TankPickerController.xib0#
+
+CCompileXIB /Users/brad/Code/devcampiphone/ControlsViewController.xib
+s293253687.102033
+e293253687.792959
+r1
+xCompileXIB
+x/Users/brad/Code/devcampiphone/ControlsViewController.xib
+lSLF07#2@37"CompileXIB ControlsViewController.xib293253687#293253687#0(0"0(0#0#57"/Users/brad/Code/devcampiphone/ControlsViewController.xib4300739032#509"    cd /Users/brad/Code/devcampiphone    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.3    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app/ControlsViewController.nib /Users/brad/Code/devcampiphone/ControlsViewController.xib0#
+
+CCompileXIB /Users/brad/Code/devcampiphone/MainWindow.xib
+s293253687.099599
+e293253687.593194
+r1
+xCompileXIB
+x/Users/brad/Code/devcampiphone/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib293253687#293253687#0(0"0(0#0#45"/Users/brad/Code/devcampiphone/MainWindow.xib4300739032#485"    cd /Users/brad/Code/devcampiphone    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.3    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app/MainWindow.nib /Users/brad/Code/devcampiphone/MainWindow.xib0#
+
+CCpResource build/Debug-iphonesimulator/devcampiphone.app/Default.png Default.png
+s293253687.100817
+e293253687.119780
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampiphone.app/Default.png
+xDefault.png
+lSLF07#2@16"Copy Default.png293253687#293253687#0(0"0(0#0#42"/Users/brad/Code/devcampiphone/Default.png4300739032#458"    cd /Users/brad/Code/devcampiphone    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampiphone/Default.png /Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampiphone.app/button_fire_down.png Images/button_fire_down.png
+s293253687.593304
+e293253687.608377
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampiphone.app/button_fire_down.png
+xImages/button_fire_down.png
+lSLF07#2@32"Copy Images/button_fire_down.png293253687#293253687#0(0"0(0#0#58"/Users/brad/Code/devcampiphone/Images/button_fire_down.png4300739032#474"    cd /Users/brad/Code/devcampiphone    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampiphone/Images/button_fire_down.png /Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampiphone.app/button_fire_up.png Images/button_fire_up.png
+s293253687.594198
+e293253687.611239
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampiphone.app/button_fire_up.png
+xImages/button_fire_up.png
+lSLF07#2@30"Copy Images/button_fire_up.png293253687#293253687#0(0"0(0#0#56"/Users/brad/Code/devcampiphone/Images/button_fire_up.png4300739032#472"    cd /Users/brad/Code/devcampiphone    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampiphone/Images/button_fire_up.png /Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampiphone.app/controller_background.png Images/controller_background.png
+s293253687.595640
+e293253687.611473
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampiphone.app/controller_background.png
+xImages/controller_background.png
+lSLF07#2@37"Copy Images/controller_background.png293253687#293253687#0(0"0(0#0#63"/Users/brad/Code/devcampiphone/Images/controller_background.png4300739032#479"    cd /Users/brad/Code/devcampiphone    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampiphone/Images/controller_background.png /Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampiphone.app/controller_header.png Images/controller_header.png
+s293253687.599591
+e293253687.611604
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampiphone.app/controller_header.png
+xImages/controller_header.png
+lSLF07#2@33"Copy Images/controller_header.png293253687#293253687#0(0"0(0#0#59"/Users/brad/Code/devcampiphone/Images/controller_header.png4300739032#475"    cd /Users/brad/Code/devcampiphone    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampiphone/Images/controller_header.png /Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampiphone.app/controller_healthbar.png Images/controller_healthbar.png
+s293253687.601378
+e293253687.630480
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampiphone.app/controller_healthbar.png
+xImages/controller_healthbar.png
+lSLF07#2@36"Copy Images/controller_healthbar.png293253687#293253687#0(0"0(0#0#62"/Users/brad/Code/devcampiphone/Images/controller_healthbar.png4300739032#478"    cd /Users/brad/Code/devcampiphone    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampiphone/Images/controller_healthbar.png /Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampiphone.app/tank_01.png Images/tanks/tank_01.png
+s293253687.605338
+e293253687.630602
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampiphone.app/tank_01.png
+xImages/tanks/tank_01.png
+lSLF07#2@29"Copy Images/tanks/tank_01.png293253687#293253687#0(0"0(0#0#55"/Users/brad/Code/devcampiphone/Images/tanks/tank_01.png4300739032#471"    cd /Users/brad/Code/devcampiphone    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampiphone/Images/tanks/tank_01.png /Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampiphone.app/tank_02.png Images/tanks/tank_02.png
+s293253687.606171
+e293253687.630721
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampiphone.app/tank_02.png
+xImages/tanks/tank_02.png
+lSLF07#2@29"Copy Images/tanks/tank_02.png293253687#293253687#0(0"0(0#0#55"/Users/brad/Code/devcampiphone/Images/tanks/tank_02.png4300739032#471"    cd /Users/brad/Code/devcampiphone    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampiphone/Images/tanks/tank_02.png /Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampiphone.app/tank_03.png Images/tanks/tank_03.png
+s293253687.606884
+e293253687.630839
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampiphone.app/tank_03.png
+xImages/tanks/tank_03.png
+lSLF07#2@29"Copy Images/tanks/tank_03.png293253687#293253687#0(0"0(0#0#55"/Users/brad/Code/devcampiphone/Images/tanks/tank_03.png4300739032#471"    cd /Users/brad/Code/devcampiphone    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampiphone/Images/tanks/tank_03.png /Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampiphone.app/tank_04.png Images/tanks/tank_04.png
+s293253687.607573
+e293253687.630960
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampiphone.app/tank_04.png
+xImages/tanks/tank_04.png
+lSLF07#2@29"Copy Images/tanks/tank_04.png293253687#293253687#0(0"0(0#0#55"/Users/brad/Code/devcampiphone/Images/tanks/tank_04.png4300739032#471"    cd /Users/brad/Code/devcampiphone    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampiphone/Images/tanks/tank_04.png /Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampiphone.app/tank_05.png Images/tanks/tank_05.png
+s293253687.611688
+e293253687.654708
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampiphone.app/tank_05.png
+xImages/tanks/tank_05.png
+lSLF07#2@29"Copy Images/tanks/tank_05.png293253687#293253687#0(0"0(0#0#55"/Users/brad/Code/devcampiphone/Images/tanks/tank_05.png4300739032#471"    cd /Users/brad/Code/devcampiphone    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampiphone/Images/tanks/tank_05.png /Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampiphone.app/tank_06.png Images/tanks/tank_06.png
+s293253687.618922
+e293253687.630339
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampiphone.app/tank_06.png
+xImages/tanks/tank_06.png
+lSLF07#2@29"Copy Images/tanks/tank_06.png293253687#293253687#0(0"0(0#0#55"/Users/brad/Code/devcampiphone/Images/tanks/tank_06.png4300739032#471"    cd /Users/brad/Code/devcampiphone    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampiphone/Images/tanks/tank_06.png /Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampiphone.app/tank_07.png Images/tanks/tank_07.png
+s293253687.622126
+e293253687.654972
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampiphone.app/tank_07.png
+xImages/tanks/tank_07.png
+lSLF07#2@29"Copy Images/tanks/tank_07.png293253687#293253687#0(0"0(0#0#55"/Users/brad/Code/devcampiphone/Images/tanks/tank_07.png4300739032#471"    cd /Users/brad/Code/devcampiphone    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampiphone/Images/tanks/tank_07.png /Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampiphone.app/tank_08.png Images/tanks/tank_08.png
+s293253687.626073
+e293253687.655094
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampiphone.app/tank_08.png
+xImages/tanks/tank_08.png
+lSLF07#2@29"Copy Images/tanks/tank_08.png293253687#293253687#0(0"0(0#0#55"/Users/brad/Code/devcampiphone/Images/tanks/tank_08.png4300739032#471"    cd /Users/brad/Code/devcampiphone    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampiphone/Images/tanks/tank_08.png /Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampiphone.app/tank_09.png Images/tanks/tank_09.png
+s293253687.631040
+e293253687.654847
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampiphone.app/tank_09.png
+xImages/tanks/tank_09.png
+lSLF07#2@29"Copy Images/tanks/tank_09.png293253687#293253687#0(0"0(0#0#55"/Users/brad/Code/devcampiphone/Images/tanks/tank_09.png4300739032#471"    cd /Users/brad/Code/devcampiphone    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampiphone/Images/tanks/tank_09.png /Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampiphone.app/tank_10.png Images/tanks/tank_10.png
+s293253687.632973
+e293253687.655217
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampiphone.app/tank_10.png
+xImages/tanks/tank_10.png
+lSLF07#2@29"Copy Images/tanks/tank_10.png293253687#293253687#0(0"0(0#0#55"/Users/brad/Code/devcampiphone/Images/tanks/tank_10.png4300739032#471"    cd /Users/brad/Code/devcampiphone    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampiphone/Images/tanks/tank_10.png /Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampiphone.app/tank_11.png Images/tanks/tank_11.png
+s293253687.637659
+e293253687.655341
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampiphone.app/tank_11.png
+xImages/tanks/tank_11.png
+lSLF07#2@29"Copy Images/tanks/tank_11.png293253687#293253687#0(0"0(0#0#55"/Users/brad/Code/devcampiphone/Images/tanks/tank_11.png4300739032#471"    cd /Users/brad/Code/devcampiphone    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampiphone/Images/tanks/tank_11.png /Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampiphone.app/tank_12.png Images/tanks/tank_12.png
+s293253687.639360
+e293253687.655462
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampiphone.app/tank_12.png
+xImages/tanks/tank_12.png
+lSLF07#2@29"Copy Images/tanks/tank_12.png293253687#293253687#0(0"0(0#0#55"/Users/brad/Code/devcampiphone/Images/tanks/tank_12.png4300739032#471"    cd /Users/brad/Code/devcampiphone    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampiphone/Images/tanks/tank_12.png /Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampiphone.app/txt_chooseTank.png Images/txt_chooseTank.png
+s293253687.644985
+e293253687.655591
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampiphone.app/txt_chooseTank.png
+xImages/txt_chooseTank.png
+lSLF07#2@30"Copy Images/txt_chooseTank.png293253687#293253687#0(0"0(0#0#56"/Users/brad/Code/devcampiphone/Images/txt_chooseTank.png4300739032#472"    cd /Users/brad/Code/devcampiphone    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampiphone/Images/txt_chooseTank.png /Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampiphone.app/uiSlider_thumb.png Images/uiSlider_thumb.png
+s293253687.647292
+e293253687.658339
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampiphone.app/uiSlider_thumb.png
+xImages/uiSlider_thumb.png
+lSLF07#2@30"Copy Images/uiSlider_thumb.png293253687#293253687#0(0"0(0#0#56"/Users/brad/Code/devcampiphone/Images/uiSlider_thumb.png4300739032#472"    cd /Users/brad/Code/devcampiphone    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampiphone/Images/uiSlider_thumb.png /Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app0#
+
+CCpResource build/Debug-iphonesimulator/devcampiphone.app/uiSlider_track.png Images/uiSlider_track.png
+s293253687.655679
+e293253687.663716
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/devcampiphone.app/uiSlider_track.png
+xImages/uiSlider_track.png
+lSLF07#2@30"Copy Images/uiSlider_track.png293253687#293253687#0(0"0(0#0#56"/Users/brad/Code/devcampiphone/Images/uiSlider_track.png4300739032#472"    cd /Users/brad/Code/devcampiphone    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brad/Code/devcampiphone/Images/uiSlider_track.png /Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app0#
+
+CGenerateDSYMFile /Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app.dSYM /Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app/devcampiphone
+s293254083.680503
+e293254083.712235
+r1
+xGenerateDSYMFile
+x/Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app.dSYM
+x/Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app/devcampiphone
+lSLF07#2@127"GenerateDSYMFile build/Debug-iphonesimulator/devcampiphone.app.dSYM build/Debug-iphonesimulator/devcampiphone.app/devcampiphone293254083#293254083#0(0"0(0#0#90"/Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app/devcampiphone4300739032#398"    cd /Users/brad/Code/devcampiphone    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/usr/bin/dsymutil /Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app/devcampiphone -o /Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app.dSYM0#
+
+CLd /Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app/devcampiphone normal i386
+s293254083.650199
+e293254083.680389
+r1
+xLd
+x/Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app/devcampiphone
+xnormal
+xi386
+lSLF07#2@95"Link /Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app/devcampiphone293254083#293254083#0(0"0(0#0#0"4300739032#901"    cd /Users/brad/Code/devcampiphone    setenv MACOSX_DEPLOYMENT_TARGET 10.5    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -L/Users/brad/Code/devcampiphone/build/Debug-iphonesimulator -F/Users/brad/Code/devcampiphone/build/Debug-iphonesimulator -filelist /Users/brad/Code/devcampiphone/build/devcampiphone.build/Debug-iphonesimulator/devcampiphone.build/Objects-normal/i386/devcampiphone.LinkFileList -mmacosx-version-min=10.5 -framework Foundation -framework UIKit -framework CoreGraphics -framework GameKit -o /Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app/devcampiphone0#
+
+CProcessInfoPlistFile /Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app/Info.plist devcampiphone-Info.plist
+s293253687.092103
+e293253687.099491
+r1
+xProcessInfoPlistFile
+x/Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app/Info.plist
+xdevcampiphone-Info.plist
+lSLF07#2@32"Process devcampiphone-Info.plist293253687#293253687#0(0"0(0#0#55"/Users/brad/Code/devcampiphone/devcampiphone-Info.plist4300739032#487"    cd /Users/brad/Code/devcampiphone    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility devcampiphone-Info.plist -genpkginfo /Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app/Info.plist0#
+
+CProcessPCH /var/folders/QR/QRu8PwqwGQ8hSBbrfF5C5k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/devcampiphone_Prefix-flncmldpiguyggbbkpkbmcaauunb/devcampiphone_Prefix.pch.gch devcampiphone_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s293253688.185106
+e293253689.120824
+r1
+xProcessPCH
+x/var/folders/QR/QRu8PwqwGQ8hSBbrfF5C5k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/devcampiphone_Prefix-flncmldpiguyggbbkpkbmcaauunb/devcampiphone_Prefix.pch.gch
+xdevcampiphone_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@35"Precompile devcampiphone_Prefix.pch293253688#293253689#0(0"0(0#0#55"/Users/brad/Code/devcampiphone/devcampiphone_Prefix.pch4300739032#1813"    cd /Users/brad/Code/devcampiphone    setenv LANG en_US.US-ASCII    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/brad/Code/devcampiphone/build/devcampiphone.build/Debug-iphonesimulator/devcampiphone.build/devcampiphone-generated-files.hmap -I/Users/brad/Code/devcampiphone/build/devcampiphone.build/Debug-iphonesimulator/devcampiphone.build/devcampiphone-own-target-headers.hmap -I/Users/brad/Code/devcampiphone/build/devcampiphone.build/Debug-iphonesimulator/devcampiphone.build/devcampiphone-all-target-headers.hmap -iquote /Users/brad/Code/devcampiphone/build/devcampiphone.build/Debug-iphonesimulator/devcampiphone.build/devcampiphone-project-headers.hmap -F/Users/brad/Code/devcampiphone/build/Debug-iphonesimulator -I/Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/include -I/Users/brad/Code/devcampiphone/build/devcampiphone.build/Debug-iphonesimulator/devcampiphone.build/DerivedSources/i386 -I/Users/brad/Code/devcampiphone/build/devcampiphone.build/Debug-iphonesimulator/devcampiphone.build/DerivedSources -c /Users/brad/Code/devcampiphone/devcampiphone_Prefix.pch -o /var/folders/QR/QRu8PwqwGQ8hSBbrfF5C5k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/devcampiphone_Prefix-flncmldpiguyggbbkpkbmcaauunb/devcampiphone_Prefix.pch.gch0#
+
+CTouch /Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app
+s293254083.712328
+e293254083.716786
+r1
+xTouch
+x/Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app
+lSLF07#2@82"Touch /Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app293254083#293254083#0(0"0(0#0#0"4300739032#282"    cd /Users/brad/Code/devcampiphone    setenv PATH "/Developer4.0Beta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.0Beta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/brad/Code/devcampiphone/build/Debug-iphonesimulator/devcampiphone.app0#
+

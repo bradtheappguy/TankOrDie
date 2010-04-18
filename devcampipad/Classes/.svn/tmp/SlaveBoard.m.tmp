@@ -1,0 +1,55 @@
+//
+//  SlaveBoard.m
+//  devcampipad
+//
+//  Created by Brad Smith on 4/17/10.
+//  Copyright 2010 Clixtr. All rights reserved.
+//
+
+#import "SlaveBoard.h"
+#import "devcampipadAppDelegate.h"
+
+@implementation SlaveBoard
+
+@synthesize peerID;
+
+-(id) initWithPeerId:(NSString *)peer {
+	if (self = [super init]) {
+		peerID = peer;
+	}
+	return self;
+}
+
+-(void) setXOffset: (int)_xoffs YOffset:(int)_yoffs {
+	NSLog(@"offset for some board set to %d,%d", _xoffs, _yoffs);
+	xoffs = _xoffs;
+	yoffs = _yoffs;
+}
+
+-(void) attachBoard: (SlaveBoard *)other inDirection: (int)dir {
+	[other setXOffset:xoffs + GET_OFFSET_CHANGE(BOARD_SIZE_X,dir,BOARD_EAST,BOARD_WEST) 
+			  YOffset:yoffs + GET_OFFSET_CHANGE(BOARD_SIZE_Y,dir,BOARD_SOUTH,BOARD_NORTH)];
+	GKSession *session = [(devcampipadAppDelegate *)[[UIApplication sharedApplication] delegate] session];
+	if (peerID != nil) {
+		NSData *data = [[NSString stringWithFormat: @"spawnPortal: %d",dir] dataUsingEncoding:NSUTF8StringEncoding];
+		NSError *error;
+		//if (![session sendDataToAllPeers:data withDataMode:GKSendDataUnreliable error:&error]) {
+		if (![session sendData:data toPeers:[NSArray arrayWithObject:peerID] withDataMode:GKSendDataUnreliable error:&error]) {
+			NSLog(@"ERROR: %@",error);
+		}
+	} else {
+		[(devcampipadAppDelegate *)[[UIApplication sharedApplication] delegate] spawnPortal:[NSString stringWithFormat:@"%d", dir]];
+	}
+	{
+		int oppdir = dir-2<0?dir+2:dir-2;
+		NSData *data = [[NSString stringWithFormat: @"spawnPortal: %d",oppdir] dataUsingEncoding:NSUTF8StringEncoding];
+		NSError *error;
+		//if (![session sendDataToAllPeers:data withDataMode:GKSendDataUnreliable error:&error]) {
+		if (![session sendData:data toPeers:[NSArray arrayWithObject:[other peerID]] withDataMode:GKSendDataUnreliable error:&error]) {
+			NSLog(@"ERROR: %@",error);
+		}
+	}
+}
+
+
+@end

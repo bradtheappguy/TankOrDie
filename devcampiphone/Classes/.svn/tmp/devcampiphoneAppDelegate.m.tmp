@@ -1,0 +1,266 @@
+//
+//  devcampiphoneAppDelegate.m
+//  devcampiphone
+//
+//  Created by Brad Smith on 4/16/10.
+//  Copyright Clixtr 2010. All rights reserved.
+//
+
+
+#define kAccelerometerFrequency        10 //Hz
+#define kFilteringFactor 0.1
+
+#import "devcampiphoneAppDelegate.h"
+
+@implementation devcampiphoneAppDelegate
+
+@synthesize window;
+@synthesize peerPicker;
+@synthesize connection;
+@synthesize accelerometer;
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
+
+    // Override point for customization after application launch
+	
+
+	//	accelerometer = [UIAccelerometer sharedAccelerometer];
+	//accelerometer.updateInterval = 1 / kAccelerometerFrequency;
+	//accelerometer.delegate = self;
+
+	[NSTimer scheduledTimerWithTimeInterval:1/30 target:self selector:@selector(timerFired) userInfo:nil repeats:YES];
+	
+    [window makeKeyAndVisible];
+	
+	return YES;
+}
+
+-(void) timerFired {
+	if ((leftSliderLastValue != leftSlider.value) || (rightSliderLastValue != rightSlider.value)) {
+		leftSliderLastValue = leftSlider.value;
+		rightSliderLastValue = rightSlider.value;
+		//NSLog(@"%f  %f",leftSlider.value, rightSlider.value);
+		if (connection) {
+			NSString *command = [NSString stringWithFormat:@"sliderDidChange:%f %f", leftSlider.value, rightSlider.value];
+			NSError *error;
+			[connection sendDataToAllPeers:[command dataUsingEncoding:NSUTF8StringEncoding] withDataMode:GKSendDataUnreliable error:&error];
+			
+		}
+	}
+}
+
+
+- (void)dealloc {
+    [window release];
+    [super dealloc];
+}
+
+
+-(IBAction)didClickSearchNetwork:(id)sender {
+	//first thing they need to do is find other players
+	peerPicker = [[GKPeerPickerController alloc] init];
+	[peerPicker setDelegate:self];
+	[peerPicker setConnectionTypesMask:GKPeerPickerConnectionTypeNearby /*|GKPeerPickerConnectionTypeOnline*/];
+	[peerPicker show];
+}
+
+
+-(IBAction)didClickDirectionalPad:(id)sender {
+	NSError *error;
+	NSData *data;
+	
+	if ([sender isEqual:upButton]) {
+		data = [@"didClickUp:" dataUsingEncoding:NSUTF8StringEncoding];
+	} else if ([sender isEqual:downButton]) {
+		data = [@"didClickDown:" dataUsingEncoding:NSUTF8StringEncoding];
+
+	} else if ([sender isEqual:leftButton]) {
+		data = [@"didClickLeft:" dataUsingEncoding:NSUTF8StringEncoding];
+	} else if ([sender isEqual:rightButton]) {
+		data = [@"didClickRight:" dataUsingEncoding:NSUTF8StringEncoding];
+	}
+	
+	[connection sendDataToAllPeers:data withDataMode:GKSendDataUnreliable error:&error];
+}
+
+/* Notifies delegate that a connection type was chosen by the user.
+ */
+//- (void)peerPickerController:(GKPeerPickerController *)picker didSelectConnectionType:(GKPeerPickerConnectionType)type;
+
+/* Notifies delegate that the connection type is requesting a GKSession object.
+ 
+ You should return a valid GKSession object for use by the picker. If this method is not implemented or returns 'nil', a default GKSession is created on the delegate's behalf.
+ */
+- (GKSession *)peerPickerController:(GKPeerPickerController *)picker sessionForConnectionType:(GKPeerPickerConnectionType)type {
+	GKSession *session = [[[GKSession alloc] initWithSessionID:@"wangchung" displayName:nil sessionMode:GKSessionModePeer] autorelease];
+	[session setDelegate:self];
+	return session;
+}
+
+/* Notifies delegate that the peer was connected to a GKSession.
+ */
+- (void)peerPickerController:(GKPeerPickerController *)picker didConnectPeer:(NSString *)peerID toSession:(GKSession *)session {
+	NSLog(@"session wtf: %@", session);
+	[peerPicker dismiss];
+	[upButton setHidden:NO];
+	[searchButton setHidden:NO];
+}
+
+/* Notifies delegate that the user cancelled the picker.
+ */
+//- (void)peerPickerControllerDidCancel:(GKPeerPickerController *)picker;
+
+
+/* Indicates a state change for the given peer.
+ */
+- (void)session:(GKSession *)session peer:(NSString *)peerID didChangeState:(GKPeerConnectionState)state {
+	if (state == GKPeerStateConnected) {
+		NSLog(@"session wtf: %@", session);
+		connection = session;
+	} else if (state == GKPeerStateDisconnected) {
+		connection = nil;
+		peerPicker = nil;
+	}
+}
+
+/* Indicates a connection request was received from another peer. 
+ 
+ Accept by calling -acceptConnectionFromPeer:
+ Deny by calling -denyConnectionFromPeer:
+ */
+- (void)session:(GKSession *)session didReceiveConnectionRequestFromPeer:(NSString *)peerID {
+}
+
+/* Indicates a connection error occurred with a peer, which includes connection request failures, or disconnects due to timeouts.
+ */
+- (void)session:(GKSession *)session connectionWithPeerFailed:(NSString *)peerID withError:(NSError *)error {
+}
+
+/* Indicates an error occurred with the session such as failing to make available.
+ */
+- (void)session:(GKSession *)session didFailWithError:(NSError *)error {
+}
+
+
+CGFloat RadiansToDegrees(CGFloat radians) {return radians * 180/M_PI;};
+
+
+- (void)accelerometer:(UIAccelerometer *)accelerometer didAccelerate:(UIAcceleration *)acceleration {
+    UIAccelerationValue x, y, z;
+    x = acceleration.x;
+    y = acceleration.y;
+    z = acceleration.z;
+	
+    // Do something with the values.
+	
+<<<<<<< .mine
+	 x = (acceleration.x * kFilteringFactor) + (x * (1.0 - kFilteringFactor));
+	 y = (acceleration.y * kFilteringFactor) + (y * (1.0 - kFilteringFactor));
+	 z = (acceleration.z * kFilteringFactor) + (z * (1.0 - kFilteringFactor));
+=======
+	//x = (acceleration.x * kFilteringFactor) + (x * (1.0 - kFilteringFactor));
+    //y = (acceleration.y * kFilteringFactor) + (y * (1.0 - kFilteringFactor));
+    //z = (acceleration.z * kFilteringFactor) + (z * (1.0 - kFilteringFactor));
+>>>>>>> .r31
+	
+<<<<<<< .mine
+	 //High Pass filter from apple documentation
+	 float accelX = acceleration.x - ( (acceleration.x * kFilteringFactor) + (accelX * (1.0 - kFilteringFactor)) );
+    float accelY = acceleration.y - ( (acceleration.y * kFilteringFactor) + (accelY * (1.0 - kFilteringFactor)) );
+    float accelZ = acceleration.z - ( (acceleration.z * kFilteringFactor) + (accelZ * (1.0 - kFilteringFactor)) );
+	
+	
+	//Speed is tilting the device forward (faster) and back (slower)
+	float speed = -RadiansToDegrees(atan2( accelZ, accelX ));   //Usabe range 145 to 90
+	
+	//Range Limits.  From slightly fowrard to flat in front of user
+	if (speed > 145) speed = 145;
+	if (speed < 90 && speed > -90) z = 90;
+	if (speed < -90) speed = 145;
+	
+	// Translate the numbers to 0 - 100.
+	speed = (speed - 90) * 1.8;
+	speed = 99 + (speed * -1);
+	
+	NSLog(@"speed: %2.0",speed);
+	
+	
+	
+	if (connection) {
+		NSString *command = [NSString stringWithFormat:@"didReceiveXyz:%f %f %f %f", x, y, z];
+		NSError *error;
+		[connection sendDataToAllPeers:[command dataUsingEncoding:NSUTF8StringEncoding] withDataMode:GKSendDataUnreliable error:&error];
+=======
+	accel[0] = acceleration.x * kFilteringFactor + accel[0] * (1.0 - kFilteringFactor);
+    accel[1] = acceleration.y * kFilteringFactor + accel[1] * (1.0 - kFilteringFactor);
+    accel[2] = acceleration.z * kFilteringFactor + accel[2] * (1.0 - kFilteringFactor);
+>>>>>>> .r31
+	
+	float matrix[4][4], length;
+
+	
+<<<<<<< .mine
+}
+=======
+	length = sqrtf(accel[0] * accel[0] + accel[1] * accel[1] + accel[2] * accel[2]);
+	
+    if(length >= 0.1)
+    {
+        //Clear matrix to be used to rotate from the current referential to one based on the gravity vector
+        bzero(matrix, sizeof(matrix));
+        matrix[3][3] = 1.0;
+        
+        //Setup first matrix column as gravity vector
+        matrix[0][0] = accel[0] / length;
+        matrix[0][1] = accel[1] / length;
+        matrix[0][2] = accel[2] / length;
+		
+		matrix[0][0] *= 75.0;
+		matrix[0][1] *= 75.0;
+		matrix[0][2] *= 75.0;
+		
+		if (connection) {
+			NSString *command = [NSString stringWithFormat:@"didReceiveXyz:%f %f %f", matrix[0][0], matrix[0][2], matrix[0][1]];
+			NSLog(@"wtf: %@", command);
+			NSError *error;
+			[connection sendDataToAllPeers:[command dataUsingEncoding:NSUTF8StringEncoding] withDataMode:GKSendDataUnreliable error:&error];
+		}
+    }
+	
+>>>>>>> .r31
+
+<<<<<<< .mine
+-(void) receiveData:(NSData *)data fromPeer:(NSString *)peerId inSession:(GKSession *)session context:(id)context {
+	 
+   NSString *command = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+	NSArray *argv = [command componentsSeparatedByString:@":"];
+	
+	
+	NSLog(@"command: %@",[argv objectAtIndex:0]);
+	
+	SEL selector = NSSelectorFromString([NSString stringWithFormat:@"%@:",[argv objectAtIndex:0]]);
+	if ([self respondsToSelector:selector]) {
+		if (argv.count == 1) {
+			[self performSelector:selector];
+		}
+		if (argv.count == 2) {
+			NSLog(@"args: %@",[argv objectAtIndex:1]);
+			[self performSelector:selector withObject:[argv objectAtIndex:1]];
+		}
+=======
+	
+
+//		accelX = acceleration.x - ( (acceleration.x * kFilteringFactor) + (accelX * (1.0 - kFilteringFactor)) );
+//		accelY = acceleration.y - ( (acceleration.y * kFilteringFactor) + (accelY * (1.0 - kFilteringFactor)) );
+//		accelZ = acceleration.z - ( (acceleration.z * kFilteringFactor) + (accelZ * (1.0 - kFilteringFactor)) );
+>>>>>>> .r31
+		
+	}
+	else {
+		NSLog(@"PROTOCAL ERROR");
+	}
+	NSLog(@"%@",command);
+}
+
+
+@end

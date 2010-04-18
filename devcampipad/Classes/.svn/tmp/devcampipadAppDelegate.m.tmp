@@ -1,0 +1,248 @@
+//
+//  devcampipadAppDelegate.m
+//  devcampipad
+//
+//  Created by Brad Smith on 4/16/10.
+//  Copyright Clixtr 2010. All rights reserved.
+//
+
+#import "devcampipadAppDelegate.h"
+#import <GameKit/GameKit.h>
+#import "PlayerView.h"
+#import "Bullet.h"
+#import "SlaveBoard.h"
+
+@implementation devcampipadAppDelegate
+
+@synthesize window;
+@synthesize session;
+@synthesize bullets;
+
+- (void)dealloc {
+	[bullets release];
+	[connectedPeers release];
+    [window release];
+    [super dealloc];
+}
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
+	[NSTimer scheduledTimerWithTimeInterval:FRAMERATE target:self selector:@selector(timerFired) userInfo:nil repeats:YES];
+	stopButton.hidden = YES;
+	
+	connectedBoards = [[NSMutableDictionary alloc] init];
+	[self setBullets:[NSMutableDictionary dictionaryWithCapacity:100]];
+	
+	connectedPeers = [[NSMutableDictionary alloc] init];
+	
+	peerCountLabel.text = @"0";
+	
+	clientModeSessionHandler = [[ClientModeSessionHandler alloc] init];
+	
+	//Adversie as a server
+	
+    [window makeKeyAndVisible];
+    
+    return YES;
+}
+
+- (void)applicationWillTerminate:(UIApplication *)application {
+	[session disconnectFromAllPeers];
+	session.available = NO;
+	[session setDataReceiveHandler: nil withContext: nil];
+	session.delegate = nil;
+	[session release];
+}
+
+
+
+-(void) timerFired {
+	for(NSString *aKey in connectedPeers) {
+		[[connectedPeers valueForKey:aKey] update];
+	}
+}
+
+/* Notifies delegate that a connection type was chosen by the user.
+ */
+- (void)peerPickerController:(GKPeerPickerController *)picker didSelectConnectionType:(GKPeerPickerConnectionType)type{
+	//NSLOG(
+}
+
+/* Notifies delegate that the connection type is requesting a GKSession object.
+ 
+ You should return a valid GKSession object for use by the picker. If this method is not implemented or returns 'nil', a default GKSession is created on the delegate's behalf.
+ */
+- (GKSession *)peerPickerController:(GKPeerPickerController *)picker sessionForConnectionType:(GKPeerPickerConnectionType)type{
+	if (actingAsServer) {
+		return nil;
+	}
+	// we're a client to another ipad server
+	session = [[[GKSession alloc] initWithSessionID:@"wangchung" displayName:nil sessionMode:GKSessionModePeer] autorelease];
+	[session setDelegate:self];
+	[session setDataReceiveHandler:self withContext:nil];
+	return session;
+}
+
+/* Notifies delegate that the peer was connected to a GKSession.
+ */
+- (void)peerPickerController:(GKPeerPickerController *)picker didConnectPeer:(NSString *)peerID toSession:(GKSession *)session{
+	if (actingAsServer) {
+		return;
+	}
+	NSLog(@"session wtf: %@", session);
+	[peerPicker dismiss];
+	//[upButton setHidden:NO];
+	//[searchButton setHidden:NO];
+}
+
+
+/* Notifies delegate that the user cancelled the picker.
+ */
+- (void)peerPickerControllerDidCancel:(GKPeerPickerController *)picker{
+}
+
+- (void)session:(GKSession *)session didReceiveConnectionRequestFromPeer:(NSString *)peerID {
+	if (actingAsServer) {
+		[session acceptConnectionFromPeer:peerID error:nil];	
+	}
+}
+
+
+- (void)session:(GKSession *)session peer:(NSString *)peerID didChangeState:(GKPeerConnectionState)state {
+	if (actingAsServer) {
+		switch (state) {
+			case GKPeerStateAvailable:
+				break;
+			case GKPeerStateUnavailable:
+				break;
+			case GKPeerStateConnected: {
+				
+				
+				break;
+			}
+			case GKPeerStateDisconnected:
+				[[connectedPeers objectForKey:peerID] removeFromSuperview];
+				[connectedPeers removeObjectForKey:peerID];
+				[connectedBoards removeObjectForKey:peerID];
+				[self updateLabels];
+				
+				break;
+			case GKPeerStateConnecting:
+				break;
+			default:
+				break;
+		}
+		return;
+	}
+}
+
+- (void) updateLabels {
+	peerCountLabel.text = [NSString stringWithFormat:@"%i",connectedPeers.count];
+	boardCountLabel.text = [NSString stringWithFormat:@"%i",connectedBoards.count];
+}
+
+-(void) receiveData:(NSData *)data fromPeer:(NSString *)peerId inSession:(GKSession *)session context:(id)context {
+	PlayerView *player = [connectedPeers objectForKey:peerId];
+    
+   NSString *command = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+	NSArray *argv = [command componentsSeparatedByString:@":"];
+	
+
+	NSLog(@"command: %@",[argv objectAtIndex:0]);
+	
+	SEL selector = NSSelectorFromString([NSString stringWithFormat:@"%@:",[argv objectAtIndex:0]]);
+	
+	if ([player respondsToSelector:selector]) {
+		if (argv.count == 1)
+			[player performSelector:selector];
+		if (argv.count == 2)
+			[player performSelector:selector withObject:[argv objectAtIndex:1]];
+	}
+	else if ([self respondsToSelector:selector]) {
+			[self performSelector:selector withObject:peerId];
+		if (argv.count == 3)
+			NSLog(@"args: %@",[argv objectAtIndex:1]);
+			[self performSelector:selector withObject:player withObject:[argv objectAtIndex:1]];
+	}
+	else if ([clientModeSessionHandler respondsToSelector:selector]) {
+		if (argv.count == 1)
+			[clientModeSessionHandler performSelector:selector];
+		if (argv.count == 2)
+			[clientModeSessionHandler performSelector:selector withObject:[argv objectAtIndex:1]];
+	}	
+	else {
+		NSLog(@"PROTOCAL ERROR command = (%@)",command);
+	}
+}
+
+-(void) confirmiPad:(NSString *) peerId {
+	UIAlertView *a = [[UIAlertView alloc] initWithTitle:@"" message:@"Confirmed that client is ipad" delegate:nil cancelButtonTitle:@"ok" otherButtonTitles:nil];
+	[a show];
+	[a release];
+	
+	SlaveBoard *newSlave = [[SlaveBoard alloc] initWithPeerId:peerId];
+	[connectedBoards setObject:newSlave forKey:peerId];
+	[self updateLabels];
+}
+
+-(void) confirmiPhone:(NSString *) peerID {
+	UIAlertView *a = [[UIAlertView alloc] initWithTitle:peerID message:@"Confirmed that client is iphone" delegate:nil cancelButtonTitle:@"ok" otherButtonTitles:nil];
+	[a show];
+	[a release];
+	
+	PlayerView *p = [[PlayerView alloc] init];
+	[connectedPeers setObject:p forKey:peerID];
+	[window addSubview:p];
+	[self updateLabels];
+	
+}
+
+#pragma mark Buttons
+-(IBAction) joinButtonPressed:(id)sender {
+	NSLog(@"join pressed");
+	actingAsServer = NO;
+	//first thing they need to do is find other players
+	peerPicker = [[GKPeerPickerController alloc] init];
+	[peerPicker setDelegate:self];
+	[peerPicker setConnectionTypesMask:GKPeerPickerConnectionTypeNearby /*|GKPeerPickerConnectionTypeOnline*/];
+	[peerPicker show];
+}
+
+-(IBAction) newButtonPressed:(id)sender {
+	NSLog(@"new pressed");
+	actingAsServer = YES;
+	session = [[GKSession alloc] initWithSessionID:@"wangchung" displayName:nil sessionMode:GKSessionModeServer];
+	session.delegate = self;
+	session.available = YES; 
+	[session setDataReceiveHandler:self withContext:nil];
+	newButton.hidden = YES;
+	stopButton.hidden = NO;
+}
+
+-(IBAction) stopButtonPressed:(id)sender {
+	session.available = NO; 
+	session.delegate = nil;
+	[session setDataReceiveHandler:nil withContext:nil];
+	session = nil;
+	newButton.hidden = NO;
+	stopButton.hidden = YES;
+}
+
+
+//This is to ask all peers that have connected to send theit IDs
+-(IBAction) testPressed:(id)sender {
+	NSString *string = [NSString stringWithFormat:@"sendID: %@",session.peerID];
+	NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
+	//[session sendData:data toPeers:[NSArray arrayWithObject:peerID] withDataMode:GKSendDataUnreliable error:nil];
+	NSError *error;
+	if (![session sendDataToAllPeers:data withDataMode:GKSendDataUnreliable error:&error]) {
+		NSLog(@"ERROR: %@",error);
+	}
+}
+
+
+-(void)player:(PlayerView *)thePlayer didFire:(Bullet *)theBullet {
+	[window addSubview:theBullet];
+	[bullets setObject:thePlayer forKey:theBullet];
+}
+
+@end
