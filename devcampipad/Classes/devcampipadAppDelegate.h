@@ -62,7 +62,7 @@
 -(void)sendID:(NSString *)serverPeerID;
 -(void)player:(Player *)player didFireBullet:(NSString *)bulletType;
 -(void) removeLoadingView;
-
+-(void)setLocalControlsHidden:(BOOL)a animated:(BOOL)b;
 
 @property (nonatomic, retain) NSMutableArray *connectedPeers;
 

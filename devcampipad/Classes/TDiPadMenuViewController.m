@@ -6,6 +6,7 @@
 //  Copyright 2010 Clixtr. All rights reserved.
 //
 
+#import "devcampipadAppDelegate.h"
 #import "TDiPadMenuViewController.h"
 #import "TankPickerController.h"
 #import "Player.h"

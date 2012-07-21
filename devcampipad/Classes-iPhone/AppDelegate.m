@@ -17,6 +17,7 @@
 
 #import "TankPickerController.h"
 #import <AudioToolbox/AudioToolbox.h>
+#import <MediaPlayer/MediaPlayer.h>
 
 @implementation AppDelegate
 
@@ -73,14 +74,15 @@
 	[[connectingViewController view] setBounds:CGRectMake(0,0, 480, 320)];
 	[[gameOverViewController view] setBounds:CGRectMake(0,0, 480, 320)];
 	
-	
+
 	[window addSubview:[controlsViewController view]]; 
 	[window addSubview:[tankPickerController view]]; 
 	
 	//  NOTE:: To test out the connecting view contrleer and game over view controller for now.  Simplay uncomment these lines:	
 	//	[window addSubview:[connectingViewController view]];
 	//  [window addSubview:[gameOverViewController view]];
-	
+
+  
 	[window makeKeyAndVisible];
 	
   [self setupExternalWindow];

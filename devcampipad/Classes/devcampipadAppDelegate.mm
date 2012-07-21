@@ -6,16 +6,13 @@
 //  Copyright Clixtr 2010. All rights reserved.
 //
 
-#define USE_COCOS_2D 0
-
 #import <GameKit/GameKit.h>
 #import "devcampipadAppDelegate.h"
 #import "TouchController.h"
 #import "Player.h"
 #import "Bullet.h"
 #import "TDiPadMenuViewController.h"
-#import "cocos2d.h"
-#import "World.h"
+#import <MediaPlayer/MediaPlayer.h>
 
 @implementation devcampipadAppDelegate
 
@@ -30,7 +27,6 @@
 @synthesize gamePaused;
 - (void)dealloc {
 	[menuViewContoller release];
-	[[CCDirector sharedDirector] release];
 	[bullets release];
 	[connectedPeers release];
     [window release];
@@ -41,44 +37,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 	[window setUserInteractionEnabled:YES];
 	[window setMultipleTouchEnabled:YES];
-
-#if USE_COCOS_2D	
-	// Try to use CADisplayLink director
-	// if it fails (SDK < 3.1) use the default director
-
-	if( ! [CCDirector setDirectorType:CCDirectorTypeDisplayLink] )
-		[CCDirector setDirectorType:CCDirectorTypeDefault];
-	
-	// Use RGBA_8888 buffers
-	// Default is: RGB_565 buffers
-	[[CCDirector sharedDirector] setPixelFormat:kPixelFormatRGBA8888];
-	
-	// Create a depth buffer of 16 bits
-	// Enable it if you are going to use 3D transitions or 3d objects
-	[[CCDirector sharedDirector] setDepthBufferFormat:kDepthBuffer16];
-	
-	// Default texture format for PNG/BMP/TIFF/JPEG/GIF images
-	// It can be RGBA8888, RGBA4444, RGB5_A1, RGB565
-	// You can change anytime.
-	[CCTexture2D setDefaultAlphaPixelFormat:kTexture2DPixelFormat_RGBA8888];
-	
-	[[CCDirector sharedDirector] setDepthTest:YES];
-	
-	// before creating any layer, set the landscape mode
-	//[[CCDirector sharedDirector] setDeviceOrientation:CCDeviceOrientationLandscapeLeft];
-	[[CCDirector sharedDirector] setAnimationInterval:1.0/30.0];
-	[[CCDirector sharedDirector] setDisplayFPS:YES];
-	
-	// create an openGL view inside a window
-	[[CCDirector sharedDirector] attachInView:window];
-	
-	//[[CCDirector sharedDirector] runWithScene: [HelloWorld scene]];
-	[[CCDirector sharedDirector] runWithScene: [World scene]];
-	
-	
-	[window makeKeyAndVisible];
-	return YES;
-#else
 	
 	gamePaused = YES;
     //[[UIDevice currentDevice] setOrientation:UIInterfaceOrientationLandscapeRight];
@@ -152,37 +110,36 @@
 	
 	[self setLastTicked:[NSDate date]];
 	
+  
+  
+  MPVolumeView *volumeView = [ [MPVolumeView alloc] init] ;
+  [volumeView setShowsVolumeSlider:NO];
+  [volumeView sizeToFit];
+  [window addSubview:volumeView];
+  
     [window makeKeyAndVisible];
     
     return YES;
-#endif
 }
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {
-	[[CCDirector sharedDirector] pause];
 }
 
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
-	[[CCDirector sharedDirector] resume];
 }
 
 
 - (void)applicationDidReceiveMemoryWarning:(UIApplication *)application {
-	[[CCTextureCache sharedTextureCache] removeUnusedTextures];
 }
 
 
 - (void)applicationSignificantTimeChange:(UIApplication *)application {
-	[[CCDirector sharedDirector] setNextDeltaTimeZero:YES];
 }
 
 
 - (void)applicationWillTerminate:(UIApplication *)application {
-#if USE_COCOS_2D	
-	[[CCDirector sharedDirector] end];
-
 	if (service) {
 		[service disconnectFromAllPeers];
 		service.available = NO;
@@ -196,7 +153,6 @@
 		client.delegate = nil;
 		[client release];
 	}
-#endif
 }
 	
 
@@ -206,13 +162,11 @@
 		localPlayer1ControlsViewController.view.alpha = 0;
 		localPlayer1ControlsViewController.view.transform = CGAffineTransformMakeRotation( .5 * M_PI );
 		[window addSubview:localPlayer1ControlsViewController.v];
-//		[localPlayer1ControlsViewController release];
 	}
+  
 	if (!localPlayer2ControlsViewController) {
 		localPlayer2ControlsViewController = [[LocalTankViewController alloc] initWithNibName:@"LocalTankViewController" bundle:nil];
 		localPlayer2ControlsViewController.view.alpha = 0;
-		//[window addSubview:localPlayer2ControlsViewController.view];
-	//	[localPlayer2ControlsViewController release];
 	}
 	
 	if (animated) {
@@ -247,9 +201,7 @@
 	NSTimeInterval dt = [[NSDate date] timeIntervalSinceDate:lastTicked];
 	
 	for(player in self.connectedPeers) {
-		//player = [connectedPeers valueForKey:aKey];
 		if ([[player peerID] isEqualToString:@"dbgPlayer"]) {
-			//
 			[self player:player didFireBullet:@"1"];
 		} else {
 			[touchController setLastTouchedPoint:[player center]];
@@ -263,7 +215,6 @@
 		bullet = [bullets objectAtIndex:i];
 		[bullet update:dt + (FRAMERATE * 4)];
 		for(player in self.connectedPeers) {
-			//player = [connectedPeers valueForKey:aKey];
 			if (player.takingDamage || bullet.exploding) {
 			} else {
 				if (![[bullet player] isEqual:player]) {
@@ -311,16 +262,15 @@
 		case GKPeerStateUnavailable: {
 			break;
 		}
+    case GKPeerStateConnecting: {
+      break;
+    }
 		case GKPeerStateConnected: {
 			[self requestConnectingClientIdentity:peerID];
 			break;
 		}
 		case GKPeerStateDisconnected: {
-			//Player *player = [connectedPeers objectForKey:peerID];
-			//if (player) {
-			//	[player removeFromSuperview];
-			//	[connectedPeers removeObjectForKey:peerID];
-			//}
+      //TODO: foo
 			break;
 		}
 	}
@@ -333,7 +283,7 @@
 
 
 -(void) receiveData:(NSData *)data fromPeer:(NSString *)peerId inSession:(GKSession *)_session context:(id)context {
-	Player *player; // = [connectedPeers objectForKey:peerId];
+	Player *player;
 	for (player in self.connectedPeers) {
 		if ([[player peerID] isEqualToString:peerId]) {
 			break;
@@ -448,7 +398,6 @@
 	NSArray *argv = [args componentsSeparatedByString:@"|"];
 	Player *p = [[Player alloc] initWithID:[argv objectAtIndex:0]];
 	[p setTank:[argv objectAtIndex:1]];
-	//[connectedPeers setObject:p forKey:[argv objectAtIndex:0]];
 	[self.connectedPeers addObject:p];
 	[window addSubview:p];
 	[p release];
@@ -462,7 +411,6 @@
 	Player *p = [[Player alloc] initWithID:[argv objectAtIndex:0]];
 	[p setTank:[argv objectAtIndex:1]];
 	[p setPlayerName:name];
-	//[connectedPeers setObject:p forKey:[argv objectAtIndex:0]];
 	[self.connectedPeers addObject:p];
 	[window addSubview:p];
 	[p release];
@@ -479,9 +427,6 @@
 		NSLog(@"ERROR: %@",error);
 	}	
 }
-
-
-
 
 
 @end

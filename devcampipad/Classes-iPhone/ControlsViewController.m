@@ -113,9 +113,9 @@
 }
 
 -(void) didLose {
-	UIAlertView *a = [[UIAlertView alloc] initWithTitle:@"Oh Nos!" message:@"Lou Lost" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"I Suck"];
-	[a show];
-	[a release];
+	//UIAlertView *a = [[UIAlertView alloc] initWithTitle:@"Oh Nos!" message:@"Lou Lost" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"I Suck"];
+	//[a show];
+	//[a release];
 }
 
 

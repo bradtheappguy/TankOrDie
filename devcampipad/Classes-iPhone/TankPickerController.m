@@ -10,6 +10,7 @@
 
 #define kPlayerNAmeUSerDefault @"PLAYER_NAME_USER_DEFAULT"
 
+#import "TDiPadMenuViewController.h"
 #import "TankPickerController.h"
 #import "AppDelegate.h"
 

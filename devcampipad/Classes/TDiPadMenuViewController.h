@@ -56,4 +56,6 @@
 -(void) updateConnectionScreenUI;
 
 -(IBAction) addLocalPlayButtonPressed:(id)sender;
+- (void)tankPickerController:(TankPickerController *)controller didFinishPickingTankID:(int)tankID withPlayerName:(NSString *)name;
+
 @end
