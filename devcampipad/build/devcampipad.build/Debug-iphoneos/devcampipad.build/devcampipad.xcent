@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>A8WV98KEFS.*</string>
+	<string>A8WV98KEFS.com.clixtr.td</string>
 	<key>get-task-allow</key>
 	<true/>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>A8WV98KEFS.*</string>
+		<string>A8WV98KEFS.com.clixtr.td</string>
 	</array>
 </dict>
 </plist>

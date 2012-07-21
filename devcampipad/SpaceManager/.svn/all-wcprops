@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/devcamp/!svn/ver/230/devcampipad/SpaceManager
+END
+cpShapeNode.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/devcamp/!svn/ver/207/devcampipad/SpaceManager/cpShapeNode.h
+END
+SpaceManager.m
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/devcamp/!svn/ver/207/devcampipad/SpaceManager/SpaceManager.m
+END
+cpConstraintNode.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/devcamp/!svn/ver/207/devcampipad/SpaceManager/cpConstraintNode.h
+END
+cpAtlasSprite.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/devcamp/!svn/ver/207/devcampipad/SpaceManager/cpAtlasSprite.h
+END
+cpCCNode.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/devcamp/!svn/ver/230/devcampipad/SpaceManager/cpCCNode.h
+END
+cpShapeNode.m
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/devcamp/!svn/ver/207/devcampipad/SpaceManager/cpShapeNode.m
+END
+cpCCSprite.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/devcamp/!svn/ver/207/devcampipad/SpaceManager/cpCCSprite.h
+END
+cpCCNodeImpl.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/devcamp/!svn/ver/207/devcampipad/SpaceManager/cpCCNodeImpl.h
+END
+cpConstraintNode.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/devcamp/!svn/ver/207/devcampipad/SpaceManager/cpConstraintNode.m
+END
+cpAtlasSprite.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/devcamp/!svn/ver/207/devcampipad/SpaceManager/cpAtlasSprite.m
+END
+cpCCNode.m
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/devcamp/!svn/ver/207/devcampipad/SpaceManager/cpCCNode.m
+END
+cpCCSprite.m
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/devcamp/!svn/ver/207/devcampipad/SpaceManager/cpCCSprite.m
+END
+cpCCNodeImpl.m
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/devcamp/!svn/ver/207/devcampipad/SpaceManager/cpCCNodeImpl.m
+END
+SpaceManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/devcamp/!svn/ver/207/devcampipad/SpaceManager/SpaceManager.h
+END

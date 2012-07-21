@@ -1,161 +1,131 @@
 K 25
 svn:wc:ra_dav:version-url
 V 33
-/devcamp/!svn/ver/150/devcampipad
+/devcamp/!svn/ver/239/devcampipad
 END
 main.m
 K 25
 svn:wc:ra_dav:version-url
-V 38
-/devcamp/!svn/ver/8/devcampipad/main.m
+V 40
+/devcamp/!svn/ver/190/devcampipad/main.m
 END
 tank_01.png
 K 25
 svn:wc:ra_dav:version-url
-V 44
-/devcamp/!svn/ver/72/devcampipad/tank_01.png
-END
-tank_02.png
-K 25
-svn:wc:ra_dav:version-url
-V 44
-/devcamp/!svn/ver/72/devcampipad/tank_02.png
-END
-tank_03.png
-K 25
-svn:wc:ra_dav:version-url
-V 44
-/devcamp/!svn/ver/72/devcampipad/tank_03.png
-END
-tank_04.png
-K 25
-svn:wc:ra_dav:version-url
-V 44
-/devcamp/!svn/ver/72/devcampipad/tank_04.png
-END
-tank_bullet.png
-K 25
-svn:wc:ra_dav:version-url
-V 48
-/devcamp/!svn/ver/78/devcampipad/tank_bullet.png
-END
-bang0001.png
-K 25
-svn:wc:ra_dav:version-url
 V 45
-/devcamp/!svn/ver/78/devcampipad/bang0001.png
+/devcamp/!svn/ver/238/devcampipad/tank_01.png
 END
-bang0010.png
+ibtn_huh.png
 K 25
 svn:wc:ra_dav:version-url
-V 45
-/devcamp/!svn/ver/78/devcampipad/bang0010.png
+V 46
+/devcamp/!svn/ver/224/devcampipad/ibtn_huh.png
 END
-bang0002.png
+btn_start.png
 K 25
 svn:wc:ra_dav:version-url
-V 45
-/devcamp/!svn/ver/78/devcampipad/bang0002.png
+V 47
+/devcamp/!svn/ver/230/devcampipad/btn_start.png
 END
-bang0011.png
+connected_background.png
 K 25
 svn:wc:ra_dav:version-url
-V 45
-/devcamp/!svn/ver/78/devcampipad/bang0011.png
+V 58
+/devcamp/!svn/ver/224/devcampipad/connected_background.png
 END
-bang0003.png
+case_tankers.png
 K 25
 svn:wc:ra_dav:version-url
-V 45
-/devcamp/!svn/ver/78/devcampipad/bang0003.png
+V 50
+/devcamp/!svn/ver/224/devcampipad/case_tankers.png
+END
+h_choosetank.png
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/devcamp/!svn/ver/224/devcampipad/h_choosetank.png
+END
+ibtn_connect.png
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/devcamp/!svn/ver/224/devcampipad/ibtn_connect.png
+END
+newgame_light_idle.png
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/devcamp/!svn/ver/232/devcampipad/newgame_light_idle.png
+END
+btn_play.png
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/devcamp/!svn/ver/230/devcampipad/btn_play.png
+END
+ibtn_save.png
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/devcamp/!svn/ver/224/devcampipad/ibtn_save.png
 END
 MainWindow.xib
 K 25
 svn:wc:ra_dav:version-url
-V 47
-/devcamp/!svn/ver/93/devcampipad/MainWindow.xib
+V 48
+/devcamp/!svn/ver/212/devcampipad/MainWindow.xib
 END
-bang0004.png
+newgame_tablebg_connect.png
 K 25
 svn:wc:ra_dav:version-url
-V 45
-/devcamp/!svn/ver/78/devcampipad/bang0004.png
-END
-bang0005.png
-K 25
-svn:wc:ra_dav:version-url
-V 45
-/devcamp/!svn/ver/78/devcampipad/bang0005.png
-END
-Default-Landscape.png
-K 25
-svn:wc:ra_dav:version-url
-V 54
-/devcamp/!svn/ver/80/devcampipad/Default-Landscape.png
+V 61
+/devcamp/!svn/ver/230/devcampipad/newgame_tablebg_connect.png
 END
 devcampipad-Info.plist
 K 25
 svn:wc:ra_dav:version-url
-V 55
-/devcamp/!svn/ver/98/devcampipad/devcampipad-Info.plist
+V 56
+/devcamp/!svn/ver/230/devcampipad/devcampipad-Info.plist
 END
-bang0006.png
+ibtn_what.png
 K 25
 svn:wc:ra_dav:version-url
-V 45
-/devcamp/!svn/ver/78/devcampipad/bang0006.png
-END
-bang0007.png
-K 25
-svn:wc:ra_dav:version-url
-V 45
-/devcamp/!svn/ver/78/devcampipad/bang0007.png
-END
-bang0008.png
-K 25
-svn:wc:ra_dav:version-url
-V 45
-/devcamp/!svn/ver/78/devcampipad/bang0008.png
+V 47
+/devcamp/!svn/ver/224/devcampipad/ibtn_what.png
 END
 devcampipad_Prefix.pch
 K 25
 svn:wc:ra_dav:version-url
 V 56
-/devcamp/!svn/ver/120/devcampipad/devcampipad_Prefix.pch
+/devcamp/!svn/ver/192/devcampipad/devcampipad_Prefix.pch
 END
-bang0009.png
-K 25
-svn:wc:ra_dav:version-url
-V 45
-/devcamp/!svn/ver/78/devcampipad/bang0009.png
-END
-tanktank_bg-1.png
-K 25
-svn:wc:ra_dav:version-url
-V 50
-/devcamp/!svn/ver/93/devcampipad/tanktank_bg-1.png
-END
-tanktank_bg.png
-K 25
-svn:wc:ra_dav:version-url
-V 48
-/devcamp/!svn/ver/72/devcampipad/tanktank_bg.png
-END
-Default-Portrait.png
+_screen_newgame.png
 K 25
 svn:wc:ra_dav:version-url
 V 53
-/devcamp/!svn/ver/80/devcampipad/Default-Portrait.png
+/devcamp/!svn/ver/230/devcampipad/_screen_newgame.png
 END
-airplane.jpg
+newgame_light_connect.png
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/devcamp/!svn/ver/232/devcampipad/newgame_light_connect.png
+END
+MainWindow-iPad.xib
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/devcamp/!svn/ver/196/devcampipad/MainWindow-iPad.xib
+END
+make_pvr.sh
 K 25
 svn:wc:ra_dav:version-url
 V 45
-/devcamp/!svn/ver/43/devcampipad/airplane.jpg
+/devcamp/!svn/ver/216/devcampipad/make_pvr.sh
 END
-Icon.png
+btn_help.png
 K 25
 svn:wc:ra_dav:version-url
-V 41
-/devcamp/!svn/ver/98/devcampipad/Icon.png
+V 46
+/devcamp/!svn/ver/230/devcampipad/btn_help.png
 END

@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/devcamp/!svn/ver/207/devcampipad/Cocos2d/external/Chipmunk/src/constraints
+END
+cpDampedSpring.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/devcamp/!svn/ver/207/devcampipad/Cocos2d/external/Chipmunk/src/constraints/cpDampedSpring.c
+END
+cpDampedRotarySpring.c
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/devcamp/!svn/ver/207/devcampipad/Cocos2d/external/Chipmunk/src/constraints/cpDampedRotarySpring.c
+END
+cpRatchetJoint.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/devcamp/!svn/ver/207/devcampipad/Cocos2d/external/Chipmunk/src/constraints/cpRatchetJoint.c
+END
+cpGearJoint.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/devcamp/!svn/ver/207/devcampipad/Cocos2d/external/Chipmunk/src/constraints/cpGearJoint.c
+END
+cpRotaryLimitJoint.c
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/devcamp/!svn/ver/207/devcampipad/Cocos2d/external/Chipmunk/src/constraints/cpRotaryLimitJoint.c
+END
+cpConstraint.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/devcamp/!svn/ver/207/devcampipad/Cocos2d/external/Chipmunk/src/constraints/cpConstraint.c
+END
+cpSlideJoint.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/devcamp/!svn/ver/207/devcampipad/Cocos2d/external/Chipmunk/src/constraints/cpSlideJoint.c
+END
+cpGrooveJoint.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/devcamp/!svn/ver/207/devcampipad/Cocos2d/external/Chipmunk/src/constraints/cpGrooveJoint.c
+END
+cpPivotJoint.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/devcamp/!svn/ver/207/devcampipad/Cocos2d/external/Chipmunk/src/constraints/cpPivotJoint.c
+END
+cpPinJoint.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/devcamp/!svn/ver/207/devcampipad/Cocos2d/external/Chipmunk/src/constraints/cpPinJoint.c
+END
+cpSimpleMotor.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/devcamp/!svn/ver/207/devcampipad/Cocos2d/external/Chipmunk/src/constraints/cpSimpleMotor.c
+END

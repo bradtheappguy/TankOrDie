@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/devcamp/!svn/ver/207/devcampipad/Cocos2d/CocosDenshion
+END
+CDConfig.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/devcamp/!svn/ver/207/devcampipad/Cocos2d/CocosDenshion/CDConfig.h
+END
+CocosDenshion.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/devcamp/!svn/ver/207/devcampipad/Cocos2d/CocosDenshion/CocosDenshion.h
+END
+SimpleAudioEngine.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/devcamp/!svn/ver/207/devcampipad/Cocos2d/CocosDenshion/SimpleAudioEngine.h
+END
+CDOpenALSupport.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/devcamp/!svn/ver/207/devcampipad/Cocos2d/CocosDenshion/CDOpenALSupport.h
+END
+CDAudioManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/devcamp/!svn/ver/207/devcampipad/Cocos2d/CocosDenshion/CDAudioManager.h
+END
+CocosDenshion.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/devcamp/!svn/ver/207/devcampipad/Cocos2d/CocosDenshion/CocosDenshion.m
+END
+SimpleAudioEngine.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/devcamp/!svn/ver/207/devcampipad/Cocos2d/CocosDenshion/SimpleAudioEngine.m
+END
+CDAudioManager.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/devcamp/!svn/ver/207/devcampipad/Cocos2d/CocosDenshion/CDAudioManager.m
+END

@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 49
-/devcamp/!svn/ver/118/devcampipad/loadingSequence
+/devcamp/!svn/ver/187/devcampipad/loadingSequence
 END
 loading0.png
 K 25
@@ -32,6 +32,12 @@ K 25
 svn:wc:ra_dav:version-url
 V 62
 /devcamp/!svn/ver/118/devcampipad/loadingSequence/loading4.png
+END
+btn_join.png
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/devcamp/!svn/ver/187/devcampipad/loadingSequence/btn_join.png
 END
 loading5.png
 K 25
@@ -110,4 +116,16 @@ K 25
 svn:wc:ra_dav:version-url
 V 63
 /devcamp/!svn/ver/118/devcampipad/loadingSequence/loading17.png
+END
+btn_stop.png
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/devcamp/!svn/ver/187/devcampipad/loadingSequence/btn_stop.png
+END
+btn_new-1.png
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/devcamp/!svn/ver/187/devcampipad/loadingSequence/btn_new-1.png
 END

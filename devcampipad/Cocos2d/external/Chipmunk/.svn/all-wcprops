@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/devcamp/!svn/ver/207/devcampipad/Cocos2d/external/Chipmunk
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/devcamp/!svn/ver/207/devcampipad/Cocos2d/external/Chipmunk/LICENSE.txt
+END
+cocos2d_chipmunk_v5_2.patch
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/devcamp/!svn/ver/207/devcampipad/Cocos2d/external/Chipmunk/cocos2d_chipmunk_v5_2.patch
+END
+chipmunk-docs.html
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/devcamp/!svn/ver/207/devcampipad/Cocos2d/external/Chipmunk/chipmunk-docs.html
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/devcamp/!svn/ver/207/devcampipad/Cocos2d/external/Chipmunk/README.txt
+END
+cocos2d_chipmunk_demo.patch
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/devcamp/!svn/ver/207/devcampipad/Cocos2d/external/Chipmunk/cocos2d_chipmunk_demo.patch
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/devcamp/!svn/ver/207/devcampipad/Cocos2d/external/Chipmunk/CMakeLists.txt
+END
+cocos2d_chipmunk_demo_2.patch
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/devcamp/!svn/ver/207/devcampipad/Cocos2d/external/Chipmunk/cocos2d_chipmunk_demo_2.patch
+END

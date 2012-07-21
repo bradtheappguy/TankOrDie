@@ -8,15 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import <GameKit/GameKit.h>
-#import "ClientModeSessionHandler.h"
-#import "SlaveBoard.h"
+#import "Sound.h"
+#import "TDiPadControllerView.h"
 
-
-@class PlayerView;
+@class Player;
 @class Bullet;
+@class TouchController;
+@class TDiPadMenuViewController;
 
-
-@interface devcampipadAppDelegate : NSObject <UIApplicationDelegate, GKPeerPickerControllerDelegate, GKSessionDelegate> {
+@interface devcampipadAppDelegate : NSObject <UIApplicationDelegate, GKSessionDelegate> {
 	IBOutlet UILabel *peerCountLabel;
 	IBOutlet UILabel *boardCountLabel;
 	IBOutlet UIButton *newButton;
@@ -26,34 +26,41 @@
 	UIImageView *loadingView;
 	NSString *serverPeerID;
 	GKPeerPickerController *peerPicker;
-	NSMutableDictionary *connectedPeers;
-	NSMutableDictionary *connectedBoards;
-	SlaveBoard *lastBoard;
+	NSMutableArray *connectedPeers;
 	UIWindow *window;
 	
 	GKSession *service;
 	GKSession *client;
 	
-	ClientModeSessionHandler *clientModeSessionHandler;
 	NSMutableArray *bullets;
 	NSDate *lastTicked;
 	BOOL actingAsServer;
+	
+	Sound *soundPlayer;
+	TouchController *touchController;
+	TDiPadMenuViewController *menuViewContoller;
+	
+	TDiPadControllerView *leftControllerViewController;
+	TDiPadControllerView *rightControllerViewController;
+	
+	BOOL gamePaused;
+	
 }
 
 
--(IBAction) joinButtonPressed:(id)sender;
--(IBAction) newButtonPressed:(id)sender;
--(IBAction) stopButtonPressed:(id)sender;
--(void) requestConnectingClientIdentity:(NSString *)thePeerId;
--(void)player:(PlayerView *)thePlayer didFire:(Bullet *)theBullet;
+-(IBAction)joinButtonPressed:(id)sender;
+-(void)requestConnectingClientIdentity:(NSString *)thePeerId;
 -(void)confirmiPad:(NSString *)peerId;
-- (void) spawnPortal:(NSString *)args;
-- (void) relocatePlayer:(PlayerView *)ply inDir:(int)dir;
-- (void) updateLabels;
--(void) confirmiPhone:(NSString *)peerID withTankID:(NSString *)tankID;
-- (void) spawnPlayer:(NSString *)args;
+-(void)spawnPortal:(NSString *)args;
+-(void)updateLabels;
+-(void)confirmiPhone:(NSString *)peerID withTankID:(NSString *)tankID;
+-(void)spawnPlayer:(NSString *)args;
 -(void)sendID:(NSString *)serverPeerID;
+-(void)player:(Player *)player didFireBullet:(NSString *)bulletType;
+-(void) removeLoadingView;
 
+
+@property (nonatomic, retain) NSMutableArray *connectedPeers;
 
 @property (nonatomic, retain) NSString *serverPeerID;
 @property (nonatomic, retain) IBOutlet UIWindow *window;
@@ -64,5 +71,8 @@
 @property (nonatomic, retain) NSMutableArray *bullets;
 @property (nonatomic, retain) NSDate *lastTicked;
 
+@property (nonatomic, retain) Sound *soundPlayer;
+@property (nonatomic, retain) TouchController *touchController;
+@property (readwrite) BOOL gamePaused;
 
 @end  
