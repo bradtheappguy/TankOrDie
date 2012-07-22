@@ -25,6 +25,7 @@
 		322F261B15BB8ABB002ADD90 /* GameServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 322F261A15BB8ABB002ADD90 /* GameServer.m */; };
 		322F262715BBA921002ADD90 /* GameHostViewControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 322F262615BBA921002ADD90 /* GameHostViewControllerViewController.m */; };
 		322F262A15BBA949002ADD90 /* GameHostViewControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 322F262915BBA949002ADD90 /* GameHostViewControllerViewController.xib */; };
+		370E41CB15BBDAAD00CCA630 /* ui_background_ipadlaunch.png in Resources */ = {isa = PBXBuildFile; fileRef = 370E41CA15BBDAAD00CCA630 /* ui_background_ipadlaunch.png */; };
 		A203680C119894F100673E4C /* GameOverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A203680A119894F100673E4C /* GameOverViewController.m */; };
 		A203680D119894F100673E4C /* GameOverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A203680B119894F100673E4C /* GameOverViewController.xib */; };
 		A222E1D1117AE736003F81C0 /* loading0.png in Resources */ = {isa = PBXBuildFile; fileRef = A222E1BF117AE735003F81C0 /* loading0.png */; };
@@ -155,6 +156,7 @@
 		322F262615BBA921002ADD90 /* GameHostViewControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameHostViewControllerViewController.m; sourceTree = "<group>"; };
 		322F262915BBA949002ADD90 /* GameHostViewControllerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameHostViewControllerViewController.xib; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* devcampipad_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = devcampipad_Prefix.pch; path = ../devcampipad_Prefix.pch; sourceTree = "<group>"; };
+		370E41CA15BBDAAD00CCA630 /* ui_background_ipadlaunch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ui_background_ipadlaunch.png; path = Images/ui_background_ipadlaunch.png; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* devcampipad-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "devcampipad-Info.plist"; path = "../devcampipad-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		A2036809119894F100673E4C /* GameOverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverViewController.h; sourceTree = "<group>"; };
 		A203680A119894F100673E4C /* GameOverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOverViewController.m; sourceTree = "<group>"; };
@@ -419,6 +421,7 @@
 				A29954CF11AB8C16007555F4 /* newgame_light_connect.png */,
 				A29954AA11AB8241007555F4 /* newgame_tablebg_connect.png */,
 				A29954AB11AB8241007555F4 /* _screen_newgame.png */,
+				370E41CA15BBDAAD00CCA630 /* ui_background_ipadlaunch.png */,
 				29F4537711AB6EE300C8BCDB /* h_choosetank.png */,
 				29F4537811AB6EE300C8BCDB /* ibtn_connect.png */,
 				29F4537911AB6EE300C8BCDB /* ibtn_huh.png */,
@@ -692,6 +695,7 @@
 				ACAD994815BBAE78007E393F /* InfoViewController.xib in Resources */,
 				322F262A15BBA949002ADD90 /* GameHostViewControllerViewController.xib in Resources */,
 				3228181B15BBBC110043A779 /* tank_dark.png in Resources */,
+				370E41CB15BBDAAD00CCA630 /* ui_background_ipadlaunch.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
