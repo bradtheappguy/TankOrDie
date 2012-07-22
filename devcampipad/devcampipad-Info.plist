@@ -28,6 +28,8 @@
 	<string>MainWindow</string>
 	<key>NSMainNibFile~ipad</key>
 	<string>MainWindow-iPad</string>
+	<key>UIApplicationExitsOnSuspend</key>
+	<false/>
 	<key>UILaunchImageFile</key>
 	<string>Default-iPhone.png</string>
 	<key>UILaunchImageFile~ipad</key>
