@@ -67,7 +67,8 @@
 
   //This is called for the person acting as server only
 - (void)tankPickerController:(TankPickerController *)controller didFinishPickingTankID:(int)tankID withPlayerName:(NSString *)name {
-	[self sendLocalMessageToServer:@"confirmiPhone|1|testname"];
+	NSString *message = [NSString stringWithFormat:@"confirmiPhone|%d|%@",tankID,name];
+  [self sendLocalMessageToServer:message];
   [tankPickerController.view removeFromSuperview];
   GameHostViewControllerViewController *hostViewControleer = [[GameHostViewControllerViewController alloc] initWithNibName:nil bundle:nil];
   hostViewControleer.view.transform =CGAffineTransformMakeRotation( .5 * M_PI );

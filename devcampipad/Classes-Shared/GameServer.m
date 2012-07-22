@@ -125,6 +125,14 @@
 					if (collided) {
 						[bullet explode];
 						if ([player takeDamage]) {
+              
+              NSLog(@"Player %@ hit Player %@",bullet.player, player);
+              
+              
+              [[NSNotificationCenter defaultCenter] postNotificationName:@"PLAYER_WAS_HIT" object:player];
+              [[NSNotificationCenter defaultCenter] postNotificationName:@"PLAYER_SCORED" object:bullet.player];
+              
+              
 							[soundPlayer playHitSound];
 							[service sendData:[@"playerDidTakeDamage" dataUsingEncoding:NSUTF8StringEncoding] toPeers:[NSArray arrayWithObject:[player peerID]] withDataMode:GKSendDataUnreliable error:nil];
 						}

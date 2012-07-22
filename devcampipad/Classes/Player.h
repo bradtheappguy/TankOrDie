@@ -66,6 +66,10 @@
 @property CGPoint pos;
 @property (nonatomic, retain) UIImageView *shieldView;
 @property (nonatomic, retain) NSString *playerName;
+
+
+@property (readwrite) NSUInteger score;
+
 //@property CGPoint loc;
 
 @end

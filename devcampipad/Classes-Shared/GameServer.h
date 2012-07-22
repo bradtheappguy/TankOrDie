@@ -65,6 +65,7 @@
 -(void) removeLoadingView;
 -(void)setLocalControlsHidden:(BOOL)a animated:(BOOL)b;
 -(void)screenDidConnect:(NSNotification *)notification;
++ (id)sharedInstance;
 
 @property (nonatomic, retain) NSMutableArray *connectedPeers;
 

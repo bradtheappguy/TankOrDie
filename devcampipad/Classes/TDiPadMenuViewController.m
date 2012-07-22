@@ -10,33 +10,23 @@
 #import "TDiPadMenuViewController.h"
 #import "TankPickerController.h"
 #import "Player.h"
+#import "GameServer.h"
 
 @implementation TDiPadMenuViewController
-
-/*
- // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
-        // Custom initialization
-    }
-    return self;
-}
-*/
 
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
-	localPlayerNameLabel1.text = @"";
-	localPlayerNameLabel2.text = @"";
 	wirelessPlayerNameLabel1.text = @"";
 	wirelessPlayerNameLabel2.text = @"";
 	wirelessPlayerNameLabel3.text = @"";
 	wirelessPlayerNameLabel4.text = @"";
-    [super viewDidLoad];
+  [super viewDidLoad];
 	playButton.alpha = 0;
 	helpButton.alpha = 0;
-	connectionView.alpha = 0;
-	
+  [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playerDidJoin:) name:@"PLAYER_JOINED" object:nil];
+  [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(gameDidStart:) name:@"GAME_DID_START" object:nil];
+  [self updateConnectionScreenUI];
 }
 
 
@@ -78,6 +68,10 @@
 
 
 - (void)viewDidUnload {
+  [backgroundImageView release];
+  backgroundImageView = nil;
+  [scoreBoard release];
+  scoreBoard = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -85,6 +79,8 @@
 
 
 - (void)dealloc {
+  [backgroundImageView release];
+  [scoreBoard release];
     [super dealloc];
 }
 
@@ -107,115 +103,62 @@
 	[appDel setGamePaused: NO];
 }
 
--(IBAction) addLocalPlayButtonPressed:(UIButton *)button {
-	if ((button != addLocalPlayerOneButton) && (button != addLocalPlayerTwoButton)){
-		NSLog(@"Whoops: Unexpected Sender");
-		return;
-	}
-	button.hidden = YES;
-	
-		
-	if (button == addLocalPlayerOneButton) {
-		tankSelectionPlayerOneViewController = [[TankPickerController alloc] initWithNibName:@"TankPickerController" bundle:nil];
-		tankSelectionPlayerOneViewController.contentSizeForViewInPopover = CGSizeMake(480, 320);
-		tankSelectionPlayerOneViewController.delegate = self;
-		
-		addPlayerOnePopoverController = [[UIPopoverController alloc] initWithContentViewController:tankSelectionPlayerOneViewController];
-		addPlayerOnePopoverController.delegate = self;
-		[addPlayerOnePopoverController presentPopoverFromRect:[self.view convertRect:button.bounds fromView:button] 
-										   inView:self.view 
-						 permittedArrowDirections:UIPopoverArrowDirectionAny 
-										 animated:YES];
-		
-	}
-	else if (button == addLocalPlayerTwoButton) {
-		tankSelectionPlayerTwoViewController = [[TankPickerController alloc] initWithNibName:@"TankPickerController" bundle:nil];
-		tankSelectionPlayerTwoViewController.contentSizeForViewInPopover = CGSizeMake(480, 320);
-		tankSelectionPlayerTwoViewController.delegate = self;
-		
-		addPlayerTwoPopoverController = [[UIPopoverController alloc] initWithContentViewController:tankSelectionPlayerTwoViewController];
-		addPlayerTwoPopoverController.delegate = self;
-		[addPlayerTwoPopoverController presentPopoverFromRect:[self.view convertRect:button.bounds fromView:button] 
-										   inView:self.view 
-						 permittedArrowDirections:UIPopoverArrowDirectionAny 
-										 animated:YES];
-		
-	}
-	
-}
-
-- (void)popoverControllerDidDismissPopover:(UIPopoverController *)popoverController {
-	if (popoverController == addPlayerOnePopoverController) {
-		addLocalPlayerOneButton.hidden = NO;
-	}
-	if (popoverController == addPlayerTwoPopoverController) {
-		addLocalPlayerTwoButton.hidden = NO;
-	}
-}
 
 
 
 -(void) updateConnectionScreenUI {
-	id appDel = [[UIApplication sharedApplication] delegate];
-	NSArray *players = [appDel connectedPeers];
-	
-	
-	
-	//	localPlayerNameLabel1.text = @"Brad";
-	//  localPlayerNameLabel2.text = @"Franky";
-	//  localConnectedTankView1.image = [UIImage imageNamed:@"tank_01_00.png"];
-	//  localConnectedTankView2.image = [UIImage imageNamed:@"tank_02.png"];
-	//  localStatusLight1.image = [UIImage imageNamed:@"newgame_light_idle.png"];
-	//  localStatusLight2.image = [UIImage imageNamed:@"newgame_light_connect.png"];
-	
-	if (players.count < 1) return;
+  NSArray *array = [[GameServer sharedInstance] connectedPeers];
+  
+  wirelessPlayerNameLabel1.text = @"Waiting...";
+  wirelessPlayerNameLabel2.text = @"Waiting...";
+  wirelessPlayerNameLabel3.text = @"Waiting...";
+  wirelessPlayerNameLabel4.text = @"Waiting...";
+  wirelessStatusLight1.image = [UIImage imageNamed:@"newgame_light_idle.png"];
+  wirelessStatusLight2.image = [UIImage imageNamed:@"newgame_light_idle.png"];
+  wirelessStatusLight3.image = [UIImage imageNamed:@"newgame_light_idle.png"];
+  wirelessStatusLight4.image = [UIImage imageNamed:@"newgame_light_idle.png"];
+  wirelessConnectedTankView1.image = [UIImage imageNamed:@"tank_dark.png"];
+  wirelessConnectedTankView2.image = [UIImage imageNamed:@"tank_dark.png"];
+  wirelessConnectedTankView3.image = [UIImage imageNamed:@"tank_dark.png"];
+  wirelessConnectedTankView4.image = [UIImage imageNamed:@"tank_dark.png"];
+  
+  if (array.count > 0) {
+    Player *one = [array objectAtIndex:0];
+    wirelessPlayerNameLabel1.text = one.playerName;
+    wirelessConnectedTankView1.image = one.image;
+    wirelessStatusLight1.image = [UIImage imageNamed:@"newgame_light_connect.png"];
+    
+  }
+  if (array.count > 1) {
+    Player *two = [array objectAtIndex:1];
+    wirelessPlayerNameLabel2.text = two.playerName;
+    wirelessConnectedTankView2.image = two.image;
+    wirelessStatusLight2.image = [UIImage imageNamed:@"newgame_light_connect.png"];
+    
+  }
+  if (array.count > 2) {
+    Player *three = [array objectAtIndex:2];
+    wirelessPlayerNameLabel3.text = three.playerName;
+    wirelessConnectedTankView3.image = three.image;
+    wirelessStatusLight3.image = [UIImage imageNamed:@"newgame_light_connect.png"];
+  }
+  
+  if (array.count > 3) {
+    Player *four = [array objectAtIndex:3];
+    wirelessPlayerNameLabel4.text = four.playerName;
+    wirelessConnectedTankView4.image = four.image;
+    wirelessStatusLight4.image = [UIImage imageNamed:@"newgame_light_connect.png"];
+    
+  }
+}	
 
-	wirelessPlayerNameLabel1.text = [(Player *)[players objectAtIndex:0] playerName];
-	wirelessConnectedTankView1.image = [(Player *)[players objectAtIndex:0] image];
-	wirelessStatusLight1.image = [UIImage imageNamed:@"newgame_light_connect.png"];
-	
-	if (players.count < 2) return;
-	wirelessPlayerNameLabel2.text = [(Player *)[players objectAtIndex:0] playerName];
-	wirelessConnectedTankView2.image = [(Player *)[players objectAtIndex:1] image];
-	wirelessStatusLight2.image = [UIImage imageNamed:@"newgame_light_connect.png"];
-	
-	if (players.count < 3) return;
-	wirelessPlayerNameLabel3.text = [(Player *)[players objectAtIndex:0] playerName];
-	wirelessConnectedTankView3.image = [(Player *)[players objectAtIndex:2] image];
-	wirelessStatusLight3.image = [UIImage imageNamed:@"newgame_light_connect.png"];
-	
-	if (players.count < 4) return;
-	wirelessPlayerNameLabel4.text = [(Player *)[players objectAtIndex:0] playerName];
-	wirelessConnectedTankView4.image = [(Player *)[players objectAtIndex:3] image];
-	wirelessStatusLight4.image = [UIImage imageNamed:@"newgame_light_connect.png"];
 
+-(void)playerDidJoin:(id)sender {
+  [self updateConnectionScreenUI];
 }
 
--(void) test___updateConnectionScreenUI {
-	localPlayerNameLabel1.text = @"Brad";
-	localPlayerNameLabel2.text = @"Franky";
-	wirelessPlayerNameLabel1.text = @"John";
-	wirelessPlayerNameLabel2.text = @"Josh";
-	wirelessPlayerNameLabel3.text = @"Homey";
-	wirelessPlayerNameLabel4.text = @"Clown";
-	
-	localConnectedTankView1.image = [UIImage imageNamed:@"tank_01.png"];
-	localConnectedTankView2.image = [UIImage imageNamed:@"tank_02.png"];
-	
-	wirelessConnectedTankView1.image = [UIImage imageNamed:@"tank_03.png"];
-	wirelessConnectedTankView2.image = [UIImage imageNamed:@"tank_04.png"];
-	wirelessConnectedTankView3.image = [UIImage imageNamed:@"tank_01.png"];
-	wirelessConnectedTankView4.image = [UIImage imageNamed:@"tank_02.png"];
-	
-	localStatusLight1.image = [UIImage imageNamed:@"newgame_light_idle.png"];
-	localStatusLight2.image = [UIImage imageNamed:@"newgame_light_connect.png"];
-	
-	wirelessStatusLight1.image = [UIImage imageNamed:@"newgame_light_idle.png"];
-	wirelessStatusLight2.image = [UIImage imageNamed:@"newgame_light_connect.png"];
-	wirelessStatusLight3.image = [UIImage imageNamed:@"newgame_light_idle.png"];
-	wirelessStatusLight4.image = [UIImage imageNamed:@"newgame_light_connect.png"];
-	
+-(void) gameDidStart:(id)sender {
+  connectionView.alpha = 0;
+  backgroundImageView.image = [UIImage imageNamed:@"tanktank_bg-1.png"];
 }
-
-
 @end
