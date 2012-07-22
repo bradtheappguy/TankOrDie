@@ -13,6 +13,7 @@
 #import "TDiPadMenuViewController.h"
 #import "TankPickerController.h"
 #import "AppDelegate.h"
+#import "../UIImage-Categories/UIImage+Resize.h"
 
 @implementation TankPickerController
 
@@ -115,7 +116,43 @@
 
 - (IBAction) addProfileButton:(id) sender
 {
-    
+    @try
+    {
+        // Make happy face camera thing go now:
+        UIImagePickerController *faceGrabber = [[[UIImagePickerController alloc] init] autorelease];
+        // Future revisions might let people choose from the camera roll... but not today:
+        faceGrabber.sourceType = UIImagePickerControllerSourceTypeCamera;
+        faceGrabber.delegate = self;
+        // FIXME: DOES NOT verify device actually has a front camera:
+        faceGrabber.cameraDevice = UIImagePickerControllerCameraDeviceFront;
+        // Absolutely, positively, only supports portrait mode, even though controls rotate
+        // to landscape once displayed:
+        [self presentModalViewController:faceGrabber animated:YES];
+    }
+    @catch (NSException *exception)
+    {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Camera Please!" message:@"No photo-maker on this device, sorry!" delegate:self cancelButtonTitle:@"Fantastic!" otherButtonTitles:nil];
+        NSLog(@"%@", [[exception name] stringByAppendingString:[exception reason]]);
+        [alert show];
+        [alert release];
+    } 
+}
+
+- (void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    /* 
+       A host of small issues here, most notably:
+       - Arbitrary 90*60 resizing causes portrait mode photos to look generally unwell
+       - UIViewContentModeCenter a very poor substitute for providing the user a real cropping tool or reticle
+    */
+    [[addProfileButton imageView] setContentMode:UIViewContentModeCenter];
+    [addProfileButton setImage:[[info objectForKey:(UIImagePickerControllerOriginalImage)] resizedImage:CGSizeMake(90,60) interpolationQuality:kCGInterpolationHigh] forState:(UIControlStateNormal)];
+    [picker dismissModalViewControllerAnimated:(YES)];
+}
+
+- (void) imagePickerControllerDidCancel:(UIImagePickerController *)picker
+{
+    [picker dismissModalViewControllerAnimated:(YES)];
 }
 
 @end

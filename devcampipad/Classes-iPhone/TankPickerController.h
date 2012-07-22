@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TankPickerController : UIViewController {
+@interface TankPickerController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate> {
 	IBOutlet UIButton *tank1Button;
 	IBOutlet UIButton *tank2Button;
 	IBOutlet UIButton *tank3Button;
