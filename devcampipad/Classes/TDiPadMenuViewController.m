@@ -36,6 +36,8 @@
 
 
 -(void) playerWon:(NSNotification *)n {
+
+  
   Player *winner = n.object;
     PlayerWonViewController *wonViewController = [[PlayerWonViewController alloc] init];
     [self.view addSubview:wonViewController.view];
@@ -44,6 +46,29 @@
     wonViewController.winnerLabel = [NSString stringWithFormat:@"Player %@ Wins!",winner.playerName];
     wonViewController.view.frame = self.view.frame;
   
+  wonViewController.loser1ImageView.image = nil;
+  wonViewController.loser2ImageView.image = nil;
+  wonViewController.loser3ImageView.image = nil;
+  
+  
+  NSArray *allPlayers = [[GameServer sharedInstance] connectedPeers];
+  for (Player *player in allPlayers) {
+    if (player == winner) {
+      break;
+    }
+    if (wonViewController.loser1ImageView.image = nil) {
+      wonViewController.loser1ImageView.image = player.image;
+      break;
+    }
+    if (wonViewController.loser2ImageView.image = nil) {
+      wonViewController.loser2ImageView.image = player.image;
+      break;
+    }
+    if (wonViewController.loser3ImageView.image = nil) {
+      wonViewController.loser3ImageView.image = player.image;
+      break;
+    }
+  }
 }
 
 
