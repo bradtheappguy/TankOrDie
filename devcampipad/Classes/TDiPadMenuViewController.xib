@@ -248,7 +248,7 @@
 						<int key="NSvFlags">297</int>
 						<object class="NSMutableArray" key="NSSubviews">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<object class="IBUIImageView" id="221095922">
+							<object class="IBUIImageView" id="211677354">
 								<reference key="NSNextResponder" ref="876758203"/>
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{20, 0}, {171, 756}}</string>
@@ -266,7 +266,7 @@
 							<object class="IBUIImageView" id="1064543812">
 								<reference key="NSNextResponder" ref="876758203"/>
 								<int key="NSvFlags">274</int>
-								<string key="NSFrame">{{146, 701}, {40, 40}}</string>
+								<string key="NSFrame">{{147, 701}, {40, 40}}</string>
 								<reference key="NSSuperview" ref="876758203"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="47570087"/>
@@ -628,7 +628,7 @@
 							<reference ref="947570297"/>
 							<reference ref="47570087"/>
 							<reference ref="409253901"/>
-							<reference ref="221095922"/>
+							<reference ref="211677354"/>
 						</object>
 						<reference key="parent" ref="766721923"/>
 					</object>
@@ -654,7 +654,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">82</int>
-						<reference key="object" ref="221095922"/>
+						<reference key="object" ref="211677354"/>
 						<reference key="parent" ref="876758203"/>
 					</object>
 				</object>
