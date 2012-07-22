@@ -93,6 +93,11 @@
 	[window addSubview:[controlsViewController view]]; 
 	[window addSubview:[tankPickerController view]]; 
 	
+  MPVolumeView *volumeView = [ [MPVolumeView alloc] init] ;
+  [volumeView setShowsVolumeSlider:NO];
+  [volumeView sizeToFit];
+  [window addSubview:volumeView];
+  
 	//  NOTE:: To test out the connecting view contrleer and game over view controller for now.  Simplay uncomment these lines:	
 	//	[window addSubview:[connectingViewController view]];
 	//  [window addSubview:[gameOverViewController view]];
