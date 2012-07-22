@@ -42,6 +42,10 @@
   NSLog(@"%@",availableModes);
 }
 
+-(void)screenDidConnectNotification:(NSNotification *)notification {
+  [self screenDidConnect:[notification object]];
+}
+
 -(void) setupExternalWindow {
   NSArray *screens = [UIScreen screens];
   if (screens.count > 1) {
@@ -50,7 +54,7 @@
   } else {
     [[NSNotificationCenter defaultCenter]
      addObserver:self
-     selector:@selector(screenDidConnect:)
+     selector:@selector(screenDidConnectNotification:)
      name:UIScreenDidConnectNotification
      object:nil];
   }
