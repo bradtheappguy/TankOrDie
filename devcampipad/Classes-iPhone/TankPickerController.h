@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-
 @interface TankPickerController : UIViewController {
 	IBOutlet UIButton *tank1Button;
 	IBOutlet UIButton *tank2Button;
@@ -20,10 +19,13 @@
 	IBOutlet UIButton *helpButton;
 	IBOutlet UITextField *nameTextField;
 	IBOutlet UILabel *helloLabel;
+    IBOutlet UIButton *addProfileButton; // Add profile image from using camera
 	
 	id delegate;
 }
+
 @property (nonatomic, retain) id delegate;
+@property (nonatomic, retain) UIButton *addProfileButton;
 
 - (IBAction) chooseTank1;
 - (IBAction) chooseTank2;
@@ -34,6 +36,7 @@
 - (IBAction) connectButtonPressed:(id) sender;
 - (IBAction) infoButtonPressed:(id) sender;
 - (IBAction) helpButtonPressed:(id) sender;
+- (IBAction) addProfileButton:(id) sender;
 
 - (void) connect:(int)tankID;
 

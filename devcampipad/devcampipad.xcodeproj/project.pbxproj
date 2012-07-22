@@ -107,6 +107,7 @@
 		A2EF48FE1179A245008647C5 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EF48FD1179A245008647C5 /* Player.m */; };
 		ACAD992F15BB8C03007E393F /* StartTankViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACAD992D15BB8C03007E393F /* StartTankViewController.m */; };
 		ACAD993015BB8C03007E393F /* StartTankViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACAD992E15BB8C03007E393F /* StartTankViewController.xib */; };
+		ACAD994215BBA790007E393F /* Icon_addprofile.png in Resources */ = {isa = PBXBuildFile; fileRef = ACAD994115BBA790007E393F /* Icon_addprofile.png */; };
 		C2DF4ADA15BB72EF006BB537 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2DF4AD915BB72EE006BB537 /* MediaPlayer.framework */; };
 		FC8F7F551181685400A7D474 /* Vector.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8F7F541181685400A7D474 /* Vector.m */; };
 		FC9481E8119FF17000B7A401 /* smoke.png in Resources */ = {isa = PBXBuildFile; fileRef = FC9481E7119FF17000B7A401 /* smoke.png */; };
@@ -248,6 +249,7 @@
 		ACAD992C15BB8C03007E393F /* StartTankViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartTankViewController.h; sourceTree = "<group>"; };
 		ACAD992D15BB8C03007E393F /* StartTankViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartTankViewController.m; sourceTree = "<group>"; };
 		ACAD992E15BB8C03007E393F /* StartTankViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StartTankViewController.xib; sourceTree = "<group>"; };
+		ACAD994115BBA790007E393F /* Icon_addprofile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon_addprofile.png; sourceTree = "<group>"; };
 		C2DF4AD915BB72EE006BB537 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		FC8F7F531181685400A7D474 /* Vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector.h; sourceTree = "<group>"; };
 		FC8F7F541181685400A7D474 /* Vector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vector.m; sourceTree = "<group>"; };
@@ -421,6 +423,7 @@
 				29F4537911AB6EE300C8BCDB /* ibtn_huh.png */,
 				29F4537A11AB6EE300C8BCDB /* ibtn_save.png */,
 				29F4537B11AB6EE300C8BCDB /* ibtn_what.png */,
+				ACAD994115BBA790007E393F /* Icon_addprofile.png */,
 				FC9481E7119FF17000B7A401 /* smoke.png */,
 				29F4539B11AB76DE00C8BCDB /* connected_background.png */,
 				FCB75D88119FC99000662CD5 /* fps_images.png */,
@@ -683,6 +686,7 @@
 				A29954D211AB8C20007555F4 /* newgame_light_idle.png in Resources */,
 				A2CF266611E90D5000C1EF8F /* LocalTankViewController.xib in Resources */,
 				ACAD993015BB8C03007E393F /* StartTankViewController.xib in Resources */,
+				ACAD994215BBA790007E393F /* Icon_addprofile.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

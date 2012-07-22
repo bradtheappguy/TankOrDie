@@ -17,6 +17,7 @@
 @implementation TankPickerController
 
 @synthesize delegate;
+@synthesize addProfileButton;
 
 - (IBAction) chooseTank1 {
 	[self connect:1];
@@ -110,6 +111,11 @@
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
 	[self changeOrSaveButtonPressed:nil];
 	return YES;
+}
+
+- (IBAction) addProfileButton:(id) sender
+{
+    
 }
 
 @end
