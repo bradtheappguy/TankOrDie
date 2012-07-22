@@ -144,13 +144,17 @@
     // [[addProfileButton imageView] setContentMode:UIViewContentModeCenter];
     [addProfileButton setImage:[[info objectForKey:(UIImagePickerControllerEditedImage)] resizedImage:CGSizeMake(100,100) interpolationQuality:kCGInterpolationHigh] forState:(UIControlStateNormal)];
     [picker dismissModalViewControllerAnimated:(YES)];
-    [[UIApplication sharedApplication] setStatusBarOrientation:UIInterfaceOrientationLandscapeRight];
+    if (self.interfaceOrientation != UIInterfaceOrientationPortrait) {
+        [[UIDevice currentDevice] performSelector:NSSelectorFromString(@"setOrientation:") withObject:(id)UIInterfaceOrientationLandscapeRight];
+    }
 }
 
 - (void) imagePickerControllerDidCancel:(UIImagePickerController *)picker
 {
     [picker dismissModalViewControllerAnimated:(YES)];
-    [[UIApplication sharedApplication] setStatusBarOrientation:UIInterfaceOrientationLandscapeRight];
+    if (self.interfaceOrientation != UIInterfaceOrientationPortrait) {
+        [[UIDevice currentDevice] performSelector:NSSelectorFromString(@"setOrientation:") withObject:(id)UIInterfaceOrientationLandscapeRight];
+    }
 }
 
 @end
