@@ -22,6 +22,7 @@
 		29F4539411AB728B00C8BCDB /* case_tankers.png in Resources */ = {isa = PBXBuildFile; fileRef = 29F4539311AB728B00C8BCDB /* case_tankers.png */; };
 		29F4539C11AB76DE00C8BCDB /* connected_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 29F4539B11AB76DE00C8BCDB /* connected_background.png */; };
 		3228181B15BBBC110043A779 /* tank_dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 3228181A15BBBC110043A779 /* tank_dark.png */; };
+		3228181F15BBD13B0043A779 /* ScoreBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3228181E15BBD13B0043A779 /* ScoreBoardView.m */; };
 		322F261B15BB8ABB002ADD90 /* GameServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 322F261A15BB8ABB002ADD90 /* GameServer.m */; };
 		322F262715BBA921002ADD90 /* GameHostViewControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 322F262615BBA921002ADD90 /* GameHostViewControllerViewController.m */; };
 		322F262A15BBA949002ADD90 /* GameHostViewControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 322F262915BBA949002ADD90 /* GameHostViewControllerViewController.xib */; };
@@ -149,6 +150,8 @@
 		29F4539311AB728B00C8BCDB /* case_tankers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = case_tankers.png; sourceTree = "<group>"; };
 		29F4539B11AB76DE00C8BCDB /* connected_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = connected_background.png; sourceTree = "<group>"; };
 		3228181A15BBBC110043A779 /* tank_dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tank_dark.png; path = Images/tank_dark.png; sourceTree = "<group>"; };
+		3228181D15BBD13B0043A779 /* ScoreBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreBoardView.h; sourceTree = "<group>"; };
+		3228181E15BBD13B0043A779 /* ScoreBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreBoardView.m; sourceTree = "<group>"; };
 		322F261915BB8ABB002ADD90 /* GameServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameServer.h; sourceTree = "<group>"; };
 		322F261A15BB8ABB002ADD90 /* GameServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameServer.m; sourceTree = "<group>"; };
 		322F262515BBA921002ADD90 /* GameHostViewControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameHostViewControllerViewController.h; sourceTree = "<group>"; };
@@ -522,6 +525,8 @@
 				322F262515BBA921002ADD90 /* GameHostViewControllerViewController.h */,
 				322F262615BBA921002ADD90 /* GameHostViewControllerViewController.m */,
 				322F262915BBA949002ADD90 /* GameHostViewControllerViewController.xib */,
+				3228181D15BBD13B0043A779 /* ScoreBoardView.h */,
+				3228181E15BBD13B0043A779 /* ScoreBoardView.m */,
 			);
 			name = iPhone;
 			path = "Classes-iPhone";
@@ -724,6 +729,7 @@
 				ACAD992F15BB8C03007E393F /* StartTankViewController.m in Sources */,
 				ACAD994715BBAE78007E393F /* InfoViewController.m in Sources */,
 				322F262715BBA921002ADD90 /* GameHostViewControllerViewController.m in Sources */,
+				3228181F15BBD13B0043A779 /* ScoreBoardView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

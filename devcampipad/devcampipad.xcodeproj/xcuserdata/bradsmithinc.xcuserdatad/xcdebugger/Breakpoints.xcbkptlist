@@ -8,11 +8,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Classes/TDiPadMenuViewController.m"
-         timestampString = "364625202.7541"
+         timestampString = "364630652.656019"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "89"
-         endingLineNumber = "89"
+         startingLineNumber = "94"
+         endingLineNumber = "94"
          landmarkName = "-playButtonPressed:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -21,11 +21,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Classes/TDiPadMenuViewController.m"
-         timestampString = "364625202.7541"
+         timestampString = "364630652.656019"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "94"
-         endingLineNumber = "94"
+         startingLineNumber = "99"
+         endingLineNumber = "99"
          landmarkName = "-startButtonPressed:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -43,32 +43,6 @@
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "Classes/devcampipadAppDelegate.mm"
-         timestampString = "364613839.759773"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "164"
-         endingLineNumber = "164"
-         landmarkName = "-timerFired"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "Classes/devcampipadAppDelegate.mm"
-         timestampString = "364613860.82403"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "62"
-         endingLineNumber = "62"
-         landmarkName = "-application:didFinishLaunchingWithOptions:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
@@ -79,45 +53,6 @@
          startingLineNumber = "95"
          endingLineNumber = "95"
          landmarkName = "-timerFired"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "Classes-iPhone/AppDelegate.m"
-         timestampString = "364623943.693803"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "334"
-         endingLineNumber = "334"
-         landmarkName = "-sendID:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "Classes-iPhone/AppDelegate.m"
-         timestampString = "364623943.693803"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "233"
-         endingLineNumber = "233"
-         landmarkName = "-didClickFire:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "Classes-iPhone/AppDelegate.m"
-         timestampString = "364623943.693803"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "247"
-         endingLineNumber = "247"
-         landmarkName = "-didClickFire:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -144,6 +79,19 @@
          startingLineNumber = "218"
          endingLineNumber = "218"
          landmarkName = "-receiveData:fromPeer:inSession:context:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Classes-iPhone/ScoreBoardView.m"
+         timestampString = "364632061.793967"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "14"
+         endingLineNumber = "14"
+         landmarkName = "-awakeFromNib"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

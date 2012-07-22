@@ -25,6 +25,7 @@
 	playButton.alpha = 0;
 	helpButton.alpha = 0;
   [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playerDidJoin:) name:@"PLAYER_JOINED" object:nil];
+  [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(gameDidStart:) name:@"GAME_DID_START" object:nil];
   [self updateConnectionScreenUI];
 }
 
@@ -67,6 +68,10 @@
 
 
 - (void)viewDidUnload {
+  [backgroundImageView release];
+  backgroundImageView = nil;
+  [scoreBoard release];
+  scoreBoard = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -74,6 +79,8 @@
 
 
 - (void)dealloc {
+  [backgroundImageView release];
+  [scoreBoard release];
     [super dealloc];
 }
 
@@ -150,4 +157,8 @@
   [self updateConnectionScreenUI];
 }
 
+-(void) gameDidStart:(id)sender {
+  connectionView.alpha = 0;
+  backgroundImageView.image = [UIImage imageNamed:@"tanktank_bg-1.png"];
+}
 @end

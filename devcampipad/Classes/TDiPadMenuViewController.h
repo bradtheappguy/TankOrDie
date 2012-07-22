@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "TankPickerController.h"
+#import "ScoreBoardView.h"
 
 @interface TDiPadMenuViewController : UIViewController <UIPopoverControllerDelegate>{
 	IBOutlet UIButton *playButton;
@@ -32,6 +33,8 @@
 	IBOutlet UILabel *wirelessPlayerNameLabel3;
 	IBOutlet UILabel *wirelessPlayerNameLabel4;
 	
+  IBOutlet ScoreBoardView *scoreBoard;
+  IBOutlet UIImageView *backgroundImageView;
 	TankPickerController *tankSelectionPlayerOneViewController;
 	TankPickerController *tankSelectionPlayerTwoViewController;
 	UIPopoverController *addPlayerOnePopoverController;
