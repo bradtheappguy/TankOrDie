@@ -27,6 +27,9 @@
   [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playerDidJoin:) name:@"PLAYER_JOINED" object:nil];
   [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(gameDidStart:) name:@"GAME_DID_START" object:nil];
   [self updateConnectionScreenUI];
+  [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(playerScored:) name:@"PLAYER_SCORED" object:nil];
+
+  [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(playerWon:) name:@"PLAYER_WON" object:nil];
 }
 
 
@@ -160,5 +163,13 @@
 -(void) gameDidStart:(id)sender {
   connectionView.alpha = 0;
   backgroundImageView.image = [UIImage imageNamed:@"tanktank_bg-1.png"];
+}
+
+
+-(void) playerScored:(NSNotification *)n {
+  Player *player = [n object];
+  if (player.score > 10) {
+    
+  }
 }
 @end
