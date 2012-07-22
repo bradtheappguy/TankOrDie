@@ -105,6 +105,8 @@
 		A2ECDEE6119E577600F8DFA7 /* TDiPadMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2ECDEE3119E577600F8DFA7 /* TDiPadMenuViewController.m */; };
 		A2ECDEE7119E577600F8DFA7 /* TDiPadMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2ECDEE4119E577600F8DFA7 /* TDiPadMenuViewController.xib */; };
 		A2EF48FE1179A245008647C5 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EF48FD1179A245008647C5 /* Player.m */; };
+		ACAD992F15BB8C03007E393F /* StartTankViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACAD992D15BB8C03007E393F /* StartTankViewController.m */; };
+		ACAD993015BB8C03007E393F /* StartTankViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACAD992E15BB8C03007E393F /* StartTankViewController.xib */; };
 		C2DF4ADA15BB72EF006BB537 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2DF4AD915BB72EE006BB537 /* MediaPlayer.framework */; };
 		FC8F7F551181685400A7D474 /* Vector.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8F7F541181685400A7D474 /* Vector.m */; };
 		FC9481E8119FF17000B7A401 /* smoke.png in Resources */ = {isa = PBXBuildFile; fileRef = FC9481E7119FF17000B7A401 /* smoke.png */; };
@@ -243,6 +245,9 @@
 		A2ECDEE5119E577600F8DFA7 /* TDiPadMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDiPadMenuViewController.h; sourceTree = "<group>"; };
 		A2EF48FC1179A245008647C5 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
 		A2EF48FD1179A245008647C5 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		ACAD992C15BB8C03007E393F /* StartTankViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartTankViewController.h; sourceTree = "<group>"; };
+		ACAD992D15BB8C03007E393F /* StartTankViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartTankViewController.m; sourceTree = "<group>"; };
+		ACAD992E15BB8C03007E393F /* StartTankViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StartTankViewController.xib; sourceTree = "<group>"; };
 		C2DF4AD915BB72EE006BB537 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		FC8F7F531181685400A7D474 /* Vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector.h; sourceTree = "<group>"; };
 		FC8F7F541181685400A7D474 /* Vector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vector.m; sourceTree = "<group>"; };
@@ -490,6 +495,9 @@
 				A2AACD8D11913B1E006193E1 /* MainWindow.xib */,
 				A2AACD9511913BE4006193E1 /* AppDelegate.h */,
 				A2AACD9611913BE4006193E1 /* AppDelegate.m */,
+				ACAD992C15BB8C03007E393F /* StartTankViewController.h */,
+				ACAD992D15BB8C03007E393F /* StartTankViewController.m */,
+				ACAD992E15BB8C03007E393F /* StartTankViewController.xib */,
 				A2AACDA711913C55006193E1 /* ControlsViewController.h */,
 				A2AACDA611913C55006193E1 /* ControlsViewController.m */,
 				A2AACDA511913C55006193E1 /* ControlsViewController.xib */,
@@ -674,6 +682,7 @@
 				A29954D011AB8C16007555F4 /* newgame_light_connect.png in Resources */,
 				A29954D211AB8C20007555F4 /* newgame_light_idle.png in Resources */,
 				A2CF266611E90D5000C1EF8F /* LocalTankViewController.xib in Resources */,
+				ACAD993015BB8C03007E393F /* StartTankViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -703,7 +712,11 @@
 				A2ECDEE6119E577600F8DFA7 /* TDiPadMenuViewController.m in Sources */,
 				A232E961119E6E1A009B8E39 /* TDiPadControllerView.m in Sources */,
 				A2CF266511E90D5000C1EF8F /* LocalTankViewController.m in Sources */,
+<<<<<<< HEAD
 				322F261B15BB8ABB002ADD90 /* GameServer.m in Sources */,
+=======
+				ACAD992F15BB8C03007E393F /* StartTankViewController.m in Sources */,
+>>>>>>> Add new StartTankViewController for starting game
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
