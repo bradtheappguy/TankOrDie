@@ -7,16 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "InfoViewController.h"
 
-@interface StartTankViewController : UIViewController {
+@interface StartTankViewController : UIViewController <InfoViewControllerDelegate> {
     IBOutlet UIButton *newgameButton;
-    IBOutlet UIButton *joinButton;  
+    IBOutlet UIButton *joinButton;
+    IBOutlet UIButton *infoButton;
 }
 
 @property (nonatomic, retain) IBOutlet UIButton *newgameButton;
 @property (nonatomic, retain) IBOutlet UIButton *joinButton;
+@property (nonatomic, retain) IBOutlet UIButton *infoButton;
 
 - (IBAction) newgameButton:(id) sender;
 - (IBAction) joinButton:(id) sender;
+- (IBAction) infoButton:(id) sender;
 
 @end

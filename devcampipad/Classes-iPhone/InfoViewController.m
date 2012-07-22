@@ -1,42 +1,25 @@
 //
-//  StartTankViewController.m
+//  InfoViewController.m
 //  devcampipad
 //
 //  Created by Bess Ho on 7/21/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "StartTankViewController.h"
+#import "InfoViewController.h"
 
-@interface StartTankViewController ()
+@interface InfoViewController ()
 
 @end
 
-@implementation StartTankViewController
+@implementation InfoViewController
 
-@synthesize newgameButton, joinButton, infoButton;
+@synthesize delegate;
 
-- (IBAction) newgameButton:(id)sender
-{
-    
-}
-
-- (IBAction) joinButton: (id) sender
-{
-    
-}
-
-- (void)InfoViewControllerDidFinish:(InfoViewController *)controller {
-	[self dismissModalViewControllerAnimated:YES];
-}
-
-- (IBAction)infoButton:(id)sender
-{
-	InfoViewController *controller = [[InfoViewController alloc] initWithNibName:@"InfoViewController" bundle:nil];
-	controller.delegate = self;
-	controller.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
-	[self presentModalViewController:controller animated:YES];
-	[controller release];   
+#pragma mark -
+#pragma mark Actions
+- (IBAction)done:(id)sender {
+	[self.delegate InfoViewControllerDidFinish:self];	
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
