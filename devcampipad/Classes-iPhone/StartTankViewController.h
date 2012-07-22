@@ -8,11 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "InfoViewController.h"
+#import "TankPickerController.h"
 
 @interface StartTankViewController : UIViewController <InfoViewControllerDelegate> {
     IBOutlet UIButton *newgameButton;
     IBOutlet UIButton *joinButton;
     IBOutlet UIButton *infoButton;
+    
+    TankPickerController *tankPickerController; 
 }
 
 @property (nonatomic, retain) IBOutlet UIButton *newgameButton;

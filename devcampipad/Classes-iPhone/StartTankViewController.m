@@ -23,7 +23,7 @@
 
 - (IBAction) joinButton: (id) sender
 {
-    
+    [self.view removeFromSuperview]; 
 }
 
 - (void)InfoViewControllerDidFinish:(InfoViewController *)controller {

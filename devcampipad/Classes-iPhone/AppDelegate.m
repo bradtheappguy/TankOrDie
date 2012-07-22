@@ -11,6 +11,7 @@
 #define kFilteringFactor 0.1
 
 #import "AppDelegate.h"
+#import "StartTankViewController.h"
 #import "ControlsViewController.h"
 #import "GameOverViewController.h"
 #import "TDiPadMenuViewController.h"
@@ -29,7 +30,6 @@
 @synthesize tank_id;
 @synthesize playerName;
 
-
 -(void)screenDidConnect:(UIScreen *)screen {
   NSArray *availableModes = [screen availableModes];
   __block UIScreenMode *highestWidthMode = NULL;
@@ -45,9 +45,6 @@
   
   UIWindow *extWindow = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, highestWidthMode.size.width, highestWidthMode.size.height)];
   extWindow.backgroundColor = [UIColor redColor];
-
-
-  
   extWindow.screen = screen; 
   extWindow.hidden = NO;
   
@@ -68,8 +65,6 @@
   NSLog(@"%@",availableModes);
 }
 
-
-
   //This is called for the person acting as server only
 - (void)tankPickerController:(TankPickerController *)controller didFinishPickingTankID:(int)tankID withPlayerName:(NSString *)name {
 	NSString *message = [NSString stringWithFormat:@"confirmiPhone|%d|%@",tankID,name];
@@ -80,7 +75,6 @@
   hostViewControleer.view.center = CGPointMake(160, 240);
   [self.window addSubview:hostViewControleer.view];
 }
-
 
 -(void)screenDidConnectNotification:(NSNotification *)notification {
   [self screenDidConnect:[notification object]];
@@ -107,41 +101,44 @@
 	[UIApplication sharedApplication].statusBarOrientation = UIInterfaceOrientationLandscapeRight;
 	CGAffineTransform landscapeTransform = CGAffineTransformMakeRotation( .5 * M_PI );
 	
+    startTankViewController = [[StartTankViewController alloc] initWithNibName:@"StartTankViewController" bundle:nil]; 
 	controlsViewController = [[ControlsViewController alloc] initWithNibName:@"ControlsViewController" bundle:nil];
 	tankPickerController = [[TankPickerController alloc] initWithNibName:@"TankPickerController" bundle:nil]; 
-  gameOverViewController = [[GameOverViewController alloc] initWithNibName:@"GameOverViewController" bundle:nil];
-	
+	gameOverViewController = [[GameOverViewController alloc] initWithNibName:@"GameOverViewController" bundle:nil];
 	
 	[NSTimer scheduledTimerWithTimeInterval:1/10 target:self selector:@selector(timerFired) userInfo:nil repeats:YES];
+    
+    [[startTankViewController view] setTransform:landscapeTransform];
 	[[controlsViewController view] setTransform:landscapeTransform];
 	[[tankPickerController view] setTransform:landscapeTransform]; 
 	[[connectingViewController view] setTransform:landscapeTransform]; 
 	[[gameOverViewController view] setTransform:landscapeTransform]; 
 	
-	[[tankPickerController view] setCenter:CGPointMake(160, 240)]; 
-	[[controlsViewController view] setCenter:CGPointMake(160, 240)]; 
+    [[startTankViewController view] setCenter:CGPointMake(160, 240)];
+    [[controlsViewController view] setCenter:CGPointMake(160, 240)];
+	[[tankPickerController view] setCenter:CGPointMake(160, 240)];
 	[[connectingViewController view] setCenter:CGPointMake(160, 240)]; 
 	[[gameOverViewController view] setCenter:CGPointMake(160, 240)]; 
 	
+    [[startTankViewController view] setBounds:CGRectMake(0, 0, 480, 320)];
 	[[controlsViewController view] setBounds:CGRectMake(0,0, 480, 320)];
 	[[tankPickerController view] setBounds:CGRectMake(0,0, 480, 320)];
 	[[connectingViewController view] setBounds:CGRectMake(0,0, 480, 320)];
 	[[gameOverViewController view] setBounds:CGRectMake(0,0, 480, 320)];
 	
-
 	[window addSubview:[controlsViewController view]]; 
 	[window addSubview:[tankPickerController view]]; 
 	
-  MPVolumeView *volumeView = [ [MPVolumeView alloc] init] ;
-  [volumeView setShowsVolumeSlider:NO];
-  [volumeView sizeToFit];
-  [window addSubview:volumeView];
+	MPVolumeView *volumeView = [[MPVolumeView alloc] init] ;
+	[volumeView setShowsVolumeSlider:NO];
+	[volumeView sizeToFit];
+	[window addSubview:volumeView];
+    [window addSubview:[startTankViewController view]];
   
 	//  NOTE:: To test out the connecting view contrleer and game over view controller for now.  Simplay uncomment these lines:	
-	//	[window addSubview:[connectingViewController view]];
-	//  [window addSubview:[gameOverViewController view]];
+	//[window addSubview:[connectingViewController view]];
+	//[window addSubview:[gameOverViewController view]];
 
-  
 	[window makeKeyAndVisible];
 	
   [self setupExternalWindow];
@@ -157,6 +154,14 @@
 		connection.delegate = nil;
 		[connection release];
 	}
+}
+
+-(void)hideStartTank
+{
+   	[UIView beginAnimations:nil context:NULL];
+	[UIView setAnimationDuration:0.5];
+	[[tankPickerController view] removeFromSuperview]; 
+	[UIView commitAnimations];  
 }
 
 - (void) hideTankPicker
@@ -206,7 +211,6 @@
     [super dealloc];
 }
 
-
 -(IBAction)didClickSearchNetwork:(id)sender {
 	//first thing they need to do is find other players
 	if (peerPicker) {
@@ -214,7 +218,6 @@
 		[peerPicker release];
 		peerPicker = nil;
 	}
-	
 	
 	peerPicker = [[GKPeerPickerController alloc] init];
 	[peerPicker setDelegate:self];
@@ -231,11 +234,9 @@
 	}
 		
 	NSError *error;
-  NSString *command = [NSString stringWithFormat:@"didClickFire|%f", 1];
+	NSString *command = [NSString stringWithFormat:@"didClickFire|%f", 1];
 	NSData *data = [command dataUsingEncoding:NSUTF8StringEncoding];
 
-		
-  
   if ([[GameServer sharedInstance] actingAsServer]) {
     [self sendLocalMessageToServer:command];
   }
@@ -244,8 +245,6 @@
       NSLog(@"ERROR: %@",error);
     }
   }
-  
-
   
   
 }
@@ -327,15 +326,11 @@
 	[a release];
 }
 
-
-
-
 -(void) sendID:(NSString *)_serverPeerID {
 	self.serverPeerID = _serverPeerID;
 	NSString *string = [NSString stringWithFormat:@"confirmiPhone|%i|%@",tank_id,playerName];
 	NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
 	NSError *error;
-	
 	
   if ([[GameServer sharedInstance] actingAsServer]) {
     [self sendLocalMessageToServer:string];
@@ -346,9 +341,6 @@
     }
   }
   
-  
-
-	
 	//UIAlertView *a = [[UIAlertView alloc] initWithTitle:@"" message:@"TElling serve I am iphone" delegate:nil cancelButtonTitle:@"ok" otherButtonTitles:nil];
 	//[a show];
 	//[a release];

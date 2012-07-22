@@ -91,11 +91,9 @@
     // e.g. self.myOutlet = nil;
 }
 
-
 - (void)dealloc {
     [super dealloc];
 	
-
 }
 
 -(void) playerDidTakeDamage {
@@ -117,6 +115,5 @@
 	//[a show];
 	//[a release];
 }
-
 
 @end

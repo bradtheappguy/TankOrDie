@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <GameKit/GameKit.h>
 
+@class StartTankViewController;
 @class ControlsViewController;
 @class TankPickerController;
 @class ConnectingScreenViewController;
@@ -30,7 +31,8 @@
 	
 	float leftSliderLastValue;
 	float rightSliderLastValue;
-	
+    
+	StartTankViewController *startTankViewController;
 	ControlsViewController *controlsViewController;
 	TankPickerController *tankPickerController; 
 	ConnectingScreenViewController *connectingViewController;
@@ -39,9 +41,9 @@
 	int tank_id;
 }
 
-
 -(IBAction)didClickSearchNetwork:(id)sender;
 -(IBAction)didClickFire:(id)server;
+-(void)hideStartTank;
 -(void)hideTankPicker;
 -(void) sendLocalMessageToServer:(NSString *)message;
 
