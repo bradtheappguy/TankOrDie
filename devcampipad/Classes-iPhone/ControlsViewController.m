@@ -62,6 +62,10 @@
 	[soundplayer playTrackSound];
 }
 
+-(void) stopSound {
+  [soundplayer stopTrackSound];
+}
+
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
     
     // Disallow recognition of tap gestures in the segmented control.

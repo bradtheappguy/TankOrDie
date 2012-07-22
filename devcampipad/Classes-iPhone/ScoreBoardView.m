@@ -16,10 +16,10 @@ static CGFloat miny = 0;
 static CGFloat maxy;
 -(void) awakeFromNib {
   [super awakeFromNib];
-  player1View.backgroundColor = [UIColor redColor];
-  player2View.backgroundColor = [UIColor blueColor];
-  player3View.backgroundColor = [UIColor greenColor];
-  player4View.backgroundColor = [UIColor orangeColor];
+  player1View.backgroundColor = [UIColor clearColor];
+  player2View.backgroundColor = [UIColor clearColor];
+  player3View.backgroundColor = [UIColor clearColor];
+  player4View.backgroundColor = [UIColor clearColor];
   
   
   
@@ -27,6 +27,8 @@ static CGFloat maxy;
     //[[NSNotificationCenter defaultCenter] postNotificationName:@"PLAYER_SCORED" object:bullet.player];
 
   [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(playerScored:) name:@"PLAYER_SCORED" object:nil];
+  [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(gameDidStart:) name:@"GAME_DID_START" object:nil];
+  
   maxy = player1View.frame.origin.y;
 }
 
@@ -49,7 +51,9 @@ static CGFloat maxy;
     CGFloat ww =  maxy - (player.score * 12);
     player1View.frame = CGRectMake(player1View.frame.origin.x,ww,player1View.frame.size.width,player1View.frame.size.height);
     NSLog(@"%f",ww);
-    [self playerWon:player];
+    if (player.score > 20 && ww < 25) {
+      [self playerWon:player];
+    }
   }
   if (players.count > 1) {
     
@@ -62,7 +66,9 @@ static CGFloat maxy;
     player2View.frame = CGRectMake(player2View.frame.origin.x,ww,player2View.frame.size.width,player2View.frame.size.height);
     NSLog(@"%f",ww);
     
-    [self playerWon:player];
+    if (player.score > 20 && ww < 25) {
+      [self playerWon:player];
+    }
   }
   if (players.count > 2) {
     
@@ -75,7 +81,9 @@ static CGFloat maxy;
     player3View.frame = CGRectMake(player3View.frame.origin.x,ww,player3View.frame.size.width,player3View.frame.size.height);
     NSLog(@"%f",ww);
     
-    [self playerWon:player];
+    if (player.score > 20 && ww < 25) {
+      [self playerWon:player];
+    }
   }
   if (players.count > 3) {
     
@@ -87,14 +95,20 @@ static CGFloat maxy;
     CGFloat ww =  maxy - (player.score * 12);
     player4View.frame = CGRectMake(player4View.frame.origin.x,ww,player4View.frame.size.width,player4View.frame.size.height);
     NSLog(@"%f",ww);
+    if (player.score > 20 && ww < 25) {
+      [self playerWon:player];
+    }
     
-    [self playerWon:player];
   }
   [UIView commitAnimations];
 }
 
 -(void) playerWon:(Player *)player {
   [[NSNotificationCenter defaultCenter] postNotificationName:@"PLAYER_WON" object:player];
+}
+
+-(void)gameDidStart:(NSNotification *)m {
+  [self playerScored:m];
 }
 
 @end
