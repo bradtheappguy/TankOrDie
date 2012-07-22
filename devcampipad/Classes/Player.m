@@ -46,6 +46,8 @@
 @synthesize shieldView;
 @synthesize lastGotShieldBonusAt;
 @synthesize playerName;
+@synthesize score;
+
 //@synthesize loc;
 
 
@@ -87,9 +89,23 @@
 		shieldView.transform = CGAffineTransformTranslate(self.transform, -(kShieldWidth - kPlayerwidth) * 0.5, -(kShieldHeight - kPlayerHeight) * 0.5);
 		[self addSubview:shieldView];
 		[self setUserInteractionEnabled:YES];
-    }
-    return self;
+    
+    self.score = 0;
+  
+      //[[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(playerWasHit:) name:@"PLAYER_WAS_HIT" object:nil];
+  [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(playerScored:) name:@"PLAYER_SCORED" object:nil];
+  }
+  return self;
 }
+
+
+-(void)playerScored:(NSNotification*)n {
+  Player *player = n.object;
+  if (player == self) {
+    self.score = self.score + 1;
+  }
+}
+
 
 + (UIImage *) imageForTankID:(NSUInteger)tankID {
 	if (tankID == 1)   return [UIImage imageNamed:@"tank_01.png"];

@@ -34,11 +34,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Classes-Shared/GameServer.m"
-         timestampString = "364615135.317388"
+         timestampString = "364633084.183167"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "262"
-         endingLineNumber = "262"
+         startingLineNumber = "270"
+         endingLineNumber = "270"
          landmarkName = "-sendID:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -60,11 +60,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Classes-Shared/GameServer.m"
-         timestampString = "364621390.306448"
+         timestampString = "364633084.183167"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "300"
-         endingLineNumber = "300"
+         startingLineNumber = "308"
+         endingLineNumber = "308"
          landmarkName = "-spawnPlayer:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -73,11 +73,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Classes-Shared/GameServer.m"
-         timestampString = "364615975.064815"
+         timestampString = "364633084.183167"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "218"
-         endingLineNumber = "218"
+         startingLineNumber = "226"
+         endingLineNumber = "226"
          landmarkName = "-receiveData:fromPeer:inSession:context:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -85,13 +85,13 @@
          shouldBeEnabled = "Yes"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
-         filePath = "Classes-iPhone/ScoreBoardView.m"
-         timestampString = "364632061.793967"
+         filePath = "Classes/Player.m"
+         timestampString = "364634206.702458"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "14"
-         endingLineNumber = "14"
-         landmarkName = "-awakeFromNib"
+         startingLineNumber = "111"
+         endingLineNumber = "111"
+         landmarkName = "+imageForTankID:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>
