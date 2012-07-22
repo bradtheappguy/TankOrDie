@@ -52,7 +52,7 @@
 							<string key="NSResourceName">controller_background.png</string>
 						</object>
 					</object>
-					<object class="IBUIImageView" id="1015138840">
+					<object class="IBUIImageView" id="884819970">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">274</int>
 						<string key="NSFrame">{{37, -33}, {406, 266}}</string>
@@ -220,7 +220,7 @@
 							<reference ref="876898115"/>
 							<reference ref="768626365"/>
 							<reference ref="888620344"/>
-							<reference ref="1015138840"/>
+							<reference ref="884819970"/>
 							<reference ref="138616687"/>
 						</array>
 						<reference key="parent" ref="0"/>
@@ -258,7 +258,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">13</int>
-						<reference key="object" ref="1015138840"/>
+						<reference key="object" ref="884819970"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 				</array>
