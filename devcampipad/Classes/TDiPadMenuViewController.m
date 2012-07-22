@@ -17,6 +17,8 @@
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
+    
+    scoreBoard.hidden = YES;
 	wirelessPlayerNameLabel1.text = @"";
 	wirelessPlayerNameLabel2.text = @"";
 	wirelessPlayerNameLabel3.text = @"";
@@ -170,6 +172,7 @@
 }
 
 -(void) gameDidStart:(id)sender {
+    scoreBoard.hidden = NO;
   connectionView.alpha = 0;
   backgroundImageView.image = [UIImage imageNamed:@"tanktank_bg-1.png"];
 }

@@ -7,6 +7,8 @@
 //
 
 #import "GameHostViewControllerViewController.h"
+#import "GameServer.h"
+#import "Player.h"
 
 @interface GameHostViewControllerViewController ()
 
@@ -18,10 +20,17 @@
 @synthesize player2ImageView;
 @synthesize player3ImageView;
 @synthesize player4ImageView;
+
 @synthesize player1NameLabel;
 @synthesize player2NameLabel;
 @synthesize player3NameLabel;
 @synthesize player4NameLabel;
+
+@synthesize player1Activity;
+@synthesize player2Activity;
+@synthesize player3Activity;
+@synthesize player4Activity;
+
 @synthesize spinner;
 @synthesize statusLabel;
 
@@ -36,9 +45,65 @@
 
 - (void)viewDidLoad
 {
+    
+    player1NameLabel.text = @"Waiting...";
+    player2NameLabel.text = @"Waiting...";
+    player3NameLabel.text = @"Waiting...";
+    player4NameLabel.text = @"Waiting...";
+    
+    NSArray *array = [[GameServer sharedInstance] connectedPeers];
+    
+    if (array.count > 0) {
+        Player *one = [array objectAtIndex:0];
+        player1NameLabel.text = one.playerName;
+        player1ImageView.image = one.image;
+        player1Activity.image = [UIImage imageNamed:@"newgame_light_connect.png"];
+        
+    }
+    
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateConnectionScreenUI) name:@"PLAYER_JOINED" object:nil];	
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }
+
+-(void) updateConnectionScreenUI {
+    
+    NSLog(@"UPDATE");
+    NSArray *array = [[GameServer sharedInstance] connectedPeers];
+    
+    if (array.count > 0) {
+        Player *one = [array objectAtIndex:0];
+        player1NameLabel.text = one.playerName;
+        player1ImageView.image = one.image;
+        player1Activity.image = [UIImage imageNamed:@"newgame_light_connect.png"];
+        
+    }
+    if (array.count > 1) {
+        Player *two = [array objectAtIndex:1];
+        player2NameLabel.text = two.playerName;
+        player2ImageView.image = two.image;
+        player2Activity.image = [UIImage imageNamed:@"newgame_light_connect.png"];
+        
+    }
+    if (array.count > 2) {
+        Player *three = [array objectAtIndex:2];
+        player3NameLabel.text = three.playerName;
+        player3ImageView.image = three.image;
+        player3Activity.image = [UIImage imageNamed:@"newgame_light_connect.png"];
+    }
+    
+    if (array.count > 3) {
+        Player *four = [array objectAtIndex:3];
+        player4NameLabel.text = four.playerName;
+        player4ImageView.image = four.image;
+        player4Activity.image = [UIImage imageNamed:@"newgame_light_connect.png"];
+        
+    }
+}	
+
+
 
 - (void)viewDidUnload
 {
