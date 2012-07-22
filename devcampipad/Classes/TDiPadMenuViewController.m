@@ -43,7 +43,8 @@
 
 
 - (void) setButtonsVisible:(BOOL)visible animated:(BOOL)animated {
-	if (animated) {
+	[self.view class];
+  if (animated) {
 		[UIView beginAnimations:@"" context:nil];
 		[UIView setAnimationDuration:.33];
 	}
@@ -64,7 +65,7 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    return interfaceOrientation==UIInterfaceOrientationLandscapeRight?YES:NO;
+  return NO; //return interfaceOrientation==UIInterfaceOrientationLandscapeRight?YES:NO;
 }
 
 

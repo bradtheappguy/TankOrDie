@@ -21,6 +21,7 @@
 		29F4538211AB6F7C00C8BCDB /* tank_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 29F4538111AB6F7C00C8BCDB /* tank_01.png */; };
 		29F4539411AB728B00C8BCDB /* case_tankers.png in Resources */ = {isa = PBXBuildFile; fileRef = 29F4539311AB728B00C8BCDB /* case_tankers.png */; };
 		29F4539C11AB76DE00C8BCDB /* connected_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 29F4539B11AB76DE00C8BCDB /* connected_background.png */; };
+		322F261B15BB8ABB002ADD90 /* GameServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 322F261A15BB8ABB002ADD90 /* GameServer.m */; };
 		A20367F5119891FB00673E4C /* ConnectingScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A20367F3119891FB00673E4C /* ConnectingScreenViewController.m */; };
 		A20367F6119891FB00673E4C /* ConnectingScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A20367F4119891FB00673E4C /* ConnectingScreenViewController.xib */; };
 		A203680C119894F100673E4C /* GameOverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A203680A119894F100673E4C /* GameOverViewController.m */; };
@@ -143,6 +144,8 @@
 		29F4538111AB6F7C00C8BCDB /* tank_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tank_01.png; sourceTree = "<group>"; };
 		29F4539311AB728B00C8BCDB /* case_tankers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = case_tankers.png; sourceTree = "<group>"; };
 		29F4539B11AB76DE00C8BCDB /* connected_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = connected_background.png; sourceTree = "<group>"; };
+		322F261915BB8ABB002ADD90 /* GameServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameServer.h; sourceTree = "<group>"; };
+		322F261A15BB8ABB002ADD90 /* GameServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameServer.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* devcampipad_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = devcampipad_Prefix.pch; path = ../devcampipad_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* devcampipad-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "devcampipad-Info.plist"; path = "../devcampipad-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		A20367F2119891FB00673E4C /* ConnectingScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectingScreenViewController.h; sourceTree = "<group>"; };
@@ -516,6 +519,8 @@
 				29B97316FDCFA39411CA2CEA /* main.m */,
 				A2AACE551191418B006193E1 /* Sound.h */,
 				A2AACE561191418B006193E1 /* Sound.m */,
+				322F261915BB8ABB002ADD90 /* GameServer.h */,
+				322F261A15BB8ABB002ADD90 /* GameServer.m */,
 			);
 			name = Common;
 			path = "Classes-Shared";
@@ -698,6 +703,7 @@
 				A2ECDEE6119E577600F8DFA7 /* TDiPadMenuViewController.m in Sources */,
 				A232E961119E6E1A009B8E39 /* TDiPadControllerView.m in Sources */,
 				A2CF266511E90D5000C1EF8F /* LocalTankViewController.m in Sources */,
+				322F261B15BB8ABB002ADD90 /* GameServer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

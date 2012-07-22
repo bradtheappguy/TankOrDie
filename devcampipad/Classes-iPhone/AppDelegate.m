@@ -18,6 +18,7 @@
 #import "TankPickerController.h"
 #import <AudioToolbox/AudioToolbox.h>
 #import <MediaPlayer/MediaPlayer.h>
+#import "GameServer.h"
 
 @implementation AppDelegate
 
@@ -31,19 +32,34 @@
 
 -(void)screenDidConnect:(UIScreen *)screen {
   NSArray *availableModes = [screen availableModes];
-  UIScreenMode *mode = [availableModes objectAtIndex:0];
+  __block UIScreenMode *highestWidthMode = NULL;
   
-  UIWindow *extWindow = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, mode.size.width, mode.size.height)];
+  [screen.availableModes enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+    UIScreenMode *currentModeInLoop = obj;
+    if (!highestWidthMode || currentModeInLoop.size.width > highestWidthMode.size.width)
+      highestWidthMode = currentModeInLoop;
+  }];
+  
+    // setting to the highest resolution available
+  screen.currentMode = highestWidthMode;
+  
+  UIWindow *extWindow = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, highestWidthMode.size.width, highestWidthMode.size.height)];
   extWindow.backgroundColor = [UIColor redColor];
+
+
   
-  extWindow.screen = screen;
+  extWindow.screen = screen; 
   extWindow.hidden = NO;
   
-  TDiPadMenuViewController *menuViewContoller = [[TDiPadMenuViewController alloc] initWithNibName:@"TDiPadMenuViewController" bundle:nil];
-    //menuViewContoller.view.transform = landscapeTransform;
-    //menuViewContoller.view.center = CGPointMake(window.frame.size.width/2, window.frame.size.height/2);
-	[menuViewContoller setButtonsVisible:YES animated:YES];
-	[extWindow addSubview:menuViewContoller.view];
+    TDiPadMenuViewController *menuViewContoller = [[TDiPadMenuViewController alloc] initWithNibName:@"TDiPadMenuViewController" bundle:nil];
+    //UIViewController *menuViewContoller = [[UIViewController alloc] init];
+  [menuViewContoller setButtonsVisible:YES animated:YES];
+	menuViewContoller.view.backgroundColor = [UIColor purpleColor];
+  menuViewContoller.view.frame = CGRectMake(0, 0, extWindow.bounds.size.width, extWindow.bounds.size.height);
+  
+  [extWindow addSubview:menuViewContoller.view];
+  
+  [[GameServer sharedInstance] startServer];
   
   NSLog(@"%@",availableModes);
 }
@@ -116,7 +132,9 @@
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
-	if (connection) {
+  [[GameServer sharedInstance] stopServer];
+  
+  if (connection) {
 		[connection disconnectFromAllPeers];
 		connection.available = NO;
 		[connection setDataReceiveHandler: nil withContext: nil];

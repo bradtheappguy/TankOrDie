@@ -1,20 +1,20 @@
 //
-//  devcampipadAppDelegate.m
+//  GameServer.m
 //  devcampipad
 //
-//  Created by Brad Smith on 4/16/10.
-//  Copyright Clixtr 2010. All rights reserved.
+//  Created by Brad Smith on 7/21/12.
+//  Copyright (c) 2012 Focal Labs. All rights reserved.
 //
 
+#import "GameServer.h"
 #import <GameKit/GameKit.h>
-#import "devcampipadAppDelegate.h"
 #import "TouchController.h"
 #import "Player.h"
 #import "Bullet.h"
 #import "TDiPadMenuViewController.h"
 #import <MediaPlayer/MediaPlayer.h>
 
-@implementation devcampipadAppDelegate
+@implementation GameServer
 
 @synthesize window, serverPeerID;
 @synthesize client;
@@ -25,55 +25,34 @@
 @synthesize touchController;
 @synthesize connectedPeers;
 @synthesize gamePaused;
-- (void)dealloc {
-	[menuViewContoller release];
-	[bullets release];
-	[connectedPeers release];
-    [window release];
-    [super dealloc];
+
++ (id)sharedInstance
+{
+  static dispatch_once_t once;
+  static id sharedInstance;
+  dispatch_once(&once, ^{
+    sharedInstance = [[self alloc] init];
+  });
+  return sharedInstance;
 }
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-	[window setUserInteractionEnabled:YES];
-	[window setMultipleTouchEnabled:YES];
+
+-(void) startServer {
 	
 	gamePaused = YES;
-    //[[UIDevice currentDevice] setOrientation:UIInterfaceOrientationLandscapeRight];
-	CGAffineTransform landscapeTransform = CGAffineTransformMakeRotation( .5 * M_PI );
-
-	menuViewContoller = [[TDiPadMenuViewController alloc] initWithNibName:@"TDiPadMenuViewController" bundle:nil];
-	menuViewContoller.view.transform = landscapeTransform;
-	menuViewContoller.view.center = CGPointMake(window.frame.size.width/2, window.frame.size.height/2);
-	[menuViewContoller setButtonsVisible:YES animated:YES];
-	
-	/*leftControllerViewController = [[TDiPadControllerView alloc] initWithNibName:@"TDiPadControllerView" bundle:nil];
-   //rightControllerViewController = [[TDiPadControllerView alloc] initWithNibName:@"TDiPadControllerView" bundle:nil];
-	
-	touchController = [[TouchController alloc] init];
-	
-	[window addSubview:[touchController view]];
-	[window sendSubviewToBack:[touchController view]];*/
-	[window addSubview:[menuViewContoller view]];
-	
 	soundPlayer = [[Sound alloc] init];
 	[UIApplication sharedApplication].idleTimerDisabled = YES;
-		
+  
 	[NSTimer scheduledTimerWithTimeInterval:FRAMERATE target:self selector:@selector(timerFired) userInfo:nil repeats:YES];
 	stopButton.hidden = YES;
 	
 	[self setBullets:[NSMutableArray arrayWithCapacity:100]];
 	
-	//connectedBoards = [[NSMutableDictionary alloc] init];
+    //connectedBoards = [[NSMutableDictionary alloc] init];
 	self.connectedPeers = [[NSMutableArray alloc] init];
 	
 	peerCountLabel.text = @"0";
-	
-	
-	//for (int i = 0; i<2; i++) {
-	//	float x = arc4random() % 1024;
-	//	float y = arc4random() % 768;
-		
 	
 	
 	service = [[GKSession alloc] initWithSessionID:@"wangchung" displayName:nil sessionMode:GKSessionModeServer];
@@ -85,34 +64,14 @@
 	
 	[self setLastTicked:[NSDate date]];
 	
-    [window makeKeyAndVisible];
-    
-    return YES;
-}
-
-- (void) screenDidConnect:(NSNotification *)notification {
-  //[self myScreenInit:[notification object]];
-  NSLog(@"foo");
-}
-
-- (void)applicationWillResignActive:(UIApplication *)application {
+  NSLog(@"Server Starting...");
+  
 }
 
 
-- (void)applicationDidBecomeActive:(UIApplication *)application {
-}
 
-
-- (void)applicationDidReceiveMemoryWarning:(UIApplication *)application {
-}
-
-
-- (void)applicationSignificantTimeChange:(UIApplication *)application {
-}
-
-
-- (void)applicationWillTerminate:(UIApplication *)application {
-	if (service) {
+-(void) stopServer {
+  if (service) {
 		[service disconnectFromAllPeers];
 		service.available = NO;
 		[service setDataReceiveHandler: nil withContext: nil];
@@ -126,39 +85,7 @@
 		[client release];
 	}
 }
-	
 
--(void) setLocalControlsHidden:(BOOL)hidden animated:(BOOL)animated {
-	if (!localPlayer1ControlsViewController) {
-		localPlayer1ControlsViewController = [[LocalTankViewController alloc] initWithNibName:@"LocalTankViewController" bundle:nil];
-		localPlayer1ControlsViewController.view.alpha = 0;
-		localPlayer1ControlsViewController.view.transform = CGAffineTransformMakeRotation( .5 * M_PI );
-		[window addSubview:localPlayer1ControlsViewController.v];
-	}
-  
-	if (!localPlayer2ControlsViewController) {
-		localPlayer2ControlsViewController = [[LocalTankViewController alloc] initWithNibName:@"LocalTankViewController" bundle:nil];
-		localPlayer2ControlsViewController.view.alpha = 0;
-	}
-	
-	if (animated) {
-		[UIView beginAnimations:nil context:nil];
-		[UIView setAnimationDuration:0.33f];
-		[UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
-	}
-	if (!hidden) {
-		localPlayer1ControlsViewController.view.alpha = 1;
-		localPlayer2ControlsViewController.view.alpha = 1;
-	}
-	if (hidden) {
-		localPlayer1ControlsViewController.view.alpha = 0;
-		localPlayer2ControlsViewController.view.alpha = 0;
-	}
-	
-	if (animated) {
-		[UIView commitAnimations];
-	}
-}
 
 -(void) timerFired {
 	if (gamePaused) {
@@ -235,6 +162,7 @@
 			break;
 		}
     case GKPeerStateConnecting: {
+      NSLog(@"Connecting...");
       break;
     }
 		case GKPeerStateConnected: {
@@ -242,7 +170,7 @@
 			break;
 		}
 		case GKPeerStateDisconnected: {
-      //TODO: foo
+        //TODO: foo
 			break;
 		}
 	}
@@ -298,7 +226,7 @@
 	} else {
 		NSLog(@"Warning: could not dispatch message");
 	}
-
+  
 }
 
 -(void)player:(Player *)player didFireBullet:(NSString *)bulletType {
@@ -306,7 +234,7 @@
 	Bullet *bullet;
 	
 	if (emitter == kNone) {
-		//
+      //
 	} else {
 		if (emitter == kSingle) {
 			bullet = [[Bullet alloc] initWithImage:[UIImage imageNamed:@"tank_bullet.png"] AndPlayer:player];
