@@ -11,7 +11,7 @@
 #import "TankPickerController.h"
 #import "Player.h"
 #import "GameServer.h"
-
+#import "PlayerWonViewController.h"
 @implementation TDiPadMenuViewController
 
 
@@ -33,6 +33,10 @@
 }
 
 
+-(void) playerWon:(NSNotification *)n {
+  PlayerWonViewController *wonViewController = [[PlayerWonViewController alloc] initWithNibName:nil bundle:nil];
+  [self.view addSubview:wonViewController.view];
+}
 
 
 - (void) setButtonsVisible:(BOOL)visible animated:(BOOL)animated {

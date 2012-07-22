@@ -23,6 +23,8 @@
 		29F4539C11AB76DE00C8BCDB /* connected_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 29F4539B11AB76DE00C8BCDB /* connected_background.png */; };
 		3228181B15BBBC110043A779 /* tank_dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 3228181A15BBBC110043A779 /* tank_dark.png */; };
 		3228181F15BBD13B0043A779 /* ScoreBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3228181E15BBD13B0043A779 /* ScoreBoardView.m */; };
+		3228182715BBF0660043A779 /* PlayerWonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3228182515BBF0660043A779 /* PlayerWonViewController.m */; };
+		3228182B15BBF0B20043A779 /* PlayerWonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3228182A15BBF0B20043A779 /* PlayerWonViewController.xib */; };
 		322F261B15BB8ABB002ADD90 /* GameServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 322F261A15BB8ABB002ADD90 /* GameServer.m */; };
 		322F262715BBA921002ADD90 /* GameHostViewControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 322F262615BBA921002ADD90 /* GameHostViewControllerViewController.m */; };
 		322F262A15BBA949002ADD90 /* GameHostViewControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 322F262915BBA949002ADD90 /* GameHostViewControllerViewController.xib */; };
@@ -153,6 +155,9 @@
 		3228181A15BBBC110043A779 /* tank_dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tank_dark.png; path = Images/tank_dark.png; sourceTree = "<group>"; };
 		3228181D15BBD13B0043A779 /* ScoreBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreBoardView.h; sourceTree = "<group>"; };
 		3228181E15BBD13B0043A779 /* ScoreBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreBoardView.m; sourceTree = "<group>"; };
+		3228182415BBF0660043A779 /* PlayerWonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerWonViewController.h; sourceTree = "<group>"; };
+		3228182515BBF0660043A779 /* PlayerWonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerWonViewController.m; sourceTree = "<group>"; };
+		3228182A15BBF0B20043A779 /* PlayerWonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayerWonViewController.xib; sourceTree = "<group>"; };
 		322F261915BB8ABB002ADD90 /* GameServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameServer.h; sourceTree = "<group>"; };
 		322F261A15BB8ABB002ADD90 /* GameServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameServer.m; sourceTree = "<group>"; };
 		322F262515BBA921002ADD90 /* GameHostViewControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameHostViewControllerViewController.h; sourceTree = "<group>"; };
@@ -332,6 +337,9 @@
 				A232E95F119E6E1A009B8E39 /* TDiPadControllerView.m */,
 				A2CF266211E90D5000C1EF8F /* LocalTankViewController.h */,
 				A2CF266311E90D5000C1EF8F /* LocalTankViewController.m */,
+				3228182415BBF0660043A779 /* PlayerWonViewController.h */,
+				3228182515BBF0660043A779 /* PlayerWonViewController.m */,
+				3228182A15BBF0B20043A779 /* PlayerWonViewController.xib */,
 			);
 			name = iPad;
 			path = Classes;
@@ -701,6 +709,7 @@
 				322F262A15BBA949002ADD90 /* GameHostViewControllerViewController.xib in Resources */,
 				3228181B15BBBC110043A779 /* tank_dark.png in Resources */,
 				370E41CB15BBDAAD00CCA630 /* ui_background_ipadlaunch.png in Resources */,
+				3228182B15BBF0B20043A779 /* PlayerWonViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -734,6 +743,7 @@
 				ACAD994715BBAE78007E393F /* InfoViewController.m in Sources */,
 				322F262715BBA921002ADD90 /* GameHostViewControllerViewController.m in Sources */,
 				3228181F15BBD13B0043A779 /* ScoreBoardView.m in Sources */,
+				3228182715BBF0660043A779 /* PlayerWonViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
