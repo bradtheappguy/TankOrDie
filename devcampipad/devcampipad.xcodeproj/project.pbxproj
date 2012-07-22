@@ -33,6 +33,8 @@
 		370E41DB15BBF70800CCA630 /* ui_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 370E41D815BBF70800CCA630 /* ui_logo.png */; };
 		370E41DC15BBF70800CCA630 /* uibtn_host.png in Resources */ = {isa = PBXBuildFile; fileRef = 370E41D915BBF70800CCA630 /* uibtn_host.png */; };
 		370E41DD15BBF70800CCA630 /* uibtn_joingame.png in Resources */ = {isa = PBXBuildFile; fileRef = 370E41DA15BBF70800CCA630 /* uibtn_joingame.png */; };
+		370E41E315BC4D8B00CCA630 /* h_connect_to_tv.png in Resources */ = {isa = PBXBuildFile; fileRef = 370E41E215BC4D8B00CCA630 /* h_connect_to_tv.png */; };
+		370E41E615BC4E9500CCA630 /* h_game_host.png in Resources */ = {isa = PBXBuildFile; fileRef = 370E41E515BC4E9500CCA630 /* h_game_host.png */; };
 		A18585AA15BC02DE0029D4A8 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = A18585A515BC02DE0029D4A8 /* UIImage+Alpha.m */; };
 		A18585AB15BC02DE0029D4A8 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = A18585A715BC02DE0029D4A8 /* UIImage+Resize.m */; };
 		A18585AC15BC02DE0029D4A8 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = A18585A915BC02DE0029D4A8 /* UIImage+RoundedCorner.m */; };
@@ -176,6 +178,8 @@
 		370E41D815BBF70800CCA630 /* ui_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ui_logo.png; path = Images/ui_logo.png; sourceTree = "<group>"; };
 		370E41D915BBF70800CCA630 /* uibtn_host.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = uibtn_host.png; path = Images/uibtn_host.png; sourceTree = "<group>"; };
 		370E41DA15BBF70800CCA630 /* uibtn_joingame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = uibtn_joingame.png; path = Images/uibtn_joingame.png; sourceTree = "<group>"; };
+		370E41E215BC4D8B00CCA630 /* h_connect_to_tv.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = h_connect_to_tv.png; path = Images/h_connect_to_tv.png; sourceTree = "<group>"; };
+		370E41E515BC4E9500CCA630 /* h_game_host.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = h_game_host.png; path = Images/h_game_host.png; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* devcampipad-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "devcampipad-Info.plist"; path = "../devcampipad-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		A18585A415BC02DE0029D4A8 /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
 		A18585A515BC02DE0029D4A8 /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
@@ -333,8 +337,8 @@
 			isa = PBXGroup;
 			children = (
 				A2ECDEE3119E577600F8DFA7 /* TDiPadMenuViewController.m */,
-				A2ECDEE4119E577600F8DFA7 /* TDiPadMenuViewController.xib */,
 				A2ECDEE5119E577600F8DFA7 /* TDiPadMenuViewController.h */,
+				A2ECDEE4119E577600F8DFA7 /* TDiPadMenuViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow-iPad.xib */,
 				1D3623240D0F684500981E51 /* devcampipadAppDelegate.h */,
 				1D3623250D0F684500981E51 /* devcampipadAppDelegate.mm */,
@@ -466,6 +470,7 @@
 				370E41CA15BBDAAD00CCA630 /* ui_background_ipadlaunch.png */,
 				29F4537711AB6EE300C8BCDB /* h_choosetank.png */,
 				370E41D515BBF34A00CCA630 /* ui_gameover_screen.png */,
+				370E41E215BC4D8B00CCA630 /* h_connect_to_tv.png */,
 				370E41D815BBF70800CCA630 /* ui_logo.png */,
 				370E41D915BBF70800CCA630 /* uibtn_host.png */,
 				370E41DA15BBF70800CCA630 /* uibtn_joingame.png */,
@@ -485,6 +490,7 @@
 				A2AACE22119140F0006193E1 /* tanktank_bg-1.png */,
 				A2AACE23119140F0006193E1 /* tank_bullet.png */,
 				29F4539311AB728B00C8BCDB /* case_tankers.png */,
+				370E41E515BC4E9500CCA630 /* h_game_host.png */,
 				A2AACE28119140F0006193E1 /* shield.png */,
 				A2AACE29119140F0006193E1 /* lockIcon.png */,
 				A2AACE2A119140F0006193E1 /* Icon.png */,
@@ -749,6 +755,8 @@
 				370E41DB15BBF70800CCA630 /* ui_logo.png in Resources */,
 				370E41DC15BBF70800CCA630 /* uibtn_host.png in Resources */,
 				370E41DD15BBF70800CCA630 /* uibtn_joingame.png in Resources */,
+				370E41E315BC4D8B00CCA630 /* h_connect_to_tv.png in Resources */,
+				370E41E615BC4E9500CCA630 /* h_game_host.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -818,12 +826,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Franky Aguilar (SU9MTY32ER)";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = devcampipad_Prefix.pch;
 				INFOPLIST_FILE = "devcampipad-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = devcampipad;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "758D2F03-6F2D-4102-B4DC-AE844670A331";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

@@ -387,7 +387,7 @@
 			<object class="NSArray" key="dict.values">
 				<bool key="EncodedWithXMLCoder">YES</bool>
 				<string>{229, 248}</string>
-				<string>{480, 320}</string>
+				<string>{960, 640}</string>
 				<string>{480, 37}</string>
 				<string>{323, 22}</string>
 				<string>{159, 159}</string>

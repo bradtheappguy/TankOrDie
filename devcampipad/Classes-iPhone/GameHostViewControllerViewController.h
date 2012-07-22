@@ -19,6 +19,12 @@
 @property (retain, nonatomic) IBOutlet UILabel *player2NameLabel;
 @property (retain, nonatomic) IBOutlet UILabel *player3NameLabel;
 @property (retain, nonatomic) IBOutlet UILabel *player4NameLabel;
+
+@property (retain, nonatomic) IBOutlet UIImageView *player1Activity;
+@property (retain, nonatomic) IBOutlet UIImageView *player2Activity;
+@property (retain, nonatomic) IBOutlet UIImageView *player3Activity;
+@property (retain, nonatomic) IBOutlet UIImageView *player4Activity;
+
 @property (retain, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
 @property (retain, nonatomic) IBOutlet UILabel *statusLabel;
 
