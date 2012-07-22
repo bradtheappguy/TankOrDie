@@ -34,76 +34,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Classes-Shared/GameServer.m"
-         timestampString = "364612912.131556"
+         timestampString = "364613905.074949"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "152"
-         endingLineNumber = "152"
-         landmarkName = "-session:didReceiveConnectionRequestFromPeer:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "Classes-Shared/GameServer.m"
-         timestampString = "364612913.410648"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "157"
-         endingLineNumber = "157"
-         landmarkName = "-session:peer:didChangeState:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "Classes-Shared/GameServer.m"
-         timestampString = "364613094.262761"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "181"
-         endingLineNumber = "181"
-         landmarkName = "-updateLabels"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "Classes-Shared/GameServer.m"
-         timestampString = "364613094.262761"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "186"
-         endingLineNumber = "186"
-         landmarkName = "-receiveData:fromPeer:inSession:context:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "Classes-Shared/GameServer.m"
-         timestampString = "364613094.262761"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "233"
-         endingLineNumber = "233"
-         landmarkName = "-player:didFireBullet:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "Classes-Shared/GameServer.m"
-         timestampString = "364613094.262761"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "258"
-         endingLineNumber = "258"
+         startingLineNumber = "260"
+         endingLineNumber = "260"
          landmarkName = "-sendID:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -111,39 +46,39 @@
          shouldBeEnabled = "Yes"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
-         filePath = "Classes-Shared/GameServer.m"
-         timestampString = "364613083.72889"
+         filePath = "Classes/devcampipadAppDelegate.mm"
+         timestampString = "364613839.759773"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "304"
-         endingLineNumber = "304"
-         landmarkName = "-spawnPlayer:"
+         startingLineNumber = "164"
+         endingLineNumber = "164"
+         landmarkName = "-timerFired"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "Yes"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
-         filePath = "Classes-Shared/GameServer.m"
-         timestampString = "364613094.262761"
+         filePath = "Classes/devcampipadAppDelegate.mm"
+         timestampString = "364613860.82403"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "308"
-         endingLineNumber = "308"
-         landmarkName = "-confirmiPhone:withTankID:withPlayerName:"
+         startingLineNumber = "62"
+         endingLineNumber = "62"
+         landmarkName = "-application:didFinishLaunchingWithOptions:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
-         shouldBeEnabled = "Yes"
+         shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Classes-Shared/GameServer.m"
-         timestampString = "364613094.262761"
+         timestampString = "364614117.35405"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "323"
-         endingLineNumber = "323"
-         landmarkName = "-requestConnectingClientIdentity:"
+         startingLineNumber = "93"
+         endingLineNumber = "93"
+         landmarkName = "-timerFired"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

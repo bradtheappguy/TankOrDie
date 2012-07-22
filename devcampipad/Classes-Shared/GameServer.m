@@ -66,6 +66,8 @@
 	
   NSLog(@"Server Starting...");
   
+  [NSTimer scheduledTimerWithTimeInterval:FRAMERATE target:self selector:@selector(timerFired) userInfo:nil repeats:YES];
+	
 }
 
 
@@ -88,9 +90,9 @@
 
 
 -(void) timerFired {
-	if (gamePaused) {
-		return;
-	}
+    //if (gamePaused) {
+		//return;
+    //}
 	
 	BOOL hasPlayersConnected = NO;
 	
@@ -294,7 +296,9 @@
 
 
 - (void) spawnPlayer:(NSString *)args {
-	args = [args stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+	gamePaused = NO;
+  
+  args = [args stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 	NSArray *argv = [args componentsSeparatedByString:@"|"];
 	Player *p = [[Player alloc] initWithID:[argv objectAtIndex:0]];
 	[p setTank:[argv objectAtIndex:1]];

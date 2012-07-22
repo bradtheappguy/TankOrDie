@@ -59,6 +59,7 @@
   
   [extWindow addSubview:menuViewContoller.view];
   
+  [[GameServer sharedInstance] setWindow:extWindow];
   [[GameServer sharedInstance] startServer];
   
   NSLog(@"%@",availableModes);
@@ -133,7 +134,6 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
   [[GameServer sharedInstance] stopServer];
-  
   if (connection) {
 		[connection disconnectFromAllPeers];
 		connection.available = NO;
