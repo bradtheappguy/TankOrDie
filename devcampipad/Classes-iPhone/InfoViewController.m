@@ -34,7 +34,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    self.view.transform =CGAffineTransformMakeRotation( .5 * M_PI );
 }
 
 - (void)viewDidUnload
