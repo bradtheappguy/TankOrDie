@@ -376,18 +376,25 @@
 	self.transform = CGAffineTransformMakeRotation(rot);
 
 	
+  CGFloat maxX = [self superview].frame.size.width;
+  CGFloat maxY = [self superview].frame.size.height;
+  
+  CGFloat marginX = maxX * 0.0975;
+  CGFloat marginY = maxX * 0.0525;
+  
+  
 	//if (pos.x < 0 || pos.x > 768 || pos.y < 0 || pos.y > 1024) {
-		if (pos.x < 0) {
-			pos.x = 0;
+		if (pos.x < marginX) {
+			pos.x = marginX;
 		}
-		if (pos.x > 768) {
-			pos.x = 768;
+		if (pos.x > (maxX - (marginX*1))) {
+			pos.x = (maxX - (marginX*1));
 		}
-		if (pos.y < 0) {
-			pos.y = 0;
+		if (pos.y < marginY) {
+			pos.y = marginY;
 		}
-		if (pos.y > 1024) {
-			pos.y = 1024;
+		if (pos.y > (maxY - (marginY*1))) {
+			pos.y = (maxY - (marginY*1));
 		}
 	//}
 		self.center = pos;

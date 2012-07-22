@@ -32,7 +32,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-   [[NSNotificationCenter defaultCenter] addObserver:self.view selector:@selector(removeFromSuperview) name:@"GAME_RESET" object:nil];
+   [[NSNotificationCenter defaultCenter] addObserver:self.view selector:@selector(removeFromSuperview) name:@"GAME_DID_START" object:nil];
 }
 
 - (void)viewDidUnload

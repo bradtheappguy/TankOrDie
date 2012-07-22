@@ -126,6 +126,8 @@
 						[bullet explode];
 						if ([player takeDamage]) {
               
+              [player retain];
+              
               NSLog(@"Player %@ hit Player %@",bullet.player, player);
               
               
@@ -182,7 +184,20 @@
 			break;
 		}
 		case GKPeerStateDisconnected: {
-        //TODO: foo
+      Player *player = nil;
+      for (player in self.connectedPeers) {
+        if ([[player peerID] isEqualToString:peerID]) {
+          break;
+        }
+      }
+      [player removeFromSuperview];
+      
+      NSMutableArray *a = [[NSMutableArray alloc] initWithArray:self.connectedPeers];
+      [a removeObject:player];
+      self.connectedPeers = a;
+      
+      
+      [[NSNotificationCenter defaultCenter] postNotificationName:@"PLAYER_REMOVED" object:nil];
 			break;
 		}
 	}
@@ -304,16 +319,7 @@
 }
 
 
-- (void) spawnPlayer:(NSString *)args {
-  args = [args stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-	NSArray *argv = [args componentsSeparatedByString:@"|"];
-	Player *p = [[Player alloc] initWithID:[argv objectAtIndex:0]];
-	[p setTank:[argv objectAtIndex:1]];
-	[self.connectedPeers addObject:p];
-	[window addSubview:p];
-	[p release];
-	[[NSNotificationCenter defaultCenter] postNotificationName:@"PLAYER_JOINED"  object:nil];
-}
+
 
 -(void) confirmiPhone:(NSString *)peerID withTankID:(NSString *)tankID withPlayerName:(NSString *)name {
 	NSString *legacy = [NSString stringWithFormat:@"%@|%@", peerID, tankID];

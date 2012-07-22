@@ -67,7 +67,7 @@
 -(void)screenDidConnect:(NSNotification *)notification;
 + (id)sharedInstance;
 
-@property (nonatomic, retain) NSMutableArray *connectedPeers;
+@property (atomic, retain) NSMutableArray *connectedPeers;
 
 @property (nonatomic, retain) NSString *serverPeerID;
 @property (nonatomic, retain) IBOutlet UIWindow *window;

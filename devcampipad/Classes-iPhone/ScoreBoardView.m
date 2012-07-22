@@ -29,6 +29,9 @@ static CGFloat maxy;
   [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(playerScored:) name:@"PLAYER_SCORED" object:nil];
   [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(gameDidStart:) name:@"GAME_DID_START" object:nil];
   
+  [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(playerRemoved:) name:@"PLAYER_REMOVED" object:nil];
+  [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(playerRemoved:) name:@"PLAYER_JOINED" object:nil];
+  
   maxy = player1View.frame.origin.y;
 }
 
@@ -109,6 +112,10 @@ static CGFloat maxy;
 
 -(void)gameDidStart:(NSNotification *)m {
   [self playerScored:m];
+}
+
+-(void)playerRemoved:(NSNotification *)n {
+  [self playerScored:n];
 }
 
 @end
