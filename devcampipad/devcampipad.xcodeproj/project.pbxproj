@@ -22,6 +22,8 @@
 		29F4539411AB728B00C8BCDB /* case_tankers.png in Resources */ = {isa = PBXBuildFile; fileRef = 29F4539311AB728B00C8BCDB /* case_tankers.png */; };
 		29F4539C11AB76DE00C8BCDB /* connected_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 29F4539B11AB76DE00C8BCDB /* connected_background.png */; };
 		322F261B15BB8ABB002ADD90 /* GameServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 322F261A15BB8ABB002ADD90 /* GameServer.m */; };
+		322F262715BBA921002ADD90 /* GameHostViewControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 322F262615BBA921002ADD90 /* GameHostViewControllerViewController.m */; };
+		322F262A15BBA949002ADD90 /* GameHostViewControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 322F262915BBA949002ADD90 /* GameHostViewControllerViewController.xib */; };
 		A20367F5119891FB00673E4C /* ConnectingScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A20367F3119891FB00673E4C /* ConnectingScreenViewController.m */; };
 		A20367F6119891FB00673E4C /* ConnectingScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A20367F4119891FB00673E4C /* ConnectingScreenViewController.xib */; };
 		A203680C119894F100673E4C /* GameOverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A203680A119894F100673E4C /* GameOverViewController.m */; };
@@ -148,6 +150,9 @@
 		29F4539B11AB76DE00C8BCDB /* connected_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = connected_background.png; sourceTree = "<group>"; };
 		322F261915BB8ABB002ADD90 /* GameServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameServer.h; sourceTree = "<group>"; };
 		322F261A15BB8ABB002ADD90 /* GameServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameServer.m; sourceTree = "<group>"; };
+		322F262515BBA921002ADD90 /* GameHostViewControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameHostViewControllerViewController.h; sourceTree = "<group>"; };
+		322F262615BBA921002ADD90 /* GameHostViewControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameHostViewControllerViewController.m; sourceTree = "<group>"; };
+		322F262915BBA949002ADD90 /* GameHostViewControllerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameHostViewControllerViewController.xib; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* devcampipad_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = devcampipad_Prefix.pch; path = ../devcampipad_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* devcampipad-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "devcampipad-Info.plist"; path = "../devcampipad-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		A20367F2119891FB00673E4C /* ConnectingScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectingScreenViewController.h; sourceTree = "<group>"; };
@@ -514,6 +519,9 @@
 				A2036809119894F100673E4C /* GameOverViewController.h */,
 				A203680A119894F100673E4C /* GameOverViewController.m */,
 				A203680B119894F100673E4C /* GameOverViewController.xib */,
+				322F262515BBA921002ADD90 /* GameHostViewControllerViewController.h */,
+				322F262615BBA921002ADD90 /* GameHostViewControllerViewController.m */,
+				322F262915BBA949002ADD90 /* GameHostViewControllerViewController.xib */,
 			);
 			name = iPhone;
 			path = "Classes-iPhone";
@@ -683,6 +691,7 @@
 				A29954D211AB8C20007555F4 /* newgame_light_idle.png in Resources */,
 				A2CF266611E90D5000C1EF8F /* LocalTankViewController.xib in Resources */,
 				ACAD993015BB8C03007E393F /* StartTankViewController.xib in Resources */,
+				322F262A15BBA949002ADD90 /* GameHostViewControllerViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -714,6 +723,7 @@
 				A2CF266511E90D5000C1EF8F /* LocalTankViewController.m in Sources */,
 				322F261B15BB8ABB002ADD90 /* GameServer.m in Sources */,
 				ACAD992F15BB8C03007E393F /* StartTankViewController.m in Sources */,
+				322F262715BBA921002ADD90 /* GameHostViewControllerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

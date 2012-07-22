@@ -19,6 +19,7 @@
 #import <AudioToolbox/AudioToolbox.h>
 #import <MediaPlayer/MediaPlayer.h>
 #import "GameServer.h"
+#import "GameHostViewControllerViewController.h"
 
 @implementation AppDelegate
 
@@ -74,6 +75,10 @@
 - (void)tankPickerController:(TankPickerController *)controller didFinishPickingTankID:(int)tankID withPlayerName:(NSString *)name {
 	[self sendLocalMessageToServer:@"confirmiPhone|1|testname"];
   [tankPickerController.view removeFromSuperview];
+  GameHostViewControllerViewController *hostViewControleer = [[GameHostViewControllerViewController alloc] initWithNibName:nil bundle:nil];
+  hostViewControleer.view.transform =CGAffineTransformMakeRotation( .5 * M_PI );
+  hostViewControleer.view.center = CGPointMake(160, 240);
+  [self.window addSubview:hostViewControleer.view];
 }
 
 
