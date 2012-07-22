@@ -104,15 +104,21 @@
   if (player == self) {
     self.score = self.score + 5;
   }
+  
+  if (self.score < 0) {
+    self.score = 0;
+  }
 }
 
 -(void)playerWasHit:(NSNotification *)n {
   Player *player = n.object;
   if (player == self) {
     self.score =  self.score - 2;
-    if (self.score < 0) {
-      self.score = 0;
-    }
+    
+  }
+  
+  if (self.score < 0) {
+    self.score = 0;
   }
 }
 

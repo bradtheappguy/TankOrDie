@@ -68,7 +68,7 @@
 @property (nonatomic, retain) NSString *playerName;
 
 
-@property (readwrite) NSUInteger score;
+@property (readwrite) NSInteger score;
 
 //@property CGPoint loc;
 

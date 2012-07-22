@@ -74,6 +74,8 @@
   hostViewControleer.view.transform =CGAffineTransformMakeRotation( .5 * M_PI );
   hostViewControleer.view.center = CGPointMake(160, 240);
   [self.window addSubview:hostViewControleer.view];
+  
+  [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(resetGame) name:@"GAME_RESET" object:nil];
 }
 
 -(void)screenDidConnectNotification:(NSNotification *)notification {
@@ -194,8 +196,10 @@
       }
       else {
         if (serverPeerID) {
-          if (![connection sendData:data toPeers:[NSArray arrayWithObject:serverPeerID] withDataMode:GKSendDataUnreliable error:&error]) {
-            NSLog(@"ERROR: %@",error);
+          if (connection) {
+            if (![connection sendData:data toPeers:[NSArray arrayWithObject:serverPeerID] withDataMode:GKSendDataUnreliable error:&error]) {
+              NSLog(@"ERROR: %@",error);
+            }
           }
         }
       }
@@ -241,8 +245,13 @@
     [self sendLocalMessageToServer:command];
   }
   else {
-    if (![connection sendData:data toPeers:[NSArray arrayWithObject:serverPeerID] withDataMode:GKSendDataUnreliable error:&error]) {
-      NSLog(@"ERROR: %@",error);
+    if (connection) {
+      if (![connection sendData:data toPeers:[NSArray arrayWithObject:serverPeerID] withDataMode:GKSendDataUnreliable error:&error]) {
+        NSLog(@"ERROR: %@",error);
+      }
+    }
+    else {
+      [self didClickSearchNetwork:nil];
     }
   }
   
@@ -293,7 +302,12 @@
 		[controlsViewController connectionEstablished];
 	} 
 	if (state == GKPeerStateDisconnected) {
-		NSLog(@"GKPeerStateDisconnected wtf: %@", session);
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Alert" message:@"You have been disconnected" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    alert.delegate = self;
+    [alert show];
+    [alert release];
+    [controlsViewController stopSound];
+      //NSLog(@"GKPeerStateDisconnected wtf: %@", session);
 		connection = nil;
 		peerPicker = nil;
 	}
@@ -336,8 +350,10 @@
     [self sendLocalMessageToServer:string];
   }
   else {
-    if (![connection sendData:data toPeers:[NSArray arrayWithObject:serverPeerID] withDataMode:GKSendDataUnreliable error:&error]) {
-      NSLog(@"ERROR: %@",error);
+    if (connection) {
+      if (![connection sendData:data toPeers:[NSArray arrayWithObject:serverPeerID] withDataMode:GKSendDataUnreliable error:&error]) {
+        NSLog(@"ERROR: %@",error);
+      }
     }
   }
   
@@ -351,7 +367,13 @@
 	 
    NSString *command = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
 	NSArray *argv = [command componentsSeparatedByString:@"|"];
-	
+	if ([command isEqualToString:@"playerDidWin"]) {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Winner" message:@"A Player Did Win\n\nWaiting for restart" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
+    [alert release];
+    return; 
+  }
+  
 	if ([command isEqualToString:@"playerDidTakeDamage"]) {
 		[controlsViewController playerDidTakeDamage];
 	}
@@ -380,4 +402,16 @@
   [[GameServer sharedInstance] receiveData:[message dataUsingEncoding:NSUTF8StringEncoding] fromPeer:@"LOCAL_DEVICE" inSession:nil context:nil];
 }
 
+- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
+ [self didClickSearchNetwork:nil];
+}
+
+  //This is called on the server only
+
+-(void) resetGame {
+  GameHostViewControllerViewController *hostViewControleer = [[GameHostViewControllerViewController alloc] initWithNibName:nil bundle:nil];
+  hostViewControleer.view.transform =CGAffineTransformMakeRotation( .5 * M_PI );
+  hostViewControleer.view.center = CGPointMake(160, 240);
+  [self.window addSubview:hostViewControleer.view];
+}
 @end

@@ -34,7 +34,12 @@
 
 
 -(void) playerWon:(NSNotification *)n {
+  Player *winner = n.object;
   PlayerWonViewController *wonViewController = [[PlayerWonViewController alloc] initWithNibName:nil bundle:nil];
+  wonViewController.winnerimageView.backgroundColor = [UIColor redColor];
+  wonViewController.winnerimageView.image = winner.image;
+  wonViewController.winnerLabel = [NSString stringWithFormat:@"Player %@ Wins!",winner.playerName];
+  wonViewController.view.frame = self.view.frame;
   [self.view addSubview:wonViewController.view];
 }
 

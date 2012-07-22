@@ -10,4 +10,9 @@
 
 @interface PlayerWonViewController : UIViewController
 
+@property (retain, nonatomic) IBOutlet UIImageView *winnerimageView;
+@property (retain, nonatomic) IBOutlet UIImageView *loser1ImageView;
+@property (retain, nonatomic) IBOutlet UIImageView *loser2ImageView;
+@property (retain, nonatomic) IBOutlet UIImageView *loser3ImageView;
+@property (retain, nonatomic) IBOutlet UILabel *winnerLabel;
 @end

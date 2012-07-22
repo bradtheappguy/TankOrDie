@@ -69,7 +69,7 @@
   NSLog(@"Server Starting...");
   
   [NSTimer scheduledTimerWithTimeInterval:FRAMERATE target:self selector:@selector(timerFired) userInfo:nil repeats:YES];
-	
+	  [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(playerWon:) name:@"PLAYER_WON" object:nil];
 }
 
 
@@ -209,7 +209,6 @@
 	NSString *command = [argv objectAtIndex:0];
 	[argv removeObjectAtIndex:0];
 	NSLog(@"command: |%@|",command);
-	
 	if ([command isEqualToString:@"confirmiPad"]) {
 		[self confirmiPad:peerId];    
 	} else if ([command isEqualToString:@"confirmiPhone"]) {
@@ -342,6 +341,22 @@
 
 -(void) gameDidStart:(id)noti {
   gamePaused = NO;
+}
+
+-(void) playerWon:(NSNotification *)m {
+  gamePaused = YES;
+  [service sendDataToAllPeers:[@"playerDidWin" dataUsingEncoding:NSUTF8StringEncoding] withDataMode:GKSendDataUnreliable error:nil];
+  UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Winner" message:@"A Player Did Win" delegate:self cancelButtonTitle:@"Rematch" otherButtonTitles:nil];
+  [alert show];
+  [alert release];
+}
+
+- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
+  [[NSNotificationCenter defaultCenter] postNotificationName:@"GAME_RESET" object:nil];
+  for (Player *player in self.connectedPeers) {
+    player.score = 0;
+  }
+  
 }
 
 @end
