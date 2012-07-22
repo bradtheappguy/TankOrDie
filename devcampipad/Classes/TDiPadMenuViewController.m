@@ -17,8 +17,6 @@
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
-	localPlayerNameLabel1.text = @"";
-	localPlayerNameLabel2.text = @"";
 	wirelessPlayerNameLabel1.text = @"";
 	wirelessPlayerNameLabel2.text = @"";
 	wirelessPlayerNameLabel3.text = @"";
@@ -98,51 +96,6 @@
 	[appDel setGamePaused: NO];
 }
 
--(IBAction) addLocalPlayButtonPressed:(UIButton *)button {
-	if ((button != addLocalPlayerOneButton) && (button != addLocalPlayerTwoButton)){
-		NSLog(@"Whoops: Unexpected Sender");
-		return;
-	}
-	button.hidden = YES;
-	
-		
-	if (button == addLocalPlayerOneButton) {
-		tankSelectionPlayerOneViewController = [[TankPickerController alloc] initWithNibName:@"TankPickerController" bundle:nil];
-		tankSelectionPlayerOneViewController.contentSizeForViewInPopover = CGSizeMake(480, 320);
-		tankSelectionPlayerOneViewController.delegate = self;
-		
-		addPlayerOnePopoverController = [[UIPopoverController alloc] initWithContentViewController:tankSelectionPlayerOneViewController];
-		addPlayerOnePopoverController.delegate = self;
-		[addPlayerOnePopoverController presentPopoverFromRect:[self.view convertRect:button.bounds fromView:button] 
-										   inView:self.view 
-						 permittedArrowDirections:UIPopoverArrowDirectionAny 
-										 animated:YES];
-		
-	}
-	else if (button == addLocalPlayerTwoButton) {
-		tankSelectionPlayerTwoViewController = [[TankPickerController alloc] initWithNibName:@"TankPickerController" bundle:nil];
-		tankSelectionPlayerTwoViewController.contentSizeForViewInPopover = CGSizeMake(480, 320);
-		tankSelectionPlayerTwoViewController.delegate = self;
-		
-		addPlayerTwoPopoverController = [[UIPopoverController alloc] initWithContentViewController:tankSelectionPlayerTwoViewController];
-		addPlayerTwoPopoverController.delegate = self;
-		[addPlayerTwoPopoverController presentPopoverFromRect:[self.view convertRect:button.bounds fromView:button] 
-										   inView:self.view 
-						 permittedArrowDirections:UIPopoverArrowDirectionAny 
-										 animated:YES];
-		
-	}
-	
-}
-
-- (void)popoverControllerDidDismissPopover:(UIPopoverController *)popoverController {
-	if (popoverController == addPlayerOnePopoverController) {
-		addLocalPlayerOneButton.hidden = NO;
-	}
-	if (popoverController == addPlayerTwoPopoverController) {
-		addLocalPlayerTwoButton.hidden = NO;
-	}
-}
 
 
 
