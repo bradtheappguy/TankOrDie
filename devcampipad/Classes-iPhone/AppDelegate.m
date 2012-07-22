@@ -175,7 +175,7 @@
 		
 		//NSLog(@"%f  %f",leftSliderLastValue, rightSliderLastValue);
 		
-		if (connection) {
+		if (true) {
 			NSString *command = [NSString stringWithFormat:@"sliderDidChange|%f %f", leftSliderLastValue, rightSliderLastValue];
 			NSData *data = [command dataUsingEncoding:NSUTF8StringEncoding];
 			NSError *error;
@@ -184,8 +184,10 @@
         [self sendLocalMessageToServer:command];
       }
       else {
-        if (![connection sendData:data toPeers:[NSArray arrayWithObject:serverPeerID] withDataMode:GKSendDataUnreliable error:&error]) {
-          NSLog(@"ERROR: %@",error);
+        if (serverPeerID) {
+          if (![connection sendData:data toPeers:[NSArray arrayWithObject:serverPeerID] withDataMode:GKSendDataUnreliable error:&error]) {
+            NSLog(@"ERROR: %@",error);
+          }
         }
       }
 				
