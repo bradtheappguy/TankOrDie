@@ -92,7 +92,7 @@
     
     self.score = 0;
   
-      //[[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(playerWasHit:) name:@"PLAYER_WAS_HIT" object:nil];
+  [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(playerWasHit:) name:@"PLAYER_WAS_HIT" object:nil];
   [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(playerScored:) name:@"PLAYER_SCORED" object:nil];
   }
   return self;
@@ -102,7 +102,17 @@
 -(void)playerScored:(NSNotification*)n {
   Player *player = n.object;
   if (player == self) {
-    self.score = self.score + 1;
+    self.score = self.score + 5;
+  }
+}
+
+-(void)playerWasHit:(NSNotification *)n {
+  Player *player = n.object;
+  if (player == self) {
+    self.score =  self.score - 2;
+    if (self.score < 0) {
+      self.score = 0;
+    }
   }
 }
 

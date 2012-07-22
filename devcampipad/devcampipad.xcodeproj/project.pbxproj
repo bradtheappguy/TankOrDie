@@ -23,10 +23,16 @@
 		29F4539C11AB76DE00C8BCDB /* connected_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 29F4539B11AB76DE00C8BCDB /* connected_background.png */; };
 		3228181B15BBBC110043A779 /* tank_dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 3228181A15BBBC110043A779 /* tank_dark.png */; };
 		3228181F15BBD13B0043A779 /* ScoreBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3228181E15BBD13B0043A779 /* ScoreBoardView.m */; };
+		3228182715BBF0660043A779 /* PlayerWonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3228182515BBF0660043A779 /* PlayerWonViewController.m */; };
+		3228182B15BBF0B20043A779 /* PlayerWonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3228182A15BBF0B20043A779 /* PlayerWonViewController.xib */; };
 		322F261B15BB8ABB002ADD90 /* GameServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 322F261A15BB8ABB002ADD90 /* GameServer.m */; };
 		322F262715BBA921002ADD90 /* GameHostViewControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 322F262615BBA921002ADD90 /* GameHostViewControllerViewController.m */; };
 		322F262A15BBA949002ADD90 /* GameHostViewControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 322F262915BBA949002ADD90 /* GameHostViewControllerViewController.xib */; };
 		370E41CB15BBDAAD00CCA630 /* ui_background_ipadlaunch.png in Resources */ = {isa = PBXBuildFile; fileRef = 370E41CA15BBDAAD00CCA630 /* ui_background_ipadlaunch.png */; };
+		370E41D615BBF34A00CCA630 /* ui_gameover_screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 370E41D515BBF34A00CCA630 /* ui_gameover_screen.png */; };
+		370E41DB15BBF70800CCA630 /* ui_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 370E41D815BBF70800CCA630 /* ui_logo.png */; };
+		370E41DC15BBF70800CCA630 /* uibtn_host.png in Resources */ = {isa = PBXBuildFile; fileRef = 370E41D915BBF70800CCA630 /* uibtn_host.png */; };
+		370E41DD15BBF70800CCA630 /* uibtn_joingame.png in Resources */ = {isa = PBXBuildFile; fileRef = 370E41DA15BBF70800CCA630 /* uibtn_joingame.png */; };
 		A203680C119894F100673E4C /* GameOverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A203680A119894F100673E4C /* GameOverViewController.m */; };
 		A203680D119894F100673E4C /* GameOverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A203680B119894F100673E4C /* GameOverViewController.xib */; };
 		A222E1D1117AE736003F81C0 /* loading0.png in Resources */ = {isa = PBXBuildFile; fileRef = A222E1BF117AE735003F81C0 /* loading0.png */; };
@@ -153,6 +159,9 @@
 		3228181A15BBBC110043A779 /* tank_dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tank_dark.png; path = Images/tank_dark.png; sourceTree = "<group>"; };
 		3228181D15BBD13B0043A779 /* ScoreBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreBoardView.h; sourceTree = "<group>"; };
 		3228181E15BBD13B0043A779 /* ScoreBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreBoardView.m; sourceTree = "<group>"; };
+		3228182415BBF0660043A779 /* PlayerWonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerWonViewController.h; sourceTree = "<group>"; };
+		3228182515BBF0660043A779 /* PlayerWonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerWonViewController.m; sourceTree = "<group>"; };
+		3228182A15BBF0B20043A779 /* PlayerWonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayerWonViewController.xib; sourceTree = "<group>"; };
 		322F261915BB8ABB002ADD90 /* GameServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameServer.h; sourceTree = "<group>"; };
 		322F261A15BB8ABB002ADD90 /* GameServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameServer.m; sourceTree = "<group>"; };
 		322F262515BBA921002ADD90 /* GameHostViewControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameHostViewControllerViewController.h; sourceTree = "<group>"; };
@@ -160,6 +169,10 @@
 		322F262915BBA949002ADD90 /* GameHostViewControllerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameHostViewControllerViewController.xib; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* devcampipad_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = devcampipad_Prefix.pch; path = ../devcampipad_Prefix.pch; sourceTree = "<group>"; };
 		370E41CA15BBDAAD00CCA630 /* ui_background_ipadlaunch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ui_background_ipadlaunch.png; path = Images/ui_background_ipadlaunch.png; sourceTree = "<group>"; };
+		370E41D515BBF34A00CCA630 /* ui_gameover_screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ui_gameover_screen.png; path = Images/ui_gameover_screen.png; sourceTree = "<group>"; };
+		370E41D815BBF70800CCA630 /* ui_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ui_logo.png; path = Images/ui_logo.png; sourceTree = "<group>"; };
+		370E41D915BBF70800CCA630 /* uibtn_host.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = uibtn_host.png; path = Images/uibtn_host.png; sourceTree = "<group>"; };
+		370E41DA15BBF70800CCA630 /* uibtn_joingame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = uibtn_joingame.png; path = Images/uibtn_joingame.png; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* devcampipad-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "devcampipad-Info.plist"; path = "../devcampipad-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		A2036809119894F100673E4C /* GameOverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverViewController.h; sourceTree = "<group>"; };
 		A203680A119894F100673E4C /* GameOverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOverViewController.m; sourceTree = "<group>"; };
@@ -332,6 +345,9 @@
 				A232E95F119E6E1A009B8E39 /* TDiPadControllerView.m */,
 				A2CF266211E90D5000C1EF8F /* LocalTankViewController.h */,
 				A2CF266311E90D5000C1EF8F /* LocalTankViewController.m */,
+				3228182415BBF0660043A779 /* PlayerWonViewController.h */,
+				3228182515BBF0660043A779 /* PlayerWonViewController.m */,
+				3228182A15BBF0B20043A779 /* PlayerWonViewController.xib */,
 			);
 			name = iPad;
 			path = Classes;
@@ -426,6 +442,10 @@
 				A29954AB11AB8241007555F4 /* _screen_newgame.png */,
 				370E41CA15BBDAAD00CCA630 /* ui_background_ipadlaunch.png */,
 				29F4537711AB6EE300C8BCDB /* h_choosetank.png */,
+				370E41D515BBF34A00CCA630 /* ui_gameover_screen.png */,
+				370E41D815BBF70800CCA630 /* ui_logo.png */,
+				370E41D915BBF70800CCA630 /* uibtn_host.png */,
+				370E41DA15BBF70800CCA630 /* uibtn_joingame.png */,
 				29F4537811AB6EE300C8BCDB /* ibtn_connect.png */,
 				29F4537911AB6EE300C8BCDB /* ibtn_huh.png */,
 				29F4537A11AB6EE300C8BCDB /* ibtn_save.png */,
@@ -701,6 +721,11 @@
 				322F262A15BBA949002ADD90 /* GameHostViewControllerViewController.xib in Resources */,
 				3228181B15BBBC110043A779 /* tank_dark.png in Resources */,
 				370E41CB15BBDAAD00CCA630 /* ui_background_ipadlaunch.png in Resources */,
+				3228182B15BBF0B20043A779 /* PlayerWonViewController.xib in Resources */,
+				370E41D615BBF34A00CCA630 /* ui_gameover_screen.png in Resources */,
+				370E41DB15BBF70800CCA630 /* ui_logo.png in Resources */,
+				370E41DC15BBF70800CCA630 /* uibtn_host.png in Resources */,
+				370E41DD15BBF70800CCA630 /* uibtn_joingame.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -734,6 +759,7 @@
 				ACAD994715BBAE78007E393F /* InfoViewController.m in Sources */,
 				322F262715BBA921002ADD90 /* GameHostViewControllerViewController.m in Sources */,
 				3228181F15BBD13B0043A779 /* ScoreBoardView.m in Sources */,
+				3228182715BBF0660043A779 /* PlayerWonViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
