@@ -123,6 +123,7 @@
         // Future revisions might let people choose from the camera roll... but not today:
         faceGrabber.sourceType = UIImagePickerControllerSourceTypeCamera;
         faceGrabber.delegate = self;
+        faceGrabber.allowsEditing = YES;
         // FIXME: DOES NOT verify device actually has a front camera:
         faceGrabber.cameraDevice = UIImagePickerControllerCameraDeviceFront;
         // Absolutely, positively, only supports portrait mode, even though controls rotate
@@ -140,13 +141,8 @@
 
 - (void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
-    /* 
-       A host of small issues here, most notably:
-       - Arbitrary 90*60 resizing causes portrait mode photos to look generally unwell
-       - UIViewContentModeCenter a very poor substitute for providing the user a real cropping tool or reticle
-    */
-    [[addProfileButton imageView] setContentMode:UIViewContentModeCenter];
-    [addProfileButton setImage:[[info objectForKey:(UIImagePickerControllerOriginalImage)] resizedImage:CGSizeMake(90,60) interpolationQuality:kCGInterpolationHigh] forState:(UIControlStateNormal)];
+    // [[addProfileButton imageView] setContentMode:UIViewContentModeCenter];
+    [addProfileButton setImage:[[info objectForKey:(UIImagePickerControllerEditedImage)] resizedImage:CGSizeMake(100,100) interpolationQuality:kCGInterpolationHigh] forState:(UIControlStateNormal)];
     [picker dismissModalViewControllerAnimated:(YES)];
 }
 
