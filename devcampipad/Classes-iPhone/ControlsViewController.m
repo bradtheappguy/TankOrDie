@@ -14,7 +14,7 @@
 
 @implementation ControlsViewController
 
-@synthesize leftSlider, rightSlider, soundplayer; 
+@synthesize leftSlider, rightSlider, soundplayer, tapRecognizer; 
 
 - (IBAction) fireButtonHit : (id) sender
 {
@@ -37,17 +37,6 @@
 	appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];		
 }
 
-/*
- // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
-        // Custom initialization
-    }
-    return self;
-}
-*/
-
-
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
 	[super viewDidLoad];
@@ -69,6 +58,26 @@
 	[soundplayer playTrackSound];
 }
 
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
+    
+    // Disallow recognition of tap gestures in the segmented control.
+    if (((touch.view == self.leftSlider) || (touch.view == self.rightSlider)) && (gestureRecognizer == self.tapRecognizer)) {
+        return NO;
+    }
+    return YES;
+}
+
+/*
+ In response to a tap gesture, show the image view appropriately then make it fade out in place.
+ */
+- (IBAction)handleTapFrom:(UITapGestureRecognizer *)recognizer {
+	NSLog(@"TAPPED");
+//	[soundplayer playFireSound]; 
+	AppDelegate *appDelegate;
+	appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];	
+	[appDelegate didClickFire:nil]; 
+}
+
 /*
 // Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
@@ -87,8 +96,7 @@
 
 - (void)viewDidUnload {
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
+	self.tapRecognizer = nil;
 }
 
 - (void)dealloc {

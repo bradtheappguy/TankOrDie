@@ -12,7 +12,7 @@
 #import "TXSlider.h"	
 #import "Sound.h"
 
-@interface ControlsViewController : UIViewController {
+@interface ControlsViewController : UIViewController <UIGestureRecognizerDelegate> {
 	IBOutlet UIButton* fireButton;
 	IBOutlet TXSlider* leftSlider;
 	IBOutlet TXSlider* rightSlider;
@@ -23,6 +23,7 @@
 @property (nonatomic, retain) Sound* soundplayer; 
 @property (nonatomic, retain) IBOutlet TXSlider* leftSlider;
 @property (nonatomic, retain) IBOutlet TXSlider* rightSlider;
+@property (nonatomic, strong) IBOutlet UITapGestureRecognizer *tapRecognizer;
 
 - (IBAction) fireButtonHit : (id) sender;
 - (IBAction) leftSliderValueChanged : (id) sender;
@@ -30,6 +31,5 @@
 -(void) didLose;
 -(void) playerDidTakeDamage;
 -(void) connectionEstablished;
-
 
 @end
