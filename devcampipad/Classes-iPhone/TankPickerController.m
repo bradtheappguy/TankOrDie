@@ -51,6 +51,7 @@
 - (void) connect:(int)tankID
 {
 	if (delegate) {
+      //This is called if I am running as a server
 		[delegate tankPickerController:self didFinishPickingTankID:tankID withPlayerName:nameTextField.text];
 	}
 	else {

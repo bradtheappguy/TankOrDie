@@ -153,22 +153,6 @@
 	}
 }
 
-- (void)tankPickerController:(TankPickerController *)controller didFinishPickingTankID:(int)tankID withPlayerName:(NSString *)name {
-	if (controller == tankSelectionPlayerOneViewController) {
-		[addPlayerOnePopoverController dismissPopoverAnimated:YES];
-		localConnectedTankView1.image = [Player imageForTankID:tankID];
-		localPlayerNameLabel1.text = name;
-		localStatusLight1.image = [UIImage imageNamed:@"newgame_light_connect.png"];
-	}
-	if (controller == tankSelectionPlayerTwoViewController) {
-		[addPlayerTwoPopoverController dismissPopoverAnimated:YES];
-		[addPlayerOnePopoverController dismissPopoverAnimated:YES];
-		localConnectedTankView2.image = [Player imageForTankID:tankID];
-		localPlayerNameLabel2.text = name;
-		localStatusLight2.image = [UIImage imageNamed:@"newgame_light_connect.png"];		
-	}
-	
-}
 
 
 -(void) updateConnectionScreenUI {

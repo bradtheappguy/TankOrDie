@@ -62,8 +62,20 @@
   [[GameServer sharedInstance] setWindow:extWindow];
   [[GameServer sharedInstance] startServer];
   
+    //The delegate is only set when we are running server
+  tankPickerController.delegate = self;
+  
   NSLog(@"%@",availableModes);
 }
+
+
+
+  //This is called for the person acting as server only
+- (void)tankPickerController:(TankPickerController *)controller didFinishPickingTankID:(int)tankID withPlayerName:(NSString *)name {
+	[self sendLocalMessageToServer:@"confirmiPhone|1|testname"];
+  [tankPickerController.view removeFromSuperview];
+}
+
 
 -(void)screenDidConnectNotification:(NSNotification *)notification {
   [self screenDidConnect:[notification object]];
@@ -167,10 +179,15 @@
 			NSString *command = [NSString stringWithFormat:@"sliderDidChange|%f %f", leftSliderLastValue, rightSliderLastValue];
 			NSData *data = [command dataUsingEncoding:NSUTF8StringEncoding];
 			NSError *error;
-			//[connection sendDataToAllPeers:[command dataUsingEncoding:NSUTF8StringEncoding] withDataMode:GKSendDataUnreliable error:&error];
-			if (![connection sendData:data toPeers:[NSArray arrayWithObject:serverPeerID] withDataMode:GKSendDataUnreliable error:&error]) {
-				NSLog(@"ERROR: %@",error);
-			}
+			
+      if ([[GameServer sharedInstance] actingAsServer]) {
+        [self sendLocalMessageToServer:command];
+      }
+      else {
+        if (![connection sendData:data toPeers:[NSArray arrayWithObject:serverPeerID] withDataMode:GKSendDataUnreliable error:&error]) {
+          NSLog(@"ERROR: %@",error);
+        }
+      }
 				
 			
 		}
@@ -200,40 +217,31 @@
 }
 
 
-/*
--(IBAction)didClickDirectionalPad:(id)sender {
-	NSError *error;
-	NSData *data;
-	
-	if ([sender isEqual:upButton]) {
-		data = [@"didClickUp:" dataUsingEncoding:NSUTF8StringEncoding];
-	} else if ([sender isEqual:downButton]) {
-		data = [@"didClickDown:" dataUsingEncoding:NSUTF8StringEncoding];
-
-	} else if ([sender isEqual:leftButton]) {
-		data = [@"didClickLeft:" dataUsingEncoding:NSUTF8StringEncoding];
-	} else if ([sender isEqual:rightButton]) {
-		data = [@"didClickRight:" dataUsingEncoding:NSUTF8StringEncoding];
-	}
-	
-	[connection sendDataToAllPeers:data withDataMode:GKSendDataUnreliable error:&error];
-}
- */
-
 
 -(IBAction)didClickFire:(id)sender {
-	if (!serverPeerID) {
+	if (!serverPeerID && ([[GameServer sharedInstance] actingAsServer] == NO)) {
 		[self didClickSearchNetwork:nil];
 		return;
 	}
 		
 	NSError *error;
-	NSData *data = [[NSString stringWithFormat:@"didClickFire|%f", 1] dataUsingEncoding:NSUTF8StringEncoding];
+  NSString *command = [NSString stringWithFormat:@"didClickFire|%f", 1];
+	NSData *data = [command dataUsingEncoding:NSUTF8StringEncoding];
 
-	//[connection sendDataToAllPeers:data withDataMode:GKSendDataUnreliable error:&error];
-	if (![connection sendData:data toPeers:[NSArray arrayWithObject:serverPeerID] withDataMode:GKSendDataUnreliable error:&error]) {
-		NSLog(@"ERROR: %@",error);
-	}
+		
+  
+  if ([[GameServer sharedInstance] actingAsServer]) {
+    [self sendLocalMessageToServer:command];
+  }
+  else {
+    if (![connection sendData:data toPeers:[NSArray arrayWithObject:serverPeerID] withDataMode:GKSendDataUnreliable error:&error]) {
+      NSLog(@"ERROR: %@",error);
+    }
+  }
+  
+
+  
+  
 }
 
 /* Notifies delegate that a connection type was chosen by the user.
@@ -321,12 +329,19 @@
 	NSString *string = [NSString stringWithFormat:@"confirmiPhone|%i|%@",tank_id,playerName];
 	NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
 	NSError *error;
-	//GKSession *session = [(AppDelegate *)[[UIApplication sharedApplication] delegate] session];
 	
-	//if (![connection sendDataToAllPeers:data withDataMode:GKSendDataUnreliable error:&error]) {
-	if (![connection sendData:data toPeers:[NSArray arrayWithObject:serverPeerID] withDataMode:GKSendDataUnreliable error:&error]) {
-		NSLog(@"ERROR: %@",error);
-	}
+	
+  if ([[GameServer sharedInstance] actingAsServer]) {
+    [self sendLocalMessageToServer:string];
+  }
+  else {
+    if (![connection sendData:data toPeers:[NSArray arrayWithObject:serverPeerID] withDataMode:GKSendDataUnreliable error:&error]) {
+      NSLog(@"ERROR: %@",error);
+    }
+  }
+  
+  
+
 	
 	//UIAlertView *a = [[UIAlertView alloc] initWithTitle:@"" message:@"TElling serve I am iphone" delegate:nil cancelButtonTitle:@"ok" otherButtonTitles:nil];
 	//[a show];
@@ -362,5 +377,9 @@
 	NSLog(@"%@",command);
 }
 
+
+-(void) sendLocalMessageToServer:(NSString *)message {
+  [[GameServer sharedInstance] receiveData:[message dataUsingEncoding:NSUTF8StringEncoding] fromPeer:@"LOCAL_DEVICE" inSession:nil context:nil];
+}
 
 @end

@@ -16,6 +16,8 @@
 
 @implementation GameServer
 
+@synthesize actingAsServer;
+
 @synthesize window, serverPeerID;
 @synthesize client;
 @synthesize service;
@@ -39,7 +41,7 @@
 
 
 -(void) startServer {
-	
+	self.actingAsServer = YES;
 	gamePaused = YES;
 	soundPlayer = [[Sound alloc] init];
 	[UIApplication sharedApplication].idleTimerDisabled = YES;

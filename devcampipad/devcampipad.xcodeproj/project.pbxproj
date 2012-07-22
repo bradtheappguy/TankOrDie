@@ -712,11 +712,8 @@
 				A2ECDEE6119E577600F8DFA7 /* TDiPadMenuViewController.m in Sources */,
 				A232E961119E6E1A009B8E39 /* TDiPadControllerView.m in Sources */,
 				A2CF266511E90D5000C1EF8F /* LocalTankViewController.m in Sources */,
-<<<<<<< HEAD
 				322F261B15BB8ABB002ADD90 /* GameServer.m in Sources */,
-=======
 				ACAD992F15BB8C03007E393F /* StartTankViewController.m in Sources */,
->>>>>>> Add new StartTankViewController for starting game
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -43,7 +43,7 @@
 -(IBAction)didClickSearchNetwork:(id)sender;
 -(IBAction)didClickFire:(id)server;
 -(void)hideTankPicker;
-
+-(void) sendLocalMessageToServer:(NSString *)message;
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) GKPeerPickerController *peerPicker;

@@ -80,5 +80,5 @@
 @property (nonatomic, retain) Sound *soundPlayer;
 @property (nonatomic, retain) TouchController *touchController;
 @property (readwrite) BOOL gamePaused;
-
+@property (readwrite) BOOL actingAsServer;
 @end
