@@ -52,6 +52,10 @@
 	leftSlider.multipleTouchEnabled = YES;
 	self.view.userInteractionEnabled = YES;
 	[leftSlider superview].userInteractionEnabled = YES;
+    
+    UIGestureRecognizer *tgr = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapFrom:)];
+    [self.view addGestureRecognizer:tgr];
+    
 }
 
 -(void) connectionEstablished {
