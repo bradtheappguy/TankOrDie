@@ -12,7 +12,6 @@
 
 #import "AppDelegate.h"
 #import "ControlsViewController.h"
-#import "ConnectingScreenViewController.h"
 #import "GameOverViewController.h"
 #import "TDiPadMenuViewController.h"
 #import "TankPickerController.h"
@@ -109,8 +108,7 @@
 	
 	controlsViewController = [[ControlsViewController alloc] initWithNibName:@"ControlsViewController" bundle:nil];
 	tankPickerController = [[TankPickerController alloc] initWithNibName:@"TankPickerController" bundle:nil]; 
-	connectingViewController = [[ConnectingScreenViewController alloc] initWithNibName:@"ConnectingScreenViewController" bundle:nil];
-	gameOverViewController = [[GameOverViewController alloc] initWithNibName:@"GameOverViewController" bundle:nil];
+  gameOverViewController = [[GameOverViewController alloc] initWithNibName:@"GameOverViewController" bundle:nil];
 	
 	
 	[NSTimer scheduledTimerWithTimeInterval:1/10 target:self selector:@selector(timerFired) userInfo:nil repeats:YES];
