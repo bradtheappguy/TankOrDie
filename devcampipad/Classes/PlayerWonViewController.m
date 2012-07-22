@@ -18,6 +18,9 @@
 @synthesize loser2ImageView;
 @synthesize loser3ImageView;
 @synthesize winnerLabel;
+@synthesize loser1Label;
+@synthesize loser2Label;
+@synthesize loser3Label;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -42,6 +45,9 @@
   [self setLoser2ImageView:nil];
   [self setLoser3ImageView:nil];
   [self setWinnerLabel:nil];
+  [self setLoser1Label:nil];
+  [self setLoser2Label:nil];
+  [self setLoser3Label:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -58,6 +64,9 @@
   [loser2ImageView release];
   [loser3ImageView release];
   [winnerLabel release];
+  [loser1Label release];
+  [loser2Label release];
+  [loser3Label release];
   [super dealloc];
 }
 @end

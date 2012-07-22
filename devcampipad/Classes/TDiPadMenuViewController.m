@@ -43,30 +43,29 @@
     [self.view addSubview:wonViewController.view];
     //wonViewController.winnerimageView.backgroundColor = [UIColor redColor];
     wonViewController.winnerimageView.image = winner.image;
-    wonViewController.winnerLabel = [NSString stringWithFormat:@"Player %@ Wins!",winner.playerName];
+    wonViewController.winnerLabel.text = [NSString stringWithFormat:@"Player %@ Wins!",winner.playerName];
     wonViewController.view.frame = self.view.frame;
   
   wonViewController.loser1ImageView.image = nil;
   wonViewController.loser2ImageView.image = nil;
   wonViewController.loser3ImageView.image = nil;
-  
+   wonViewController.loser1Label.text = @"";
+   wonViewController.loser2Label.text = @"";
+   wonViewController.loser3Label.text = @"";
   
   NSArray *allPlayers = [[GameServer sharedInstance] connectedPeers];
   for (Player *player in allPlayers) {
-    if (player == winner) {
-      break;
-    }
-    if (wonViewController.loser1ImageView.image = nil) {
+    if ((player != winner) && wonViewController.loser1ImageView.image == nil) {
       wonViewController.loser1ImageView.image = player.image;
-      break;
+      wonViewController.loser1Label.text = player.playerName;
     }
-    if (wonViewController.loser2ImageView.image = nil) {
+    else if ((player != winner) && wonViewController.loser2ImageView.image == nil) {
       wonViewController.loser2ImageView.image = player.image;
-      break;
+      wonViewController.loser2Label.text = player.playerName;
     }
-    if (wonViewController.loser3ImageView.image = nil) {
+    else if ((player != winner) && wonViewController.loser3ImageView.image == nil) {
       wonViewController.loser3ImageView.image = player.image;
-      break;
+      wonViewController.loser3Label.text = player.playerName;
     }
   }
 }

@@ -15,4 +15,7 @@
 @property (retain, nonatomic) IBOutlet UIImageView *loser2ImageView;
 @property (retain, nonatomic) IBOutlet UIImageView *loser3ImageView;
 @property (retain, nonatomic) IBOutlet UILabel *winnerLabel;
+@property (retain, nonatomic) IBOutlet UILabel *loser1Label;
+@property (retain, nonatomic) IBOutlet UILabel *loser2Label;
+@property (retain, nonatomic) IBOutlet UILabel *loser3Label;
 @end
