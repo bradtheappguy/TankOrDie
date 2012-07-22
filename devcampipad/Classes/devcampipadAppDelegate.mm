@@ -110,18 +110,15 @@
 	
 	[self setLastTicked:[NSDate date]];
 	
-  
-  
-  MPVolumeView *volumeView = [ [MPVolumeView alloc] init] ;
-  [volumeView setShowsVolumeSlider:NO];
-  [volumeView sizeToFit];
-  [window addSubview:volumeView];
-  
     [window makeKeyAndVisible];
     
     return YES;
 }
 
+- (void) screenDidConnect:(NSNotification *)notification {
+  //[self myScreenInit:[notification object]];
+  NSLog(@"foo");
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
 }

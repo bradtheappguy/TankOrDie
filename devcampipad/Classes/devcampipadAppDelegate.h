@@ -63,6 +63,7 @@
 -(void)player:(Player *)player didFireBullet:(NSString *)bulletType;
 -(void) removeLoadingView;
 -(void)setLocalControlsHidden:(BOOL)a animated:(BOOL)b;
+-(void)screenDidConnect:(NSNotification *)notification;
 
 @property (nonatomic, retain) NSMutableArray *connectedPeers;
 

@@ -28,20 +28,31 @@
 @synthesize tank_id;
 @synthesize playerName;
 
+
+-(void)screenDidConnect:(UIScreen *)screen {
+  NSArray *availableModes = [screen availableModes];
+  UIScreenMode *mode = [availableModes objectAtIndex:4];
+  
+  UIWindow *extWindow = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, mode.size.width, mode.size.height)];
+  extWindow.backgroundColor = [UIColor redColor];
+  
+  extWindow.screen = screen;
+  [extWindow makeKeyAndVisible];
+  
+  NSLog(@"%@",availableModes);
+}
+
 -(void) setupExternalWindow {
   NSArray *screens = [UIScreen screens];
   if (screens.count > 1) {
     UIScreen *screen = [screens lastObject];
-    NSArray *availableModes = [screen availableModes];
-    UIScreenMode *mode = [availableModes objectAtIndex:4];
-    
-    UIWindow *extWindow = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, mode.size.width, mode.size.height)];
-    extWindow.backgroundColor = [UIColor redColor];
-                      
-    extWindow.screen = screen;
-    [extWindow makeKeyAndVisible];
-    
-    NSLog(@"%@",availableModes);
+    [self screenDidConnect:screen];
+  } else {
+    [[NSNotificationCenter defaultCenter]
+     addObserver:self
+     selector:@selector(screenDidConnect:)
+     name:UIScreenDidConnectNotification
+     object:nil];
   }
 }
 
