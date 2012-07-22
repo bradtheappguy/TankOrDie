@@ -35,6 +35,7 @@
 		370E41DD15BBF70800CCA630 /* uibtn_joingame.png in Resources */ = {isa = PBXBuildFile; fileRef = 370E41DA15BBF70800CCA630 /* uibtn_joingame.png */; };
 		370E41E315BC4D8B00CCA630 /* h_connect_to_tv.png in Resources */ = {isa = PBXBuildFile; fileRef = 370E41E215BC4D8B00CCA630 /* h_connect_to_tv.png */; };
 		370E41E615BC4E9500CCA630 /* h_game_host.png in Resources */ = {isa = PBXBuildFile; fileRef = 370E41E515BC4E9500CCA630 /* h_game_host.png */; };
+		370E41E815BC59A000CCA630 /* ui_track_score.png in Resources */ = {isa = PBXBuildFile; fileRef = 370E41E715BC599F00CCA630 /* ui_track_score.png */; };
 		A18585AA15BC02DE0029D4A8 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = A18585A515BC02DE0029D4A8 /* UIImage+Alpha.m */; };
 		A18585AB15BC02DE0029D4A8 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = A18585A715BC02DE0029D4A8 /* UIImage+Resize.m */; };
 		A18585AC15BC02DE0029D4A8 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = A18585A915BC02DE0029D4A8 /* UIImage+RoundedCorner.m */; };
@@ -180,6 +181,7 @@
 		370E41DA15BBF70800CCA630 /* uibtn_joingame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = uibtn_joingame.png; path = Images/uibtn_joingame.png; sourceTree = "<group>"; };
 		370E41E215BC4D8B00CCA630 /* h_connect_to_tv.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = h_connect_to_tv.png; path = Images/h_connect_to_tv.png; sourceTree = "<group>"; };
 		370E41E515BC4E9500CCA630 /* h_game_host.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = h_game_host.png; path = Images/h_game_host.png; sourceTree = "<group>"; };
+		370E41E715BC599F00CCA630 /* ui_track_score.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ui_track_score.png; path = Images/ui_track_score.png; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* devcampipad-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "devcampipad-Info.plist"; path = "../devcampipad-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		A18585A415BC02DE0029D4A8 /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
 		A18585A515BC02DE0029D4A8 /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
@@ -499,6 +501,7 @@
 				A2AACE2D119140F0006193E1 /* Default-Landscape.png */,
 				A2AACE2E119140F0006193E1 /* Default-iPhone.png */,
 				A2AACDC611913E78006193E1 /* uiSlider_thumb.png */,
+				370E41E715BC599F00CCA630 /* ui_track_score.png */,
 				A2AACDC711913E78006193E1 /* txt_chooseTank.png */,
 				A2AACDE211913E78006193E1 /* controller_healthbar.png */,
 				A2AACDE311913E78006193E1 /* controller_header.png */,
@@ -757,6 +760,7 @@
 				370E41DD15BBF70800CCA630 /* uibtn_joingame.png in Resources */,
 				370E41E315BC4D8B00CCA630 /* h_connect_to_tv.png in Resources */,
 				370E41E615BC4E9500CCA630 /* h_game_host.png in Resources */,
+				370E41E815BC59A000CCA630 /* ui_track_score.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
