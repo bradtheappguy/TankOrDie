@@ -161,10 +161,7 @@
 }
 
 -(void) timerFired {
-	if (gamePaused) {
-		return;
-	}
-	
+
 	BOOL hasPlayersConnected = NO;
 	
 	Bullet *bullet;

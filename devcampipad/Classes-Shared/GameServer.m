@@ -45,7 +45,7 @@
 	gamePaused = YES;
 	soundPlayer = [[Sound alloc] init];
 	[UIApplication sharedApplication].idleTimerDisabled = YES;
-  
+  [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(gameDidStart:) name:@"GAME_DID_START" object:nil];
 	[NSTimer scheduledTimerWithTimeInterval:FRAMERATE target:self selector:@selector(timerFired) userInfo:nil repeats:YES];
 	stopButton.hidden = YES;
 	
@@ -92,9 +92,9 @@
 
 
 -(void) timerFired {
-    //if (gamePaused) {
-		//return;
-    //}
+  if (gamePaused) {
+		return;
+  }
 	
 	BOOL hasPlayersConnected = NO;
 	
@@ -298,8 +298,6 @@
 
 
 - (void) spawnPlayer:(NSString *)args {
-	gamePaused = NO;
-  
   args = [args stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 	NSArray *argv = [args componentsSeparatedByString:@"|"];
 	Player *p = [[Player alloc] initWithID:[argv objectAtIndex:0]];
@@ -334,5 +332,8 @@
 	}	
 }
 
+-(void) gameDidStart:(id)noti {
+  gamePaused = NO;
+}
 
 @end

@@ -22,8 +22,8 @@
 		29F4539411AB728B00C8BCDB /* case_tankers.png in Resources */ = {isa = PBXBuildFile; fileRef = 29F4539311AB728B00C8BCDB /* case_tankers.png */; };
 		29F4539C11AB76DE00C8BCDB /* connected_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 29F4539B11AB76DE00C8BCDB /* connected_background.png */; };
 		322F261B15BB8ABB002ADD90 /* GameServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 322F261A15BB8ABB002ADD90 /* GameServer.m */; };
-		A20367F5119891FB00673E4C /* ConnectingScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A20367F3119891FB00673E4C /* ConnectingScreenViewController.m */; };
-		A20367F6119891FB00673E4C /* ConnectingScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A20367F4119891FB00673E4C /* ConnectingScreenViewController.xib */; };
+		322F262715BBA921002ADD90 /* GameHostViewControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 322F262615BBA921002ADD90 /* GameHostViewControllerViewController.m */; };
+		322F262A15BBA949002ADD90 /* GameHostViewControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 322F262915BBA949002ADD90 /* GameHostViewControllerViewController.xib */; };
 		A203680C119894F100673E4C /* GameOverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A203680A119894F100673E4C /* GameOverViewController.m */; };
 		A203680D119894F100673E4C /* GameOverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A203680B119894F100673E4C /* GameOverViewController.xib */; };
 		A222E1D1117AE736003F81C0 /* loading0.png in Resources */ = {isa = PBXBuildFile; fileRef = A222E1BF117AE735003F81C0 /* loading0.png */; };
@@ -45,7 +45,6 @@
 		A222E1E1117AE736003F81C0 /* loading8.png in Resources */ = {isa = PBXBuildFile; fileRef = A222E1CF117AE736003F81C0 /* loading8.png */; };
 		A222E1E2117AE736003F81C0 /* loading9.png in Resources */ = {isa = PBXBuildFile; fileRef = A222E1D0117AE736003F81C0 /* loading9.png */; };
 		A232E961119E6E1A009B8E39 /* TDiPadControllerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A232E95F119E6E1A009B8E39 /* TDiPadControllerView.m */; };
-		A232E962119E6E1A009B8E39 /* TDiPadControllerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A232E960119E6E1A009B8E39 /* TDiPadControllerView.xib */; };
 		A27F7084117994730020433A /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27F7083117994730020433A /* GameKit.framework */; };
 		A29954A711AB8233007555F4 /* btn_start.png in Resources */ = {isa = PBXBuildFile; fileRef = A29954A411AB8233007555F4 /* btn_start.png */; };
 		A29954A811AB8233007555F4 /* btn_play.png in Resources */ = {isa = PBXBuildFile; fileRef = A29954A511AB8233007555F4 /* btn_play.png */; };
@@ -101,7 +100,6 @@
 		A2AE33D5117B924500BA4B12 /* btn_join.png in Resources */ = {isa = PBXBuildFile; fileRef = A2AE33D4117B924500BA4B12 /* btn_join.png */; };
 		A2AE33FA117B93C700BA4B12 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2AE33F9117B93C700BA4B12 /* AVFoundation.framework */; };
 		A2CF266511E90D5000C1EF8F /* LocalTankViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CF266311E90D5000C1EF8F /* LocalTankViewController.m */; };
-		A2CF266611E90D5000C1EF8F /* LocalTankViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2CF266411E90D5000C1EF8F /* LocalTankViewController.xib */; };
 		A2ECDEE6119E577600F8DFA7 /* TDiPadMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2ECDEE3119E577600F8DFA7 /* TDiPadMenuViewController.m */; };
 		A2ECDEE7119E577600F8DFA7 /* TDiPadMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2ECDEE4119E577600F8DFA7 /* TDiPadMenuViewController.xib */; };
 		A2EF48FE1179A245008647C5 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EF48FD1179A245008647C5 /* Player.m */; };
@@ -151,11 +149,11 @@
 		29F4539B11AB76DE00C8BCDB /* connected_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = connected_background.png; sourceTree = "<group>"; };
 		322F261915BB8ABB002ADD90 /* GameServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameServer.h; sourceTree = "<group>"; };
 		322F261A15BB8ABB002ADD90 /* GameServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameServer.m; sourceTree = "<group>"; };
+		322F262515BBA921002ADD90 /* GameHostViewControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameHostViewControllerViewController.h; sourceTree = "<group>"; };
+		322F262615BBA921002ADD90 /* GameHostViewControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameHostViewControllerViewController.m; sourceTree = "<group>"; };
+		322F262915BBA949002ADD90 /* GameHostViewControllerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameHostViewControllerViewController.xib; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* devcampipad_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = devcampipad_Prefix.pch; path = ../devcampipad_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* devcampipad-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "devcampipad-Info.plist"; path = "../devcampipad-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
-		A20367F2119891FB00673E4C /* ConnectingScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectingScreenViewController.h; sourceTree = "<group>"; };
-		A20367F3119891FB00673E4C /* ConnectingScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectingScreenViewController.m; sourceTree = "<group>"; };
-		A20367F4119891FB00673E4C /* ConnectingScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConnectingScreenViewController.xib; sourceTree = "<group>"; };
 		A2036809119894F100673E4C /* GameOverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverViewController.h; sourceTree = "<group>"; };
 		A203680A119894F100673E4C /* GameOverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOverViewController.m; sourceTree = "<group>"; };
 		A203680B119894F100673E4C /* GameOverViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameOverViewController.xib; sourceTree = "<group>"; };
@@ -179,7 +177,6 @@
 		A222E1D0117AE736003F81C0 /* loading9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading9.png; sourceTree = "<group>"; };
 		A232E95E119E6E1A009B8E39 /* TDiPadControllerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDiPadControllerView.h; sourceTree = "<group>"; };
 		A232E95F119E6E1A009B8E39 /* TDiPadControllerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDiPadControllerView.m; sourceTree = "<group>"; };
-		A232E960119E6E1A009B8E39 /* TDiPadControllerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TDiPadControllerView.xib; sourceTree = "<group>"; };
 		A27F7083117994730020433A /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		A29954A411AB8233007555F4 /* btn_start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_start.png; sourceTree = "<group>"; };
 		A29954A511AB8233007555F4 /* btn_play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_play.png; sourceTree = "<group>"; };
@@ -242,7 +239,6 @@
 		A2AE33F9117B93C700BA4B12 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		A2CF266211E90D5000C1EF8F /* LocalTankViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalTankViewController.h; sourceTree = "<group>"; };
 		A2CF266311E90D5000C1EF8F /* LocalTankViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalTankViewController.m; sourceTree = "<group>"; };
-		A2CF266411E90D5000C1EF8F /* LocalTankViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocalTankViewController.xib; sourceTree = "<group>"; };
 		A2ECDEE3119E577600F8DFA7 /* TDiPadMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDiPadMenuViewController.m; sourceTree = "<group>"; };
 		A2ECDEE4119E577600F8DFA7 /* TDiPadMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TDiPadMenuViewController.xib; sourceTree = "<group>"; };
 		A2ECDEE5119E577600F8DFA7 /* TDiPadMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDiPadMenuViewController.h; sourceTree = "<group>"; };
@@ -327,10 +323,8 @@
 				FC8F7F541181685400A7D474 /* Vector.m */,
 				A232E95E119E6E1A009B8E39 /* TDiPadControllerView.h */,
 				A232E95F119E6E1A009B8E39 /* TDiPadControllerView.m */,
-				A232E960119E6E1A009B8E39 /* TDiPadControllerView.xib */,
 				A2CF266211E90D5000C1EF8F /* LocalTankViewController.h */,
 				A2CF266311E90D5000C1EF8F /* LocalTankViewController.m */,
-				A2CF266411E90D5000C1EF8F /* LocalTankViewController.xib */,
 			);
 			name = iPad;
 			path = Classes;
@@ -516,15 +510,15 @@
 				A2AACD9B11913BE4006193E1 /* TKThumbSlider.m */,
 				A2AACD9C11913BE4006193E1 /* TXSlider.h */,
 				A2AACD9D11913BE4006193E1 /* TXSlider.m */,
-				A20367F2119891FB00673E4C /* ConnectingScreenViewController.h */,
-				A20367F3119891FB00673E4C /* ConnectingScreenViewController.m */,
-				A20367F4119891FB00673E4C /* ConnectingScreenViewController.xib */,
 				A2036809119894F100673E4C /* GameOverViewController.h */,
 				A203680A119894F100673E4C /* GameOverViewController.m */,
 				A203680B119894F100673E4C /* GameOverViewController.xib */,
 				ACAD994415BBAE76007E393F /* InfoViewController.h */,
 				ACAD994515BBAE77007E393F /* InfoViewController.m */,
 				ACAD994615BBAE77007E393F /* InfoViewController.xib */,
+				322F262515BBA921002ADD90 /* GameHostViewControllerViewController.h */,
+				322F262615BBA921002ADD90 /* GameHostViewControllerViewController.m */,
+				322F262915BBA949002ADD90 /* GameHostViewControllerViewController.xib */,
 			);
 			name = iPhone;
 			path = "Classes-iPhone";
@@ -668,11 +662,9 @@
 				A2AACE51119140F0006193E1 /* bang0003.png in Resources */,
 				A2AACE52119140F0006193E1 /* bang0002.png in Resources */,
 				A2AACE53119140F0006193E1 /* bang0001.png in Resources */,
-				A20367F6119891FB00673E4C /* ConnectingScreenViewController.xib in Resources */,
 				A203680D119894F100673E4C /* GameOverViewController.xib in Resources */,
 				FCC724CE119E1B280053F536 /* ball.png in Resources */,
 				A2ECDEE7119E577600F8DFA7 /* TDiPadMenuViewController.xib in Resources */,
-				A232E962119E6E1A009B8E39 /* TDiPadControllerView.xib in Resources */,
 				FCB75D8B119FC99000662CD5 /* fps_images.png in Resources */,
 				FCB75D8C119FC99000662CD5 /* stars.png in Resources */,
 				FCB75D8D119FC99000662CD5 /* stars.pvr in Resources */,
@@ -692,10 +684,10 @@
 				A29954AD11AB8241007555F4 /* _screen_newgame.png in Resources */,
 				A29954D011AB8C16007555F4 /* newgame_light_connect.png in Resources */,
 				A29954D211AB8C20007555F4 /* newgame_light_idle.png in Resources */,
-				A2CF266611E90D5000C1EF8F /* LocalTankViewController.xib in Resources */,
 				ACAD993015BB8C03007E393F /* StartTankViewController.xib in Resources */,
 				ACAD994215BBA790007E393F /* Icon_addprofile.png in Resources */,
 				ACAD994815BBAE78007E393F /* InfoViewController.xib in Resources */,
+				322F262A15BBA949002ADD90 /* GameHostViewControllerViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -720,7 +712,6 @@
 				A2AACDA211913BE4006193E1 /* TXSlider.m in Sources */,
 				A2AACDA911913C55006193E1 /* ControlsViewController.m in Sources */,
 				A2AACE571191418B006193E1 /* Sound.m in Sources */,
-				A20367F5119891FB00673E4C /* ConnectingScreenViewController.m in Sources */,
 				A203680C119894F100673E4C /* GameOverViewController.m in Sources */,
 				A2ECDEE6119E577600F8DFA7 /* TDiPadMenuViewController.m in Sources */,
 				A232E961119E6E1A009B8E39 /* TDiPadControllerView.m in Sources */,
@@ -728,6 +719,7 @@
 				322F261B15BB8ABB002ADD90 /* GameServer.m in Sources */,
 				ACAD992F15BB8C03007E393F /* StartTankViewController.m in Sources */,
 				ACAD994715BBAE78007E393F /* InfoViewController.m in Sources */,
+				322F262715BBA921002ADD90 /* GameHostViewControllerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

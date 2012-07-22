@@ -12,13 +12,13 @@
 
 #import "AppDelegate.h"
 #import "ControlsViewController.h"
-#import "ConnectingScreenViewController.h"
 #import "GameOverViewController.h"
 #import "TDiPadMenuViewController.h"
 #import "TankPickerController.h"
 #import <AudioToolbox/AudioToolbox.h>
 #import <MediaPlayer/MediaPlayer.h>
 #import "GameServer.h"
+#import "GameHostViewControllerViewController.h"
 
 @implementation AppDelegate
 
@@ -74,6 +74,10 @@
 - (void)tankPickerController:(TankPickerController *)controller didFinishPickingTankID:(int)tankID withPlayerName:(NSString *)name {
 	[self sendLocalMessageToServer:@"confirmiPhone|1|testname"];
   [tankPickerController.view removeFromSuperview];
+  GameHostViewControllerViewController *hostViewControleer = [[GameHostViewControllerViewController alloc] initWithNibName:nil bundle:nil];
+  hostViewControleer.view.transform =CGAffineTransformMakeRotation( .5 * M_PI );
+  hostViewControleer.view.center = CGPointMake(160, 240);
+  [self.window addSubview:hostViewControleer.view];
 }
 
 
@@ -104,8 +108,7 @@
 	
 	controlsViewController = [[ControlsViewController alloc] initWithNibName:@"ControlsViewController" bundle:nil];
 	tankPickerController = [[TankPickerController alloc] initWithNibName:@"TankPickerController" bundle:nil]; 
-	connectingViewController = [[ConnectingScreenViewController alloc] initWithNibName:@"ConnectingScreenViewController" bundle:nil];
-	gameOverViewController = [[GameOverViewController alloc] initWithNibName:@"GameOverViewController" bundle:nil];
+  gameOverViewController = [[GameOverViewController alloc] initWithNibName:@"GameOverViewController" bundle:nil];
 	
 	
 	[NSTimer scheduledTimerWithTimeInterval:1/10 target:self selector:@selector(timerFired) userInfo:nil repeats:YES];
@@ -175,7 +178,7 @@
 		
 		//NSLog(@"%f  %f",leftSliderLastValue, rightSliderLastValue);
 		
-		if (connection) {
+		if (true) {
 			NSString *command = [NSString stringWithFormat:@"sliderDidChange|%f %f", leftSliderLastValue, rightSliderLastValue];
 			NSData *data = [command dataUsingEncoding:NSUTF8StringEncoding];
 			NSError *error;
@@ -184,8 +187,10 @@
         [self sendLocalMessageToServer:command];
       }
       else {
-        if (![connection sendData:data toPeers:[NSArray arrayWithObject:serverPeerID] withDataMode:GKSendDataUnreliable error:&error]) {
-          NSLog(@"ERROR: %@",error);
+        if (serverPeerID) {
+          if (![connection sendData:data toPeers:[NSArray arrayWithObject:serverPeerID] withDataMode:GKSendDataUnreliable error:&error]) {
+            NSLog(@"ERROR: %@",error);
+          }
         }
       }
 				
