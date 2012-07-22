@@ -139,22 +139,23 @@
     } 
 }
 
-- (void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+- (void) imagePickerController:(UIImagePickerController *)faceGrabber didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
     // [[addProfileButton imageView] setContentMode:UIViewContentModeCenter];
     [addProfileButton setImage:[[info objectForKey:(UIImagePickerControllerEditedImage)] resizedImage:CGSizeMake(100,100) interpolationQuality:kCGInterpolationHigh] forState:(UIControlStateNormal)];
-    [picker dismissModalViewControllerAnimated:(YES)];
-    if (self.interfaceOrientation != UIInterfaceOrientationPortrait) {
-        [[UIDevice currentDevice] performSelector:NSSelectorFromString(@"setOrientation:") withObject:(id)UIInterfaceOrientationLandscapeRight];
-    }
+    [[UIApplication sharedApplication] setStatusBarHidden:NO];
+    [[UIApplication sharedApplication] setStatusBarOrientation:UIInterfaceOrientationLandscapeRight];
+    [faceGrabber dismissModalViewControllerAnimated:(YES)];
+    [[UIApplication sharedApplication] setStatusBarHidden:YES];
 }
 
-- (void) imagePickerControllerDidCancel:(UIImagePickerController *)picker
+- (void) imagePickerControllerDidCancel:(UIImagePickerController *)faceGrabber
 {
-    [picker dismissModalViewControllerAnimated:(YES)];
-    if (self.interfaceOrientation != UIInterfaceOrientationPortrait) {
-        [[UIDevice currentDevice] performSelector:NSSelectorFromString(@"setOrientation:") withObject:(id)UIInterfaceOrientationLandscapeRight];
-    }
-}
+    [[UIApplication sharedApplication] setStatusBarHidden:NO];
+    [[UIApplication sharedApplication] setStatusBarOrientation:UIInterfaceOrientationLandscapeRight];
+    [faceGrabber dismissModalViewControllerAnimated:(YES)];
+    [[UIApplication sharedApplication] setStatusBarHidden:YES];
+
+   }
 
 @end
