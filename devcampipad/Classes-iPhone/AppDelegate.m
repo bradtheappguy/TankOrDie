@@ -14,7 +14,7 @@
 #import "ControlsViewController.h"
 #import "ConnectingScreenViewController.h"
 #import "GameOverViewController.h"
-
+#import "TDiPadMenuViewController.h"
 #import "TankPickerController.h"
 #import <AudioToolbox/AudioToolbox.h>
 #import <MediaPlayer/MediaPlayer.h>
@@ -31,13 +31,19 @@
 
 -(void)screenDidConnect:(UIScreen *)screen {
   NSArray *availableModes = [screen availableModes];
-  UIScreenMode *mode = [availableModes objectAtIndex:4];
+  UIScreenMode *mode = [availableModes objectAtIndex:0];
   
   UIWindow *extWindow = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, mode.size.width, mode.size.height)];
   extWindow.backgroundColor = [UIColor redColor];
   
   extWindow.screen = screen;
-  [extWindow makeKeyAndVisible];
+  extWindow.hidden = NO;
+  
+  TDiPadMenuViewController *menuViewContoller = [[TDiPadMenuViewController alloc] initWithNibName:@"TDiPadMenuViewController" bundle:nil];
+    //menuViewContoller.view.transform = landscapeTransform;
+    //menuViewContoller.view.center = CGPointMake(window.frame.size.width/2, window.frame.size.height/2);
+	[menuViewContoller setButtonsVisible:YES animated:YES];
+	[extWindow addSubview:menuViewContoller.view];
   
   NSLog(@"%@",availableModes);
 }

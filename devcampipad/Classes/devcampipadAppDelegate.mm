@@ -58,32 +58,7 @@
 	
 	soundPlayer = [[Sound alloc] init];
 	[UIApplication sharedApplication].idleTimerDisabled = YES;
-/*	loadingView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"loading0.png"]];
-	loadingView.animationDuration = 1;
-	[loadingView setAnimationImages:[NSArray arrayWithObjects:[UIImage imageNamed:@"loading1.png"], 
-																		[UIImage imageNamed:@"loading2.png"],
-									 [UIImage imageNamed:@"loading3.png"],
-									 [UIImage imageNamed:@"loading4.png"],
-									 [UIImage imageNamed:@"loading5.png"],
-									 [UIImage imageNamed:@"loading6.png"],
-									 [UIImage imageNamed:@"loading7.png"],
-									 [UIImage imageNamed:@"loading8.png"],
-									 [UIImage imageNamed:@"loading9.png"],
-									 [UIImage imageNamed:@"loading10.png"],
-									 [UIImage imageNamed:@"loading11.png"],
-									 [UIImage imageNamed:@"loading12.png"],
-									 [UIImage imageNamed:@"loading13.png"],
-									 [UIImage imageNamed:@"loading14.png"],
-									 [UIImage imageNamed:@"loading15.png"],
-									 [UIImage imageNamed:@"loading16.png"],
-									 [UIImage imageNamed:@"loading17.png"],
-									                               nil]];
-	[loadingView startAnimating];
-	
-	[window addSubview:loadingView];
-	loadingView.center = window.center;
-*/		
-	
+		
 	[NSTimer scheduledTimerWithTimeInterval:FRAMERATE target:self selector:@selector(timerFired) userInfo:nil repeats:YES];
 	stopButton.hidden = YES;
 	
