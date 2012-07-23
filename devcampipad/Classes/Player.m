@@ -16,14 +16,14 @@
 #define kBoardWidth 720.0
 #define kBoardHeight 1024.0
 
-#define kPlayerwidth 60
-#define kPlayerHeight 60
+#define kPlayerwidth 150
+#define kPlayerHeight 150
 
 #define kShieldWidth 75
 #define kShieldHeight 75
 
-#define kMaxTankSpeed 100.0
-#define kTurnRate 6.0
+#define kMaxTankSpeed 125.0
+#define kTurnRate 4.0
 #define stepSize 5
 #define kTankAcceleration 10.0
 #define kTimeBetweenFire 0.05

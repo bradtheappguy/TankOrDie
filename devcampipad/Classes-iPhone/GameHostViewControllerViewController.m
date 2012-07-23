@@ -61,9 +61,11 @@
         
     }
     
+  [self updateConnectionScreenUI];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateConnectionScreenUI) name:@"PLAYER_JOINED" object:nil];	
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateConnectionScreenUI) name:@"GAME_RESET" object:nil];
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }

@@ -25,6 +25,11 @@
 		3228181F15BBD13B0043A779 /* ScoreBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3228181E15BBD13B0043A779 /* ScoreBoardView.m */; };
 		3228182715BBF0660043A779 /* PlayerWonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3228182515BBF0660043A779 /* PlayerWonViewController.m */; };
 		3228182B15BBF0B20043A779 /* PlayerWonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3228182A15BBF0B20043A779 /* PlayerWonViewController.xib */; };
+		322C6B2B15BC8EDC001C9318 /* Icon72.png in Resources */ = {isa = PBXBuildFile; fileRef = 322C6B2815BC8EDC001C9318 /* Icon72.png */; };
+		322C6B2C15BC8EDC001C9318 /* Icon57.png in Resources */ = {isa = PBXBuildFile; fileRef = 322C6B2915BC8EDC001C9318 /* Icon57.png */; };
+		322C6B2D15BC8EDC001C9318 /* Icon-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 322C6B2A15BC8EDC001C9318 /* Icon-512.png */; };
+		322C6B2F15BC8F2E001C9318 /* Icon57.png in Resources */ = {isa = PBXBuildFile; fileRef = 322C6B2E15BC8F2E001C9318 /* Icon57.png */; };
+		322C6B3115BC8F3A001C9318 /* Icon72.png in Resources */ = {isa = PBXBuildFile; fileRef = 322C6B3015BC8F3A001C9318 /* Icon72.png */; };
 		322F261B15BB8ABB002ADD90 /* GameServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 322F261A15BB8ABB002ADD90 /* GameServer.m */; };
 		322F262715BBA921002ADD90 /* GameHostViewControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 322F262615BBA921002ADD90 /* GameHostViewControllerViewController.m */; };
 		322F262A15BBA949002ADD90 /* GameHostViewControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 322F262915BBA949002ADD90 /* GameHostViewControllerViewController.xib */; };
@@ -168,6 +173,11 @@
 		3228182415BBF0660043A779 /* PlayerWonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerWonViewController.h; sourceTree = "<group>"; };
 		3228182515BBF0660043A779 /* PlayerWonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerWonViewController.m; sourceTree = "<group>"; };
 		3228182A15BBF0B20043A779 /* PlayerWonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayerWonViewController.xib; sourceTree = "<group>"; };
+		322C6B2815BC8EDC001C9318 /* Icon72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon72.png; path = Images/Icon72.png; sourceTree = SOURCE_ROOT; };
+		322C6B2915BC8EDC001C9318 /* Icon57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon57.png; path = Images/Icon57.png; sourceTree = SOURCE_ROOT; };
+		322C6B2A15BC8EDC001C9318 /* Icon-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-512.png"; path = "Images/Icon-512.png"; sourceTree = SOURCE_ROOT; };
+		322C6B2E15BC8F2E001C9318 /* Icon57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon57.png; sourceTree = "<group>"; };
+		322C6B3015BC8F3A001C9318 /* Icon72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon72.png; sourceTree = "<group>"; };
 		322F261915BB8ABB002ADD90 /* GameServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameServer.h; sourceTree = "<group>"; };
 		322F261A15BB8ABB002ADD90 /* GameServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameServer.m; sourceTree = "<group>"; };
 		322F262515BBA921002ADD90 /* GameHostViewControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameHostViewControllerViewController.h; sourceTree = "<group>"; };
@@ -379,6 +389,8 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				322C6B3015BC8F3A001C9318 /* Icon72.png */,
+				322C6B2E15BC8F2E001C9318 /* Icon57.png */,
 				A18585A315BC02DE0029D4A8 /* UIImage-Categories */,
 				A2AACE541191418B006193E1 /* Common */,
 				A2AACD9411913BE4006193E1 /* iPhone */,
@@ -420,6 +432,9 @@
 		A18585A315BC02DE0029D4A8 /* UIImage-Categories */ = {
 			isa = PBXGroup;
 			children = (
+				322C6B2815BC8EDC001C9318 /* Icon72.png */,
+				322C6B2915BC8EDC001C9318 /* Icon57.png */,
+				322C6B2A15BC8EDC001C9318 /* Icon-512.png */,
 				A18585A415BC02DE0029D4A8 /* UIImage+Alpha.h */,
 				A18585A515BC02DE0029D4A8 /* UIImage+Alpha.m */,
 				A18585A615BC02DE0029D4A8 /* UIImage+Resize.h */,
@@ -761,6 +776,11 @@
 				370E41E315BC4D8B00CCA630 /* h_connect_to_tv.png in Resources */,
 				370E41E615BC4E9500CCA630 /* h_game_host.png in Resources */,
 				370E41E815BC59A000CCA630 /* ui_track_score.png in Resources */,
+				322C6B2B15BC8EDC001C9318 /* Icon72.png in Resources */,
+				322C6B2C15BC8EDC001C9318 /* Icon57.png in Resources */,
+				322C6B2D15BC8EDC001C9318 /* Icon-512.png in Resources */,
+				322C6B2F15BC8F2E001C9318 /* Icon57.png in Resources */,
+				322C6B3115BC8F3A001C9318 /* Icon72.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -819,7 +839,7 @@
 					$SOURCE_ROOT/Cocos2d/cocos2d,
 				);
 				INFOPLIST_FILE = "devcampipad-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = devcampipad;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
@@ -830,14 +850,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Franky Aguilar (SU9MTY32ER)";
+				ARCHS = (
+					armv7,
+					armv6,
+				);
+				"ARCHS[sdk=iphoneos*]" = (
+					armv7,
+					armv6,
+				);
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Brad Smith";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = devcampipad_Prefix.pch;
 				INFOPLIST_FILE = "devcampipad-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = devcampipad;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "758D2F03-6F2D-4102-B4DC-AE844670A331";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "7AB02801-C801-44D6-8138-8A6CF8F96E9B";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

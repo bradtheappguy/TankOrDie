@@ -9,11 +9,11 @@
 #import "Bullet.h"
 
 
-#define kBulletWidth 15.0
-#define kBulletHeight 15.0
-#define kFlyingTime 4.0
-#define kExplodingTime 0.5
-#define kBulletSpeed 40.0
+#define kBulletWidth 30.0
+#define kBulletHeight 30.0
+#define kFlyingTime 6.0
+#define kExplodingTime 3
+#define kBulletSpeed 60.0
 
 
 @implementation Bullet
@@ -118,7 +118,7 @@
 						  [UIImage imageNamed:@"bang0010.png"],
 						  [UIImage imageNamed:@"bang0011.png"], nil];
 	[self setAnimationRepeatCount:1];
-	[self setAnimationDuration:kExplodingTime];
+    //[self setAnimationDuration:kExplodingTime];
 	[self setAnimationImages:explosion];
 	[self startAnimating];
 	
