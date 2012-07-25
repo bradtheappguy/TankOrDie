@@ -14,4 +14,15 @@
 
 @synthesize powerUpType;
 
+
+-(id)initWithPowerUpType:(NSString *)theType {
+	if (self = [super initWithFrame:CGRectMake(0.0, 0.0, 20.0, 20.0)]) {
+		if ([theType isEqualToString:@"shield"]) {
+			[self setImage:[UIImage imageNamed:@"shield.png"]];
+		}
+	}
+	return self;
+}
+
+
 @end

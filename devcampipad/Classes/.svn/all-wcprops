@@ -1,77 +1,161 @@
 K 25
 svn:wc:ra_dav:version-url
 V 41
-/devcamp/!svn/ver/150/devcampipad/Classes
+/devcamp/!svn/ver/236/devcampipad/Classes
 END
-devcampipadAppDelegate.h
-K 25
-svn:wc:ra_dav:version-url
-V 66
-/devcamp/!svn/ver/148/devcampipad/Classes/devcampipadAppDelegate.h
-END
-ClientModeSessionHandler.m
+TDiPadMenuViewController.h
 K 25
 svn:wc:ra_dav:version-url
 V 68
-/devcamp/!svn/ver/148/devcampipad/Classes/ClientModeSessionHandler.m
+/devcamp/!svn/ver/231/devcampipad/Classes/TDiPadMenuViewController.h
 END
-PlayerView.m
+Cyborg.m
 K 25
 svn:wc:ra_dav:version-url
-V 54
-/devcamp/!svn/ver/140/devcampipad/Classes/PlayerView.m
+V 50
+/devcamp/!svn/ver/194/devcampipad/Classes/Cyborg.m
+END
+devcampipadAppDelegate.mm
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/devcamp/!svn/ver/236/devcampipad/Classes/devcampipadAppDelegate.mm
+END
+TouchController.m
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/devcamp/!svn/ver/194/devcampipad/Classes/TouchController.m
 END
 Bullet.m
 K 25
 svn:wc:ra_dav:version-url
 V 50
-/devcamp/!svn/ver/120/devcampipad/Classes/Bullet.m
+/devcamp/!svn/ver/194/devcampipad/Classes/Bullet.m
 END
-devcampipadAppDelegate.m
+Player.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/devcamp/!svn/ver/236/devcampipad/Classes/Player.h
+END
+TDiPadMenuViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/devcamp/!svn/ver/236/devcampipad/Classes/TDiPadMenuViewController.m
+END
+Map.mm
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/devcamp/!svn/ver/221/devcampipad/Classes/Map.mm
+END
+TDiPadControllerView.xib
 K 25
 svn:wc:ra_dav:version-url
 V 66
-/devcamp/!svn/ver/150/devcampipad/Classes/devcampipadAppDelegate.m
+/devcamp/!svn/ver/212/devcampipad/Classes/TDiPadControllerView.xib
 END
 PowerUp.h
 K 25
 svn:wc:ra_dav:version-url
 V 51
-/devcamp/!svn/ver/125/devcampipad/Classes/PowerUp.h
+/devcamp/!svn/ver/194/devcampipad/Classes/PowerUp.h
 END
-SlaveBoard.h
+Player.m
 K 25
 svn:wc:ra_dav:version-url
-V 53
-/devcamp/!svn/ver/96/devcampipad/Classes/SlaveBoard.h
+V 50
+/devcamp/!svn/ver/236/devcampipad/Classes/Player.m
 END
-ClientModeSessionHandler.h
+Vector.h
 K 25
 svn:wc:ra_dav:version-url
-V 68
-/devcamp/!svn/ver/148/devcampipad/Classes/ClientModeSessionHandler.h
+V 50
+/devcamp/!svn/ver/194/devcampipad/Classes/Vector.h
+END
+TDiPadControllerView.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/devcamp/!svn/ver/212/devcampipad/Classes/TDiPadControllerView.h
 END
 PowerUp.m
 K 25
 svn:wc:ra_dav:version-url
 V 51
-/devcamp/!svn/ver/125/devcampipad/Classes/PowerUp.m
+/devcamp/!svn/ver/194/devcampipad/Classes/PowerUp.m
 END
-PlayerView.h
+Vector.m
 K 25
 svn:wc:ra_dav:version-url
-V 54
-/devcamp/!svn/ver/133/devcampipad/Classes/PlayerView.h
+V 50
+/devcamp/!svn/ver/194/devcampipad/Classes/Vector.m
 END
-SlaveBoard.m
+devcampipadAppDelegate.h
 K 25
 svn:wc:ra_dav:version-url
-V 54
-/devcamp/!svn/ver/148/devcampipad/Classes/SlaveBoard.m
+V 66
+/devcamp/!svn/ver/231/devcampipad/Classes/devcampipadAppDelegate.h
+END
+TDiPadControllerView.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/devcamp/!svn/ver/212/devcampipad/Classes/TDiPadControllerView.m
+END
+World.mm
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/devcamp/!svn/ver/230/devcampipad/Classes/World.mm
+END
+Map.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/devcamp/!svn/ver/219/devcampipad/Classes/Map.h
+END
+BulletParticleSystem.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/devcamp/!svn/ver/223/devcampipad/Classes/BulletParticleSystem.h
+END
+TDiPadMenuViewController.xib
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/devcamp/!svn/ver/231/devcampipad/Classes/TDiPadMenuViewController.xib
+END
+Cyborg.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/devcamp/!svn/ver/194/devcampipad/Classes/Cyborg.h
+END
+BulletParticleSystem.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/devcamp/!svn/ver/223/devcampipad/Classes/BulletParticleSystem.m
+END
+TouchController.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/devcamp/!svn/ver/194/devcampipad/Classes/TouchController.h
 END
 Bullet.h
 K 25
 svn:wc:ra_dav:version-url
 V 50
-/devcamp/!svn/ver/120/devcampipad/Classes/Bullet.h
+/devcamp/!svn/ver/194/devcampipad/Classes/Bullet.h
+END
+World.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/devcamp/!svn/ver/221/devcampipad/Classes/World.h
 END

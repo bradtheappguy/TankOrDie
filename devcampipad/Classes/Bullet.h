@@ -9,11 +9,18 @@
 #import <Foundation/Foundation.h>
 
 
-@class PlayerView;
+typedef enum {
+	kNone,
+	kSingle,
+	kTriple
+} BulletEmitPattern;
+
+
+@class Player;
 
 
 @interface Bullet : UIImageView {
-	PlayerView *player;
+	Player *player;
 	float rot;
 	float speed;
 	CGPoint direction;
@@ -22,18 +29,19 @@
 	NSTimeInterval timeSpentExploding;
 	NSTimeInterval timeSpentFlying;
 	BOOL exploding;
+	float damage;
 }
 
-
-+(id)bulletFrom:(PlayerView *)thePlayer WithType:(id)type;
+-(id)initWithImage:(UIImage *)theImage AndPlayer:(Player *)thePlayer;
 -(void)update:(NSTimeInterval)dt;
 -(void)explode;
 
 
-@property (nonatomic, retain) PlayerView *player;
+@property (nonatomic, retain) Player *player;
 @property float rot;
 @property CGPoint direction;
 @property CGPoint origin;
 @property BOOL exploding;
+@property float damage;
 
 @end

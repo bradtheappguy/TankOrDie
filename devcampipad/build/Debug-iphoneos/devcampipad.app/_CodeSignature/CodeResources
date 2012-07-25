@@ -4,33 +4,85 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>001.png</key>
+		<data>
+		/5rU/azX5XenvraojelabIxb10g=
+		</data>
+		<key>001.tmx</key>
+		<data>
+		uUc4ctIoHR4tuYskC+tM8W4zvtE=
+		</data>
+		<key>ConnectingScreenViewController.nib</key>
+		<data>
+		BdET381Y2IG8dkKSGILEkvHq0TA=
+		</data>
+		<key>ControlsViewController.nib</key>
+		<data>
+		y+uvlvFBbgBYjWbT7d+TgYs6Y6M=
+		</data>
 		<key>Default-Landscape.png</key>
 		<data>
-		ZfulDyMg8EXCbq5F/F0H6gpbKBU=
+		VVENmGodotmHKz0t0vw4BKiD7CM=
 		</data>
 		<key>Default-Portrait.png</key>
 		<data>
-		KN6IDgqGghMB30jgekN5vKWViIE=
+		VVENmGodotmHKz0t0vw4BKiD7CM=
 		</data>
-		<key>Icon-1.png</key>
+		<key>Default-iPhone.png</key>
 		<data>
-		8BnX/lHUc0GfoDOfY/q4ZwAiOO8=
+		9o/tmWxBpbU9MchcL2F/J8nvPKM=
+		</data>
+		<key>DemoMap.tmx</key>
+		<data>
+		HChHABp13zlM6cAaHcuyx2TY7+4=
+		</data>
+		<key>GameOverViewController.nib</key>
+		<data>
+		EvNMK0zwlOP1TYSFAxdYV5r+TfA=
+		</data>
+		<key>Icon-iPhone.png</key>
+		<data>
+		QlmVF/y/J3naAxol0bv+foCb/m8=
 		</data>
 		<key>Icon.png</key>
 		<data>
 		8BnX/lHUc0GfoDOfY/q4ZwAiOO8=
 		</data>
+		<key>MainWindow-iPad.nib</key>
+		<data>
+		5cHURSbdyFt4DDrtCV5oQZvjaO8=
+		</data>
 		<key>MainWindow.nib</key>
 		<data>
-		Wc794xwa1vuvs2ixMzaFEX31MHo=
+		fTMPCQlgAfvZEM4wya6bqrFbR9w=
 		</data>
 		<key>PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
 		</data>
-		<key>airplane.jpg</key>
+		<key>TDiPadControllerView.nib</key>
 		<data>
-		Odh+SFf351V8iyEHU98IRIx2O/k=
+		d3s/FmxLFqs+8vWKzFmA0G0jFh4=
+		</data>
+		<key>TDiPadMenuViewController.nib</key>
+		<data>
+		ACMh4MSH/RsQYlMs3jxdc41z/Rc=
+		</data>
+		<key>TankPickerController.nib</key>
+		<data>
+		8c4IJy1pFGAiCas6iCuMXlH44Do=
+		</data>
+		<key>Tileset.png</key>
+		<data>
+		5pygRahNCN6e1ehkkpMl1Ih20so=
+		</data>
+		<key>_screen_newgame.png</key>
+		<data>
+		wSgTsVO3/S5VKGXFnvMYJSSD81U=
+		</data>
+		<key>ball.png</key>
+		<data>
+		IBlew6BW3Ip4Enon+Un4PEJgdJA=
 		</data>
 		<key>bang0001.png</key>
 		<data>
@@ -76,9 +128,97 @@
 		<data>
 		m7D69KtuJdl1SXRqrzwFrKq1WLk=
 		</data>
+		<key>btn_help.png</key>
+		<data>
+		Qg3vNCsbZWzP9lLOYBtO1B3kZH0=
+		</data>
+		<key>btn_join.png</key>
+		<data>
+		k2mQbOpZJXN706weKAb+Btse0qw=
+		</data>
+		<key>btn_new-1.png</key>
+		<data>
+		GzmrWKCW3ghROXVNIJ1HbuQ+Aas=
+		</data>
+		<key>btn_play.png</key>
+		<data>
+		dHxJIi4ScPplwSNjFc92oDwHcH0=
+		</data>
+		<key>btn_start.png</key>
+		<data>
+		gT2QACAC/UaLUr3HdeYyect4kBo=
+		</data>
+		<key>btn_stop.png</key>
+		<data>
+		GIrx9IhfdMiAOVMfIDcu+pw9Sig=
+		</data>
+		<key>button_fire_down.png</key>
+		<data>
+		PgkKzPr6CBuHibgxvT7RGOk5W30=
+		</data>
+		<key>button_fire_up.png</key>
+		<data>
+		dnhEEuP3TAlNTExYRoRzaSqeouE=
+		</data>
+		<key>case_tankers.png</key>
+		<data>
+		NmaEgXb2P8VGgMzmn0mj4WIH250=
+		</data>
+		<key>connected.caf</key>
+		<data>
+		526wzHLQVLKo3fbJKVP4ZA67+/4=
+		</data>
+		<key>connected_background.png</key>
+		<data>
+		i5XFkzsurAbWBXlBzSTpvY6t6so=
+		</data>
+		<key>controller_background.png</key>
+		<data>
+		tbQywhM7CEZ4K7gAGqOHxZUJeHY=
+		</data>
+		<key>controller_header.png</key>
+		<data>
+		1hDwdgpD/B3Je0nF+fWLsMHDkOs=
+		</data>
+		<key>controller_healthbar.png</key>
+		<data>
+		MnBxIORZ7TC9DFntyCGuAculBJw=
+		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		17g4AxY90pmiMXjDwTbhSEMNgDU=
+		gpjMjDg6ABqnqlLN5ZRmATFsfqI=
+		</data>
+		<key>fire.caf</key>
+		<data>
+		No3/VIaALweWnd9sI3YiceL+MGY=
+		</data>
+		<key>fps_images.png</key>
+		<data>
+		df+X61fyIPq6c17u1Duc22Sp4Hs=
+		</data>
+		<key>h_choosetank.png</key>
+		<data>
+		ReprAmjfL8bohv8iTxPXVpyxlS8=
+		</data>
+		<key>hit.caf</key>
+		<data>
+		6KFs6lxd50HP6QE35uIYl4kxkRQ=
+		</data>
+		<key>ibtn_connect.png</key>
+		<data>
+		aW62N1BHDjdG+iWiBwhdTrxKR2Q=
+		</data>
+		<key>ibtn_huh.png</key>
+		<data>
+		l2cXaXeCNKjFZ1WXMWKv/xZfai0=
+		</data>
+		<key>ibtn_save.png</key>
+		<data>
+		sNDXWl9qPNvTkzNvL5J9pimdjjg=
+		</data>
+		<key>ibtn_what.png</key>
+		<data>
+		IIktsdhjh8dHMl6gd7liXyJBCmY=
 		</data>
 		<key>loading0.png</key>
 		<data>
@@ -152,7 +292,47 @@
 		<data>
 		if+2Vome2qJlMnzP8BsJtGbNJ2s=
 		</data>
+		<key>lockIcon.png</key>
+		<data>
+		Rc2r4Bns7ky/zcPbzS/hrPHyh18=
+		</data>
+		<key>newgame_light_connect.png</key>
+		<data>
+		2jMYzGesYmlSQIIY5udQ5Rz4u5g=
+		</data>
+		<key>newgame_light_idle.png</key>
+		<data>
+		qRJsAxAXLCO4CC3bo7uqDiFDV8w=
+		</data>
+		<key>newgame_tablebg_connect.png</key>
+		<data>
+		JLexVXiW9/g8NqZ+D3sgluIT8Ug=
+		</data>
+		<key>shield.png</key>
+		<data>
+		PUZss2k6g/bnZFxQaUlp4OVslig=
+		</data>
+		<key>smoke.png</key>
+		<data>
+		5yJY8Yu1xW66vl0M0ePfq0JCcoo=
+		</data>
+		<key>soundtrack.mp3</key>
+		<data>
+		x8j7QQtZ0wq82MV/lhX2+YlBUYw=
+		</data>
+		<key>stars.png</key>
+		<data>
+		+K95dD7+hNcgMm8lQFuwFg/oO4s=
+		</data>
+		<key>stars.pvr</key>
+		<data>
+		CMZVUSkvsSJKaPp7qM5TEr6aKXo=
+		</data>
 		<key>tank_01.png</key>
+		<data>
+		ebznQ3wdqn3Ph51zYs3dzP+/0IE=
+		</data>
+		<key>tank_01_00.png</key>
 		<data>
 		mFhHoXLuZzxssY5Ez9419asME64=
 		</data>
@@ -179,6 +359,22 @@
 		<key>tanktank_bg.png</key>
 		<data>
 		/HI6VrsAWKHlunfOjIH5clMu9uo=
+		</data>
+		<key>track.caf</key>
+		<data>
+		OqZJ9NXx4IynOWGf5WjPT6AkKz8=
+		</data>
+		<key>txt_chooseTank.png</key>
+		<data>
+		lZO7hDLJ1BvPkaHDMIrarv1jjfA=
+		</data>
+		<key>uiSlider_thumb.png</key>
+		<data>
+		aAsykrREZwPgNPavkv0Xa6LBfko=
+		</data>
+		<key>uiSlider_track.png</key>
+		<data>
+		PHWmnj/K65uoVOgVQbx6a6j/SfQ=
 		</data>
 	</dict>
 	<key>rules</key>

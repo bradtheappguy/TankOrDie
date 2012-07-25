@@ -1,15 +1,15 @@
 10
 
 dir
-150
+236
 http://brad@svn.bradsmithinc.com/devcamp/devcampipad
 http://brad@svn.bradsmithinc.com/devcamp
 
 
 
-2010-04-18T10:56:38.654739Z
-150
-john
+2010-05-25T06:33:25.311282Z
+236
+brad
 has-props
 
 
@@ -32,10 +32,10 @@ file
 
 
 
-2010-04-17T08:31:21.000000Z
-fdac89b5184dcecc080c9ceb01769cb7
-2010-04-17T08:30:19.283122Z
-8
+2010-04-20T15:33:38.000000Z
+ab32a02237a19efcc8135af2575b1cf3
+2010-04-20T18:31:34.227668Z
+190
 brad
 
 
@@ -58,19 +58,337 @@ brad
 
 
 
-352
+347
 
-tank_01.png
+connected_background.png
 file
 
 
 
 
-2010-04-18T00:47:29.000000Z
-2557b0a2f07abaf782d7fbd249b35129
-2010-04-18T01:06:30.745339Z
-72
+2010-05-25T03:52:42.000000Z
+e220d0a251fca5df33bd12c8f4ac34f9
+2010-05-25T03:13:38.084990Z
+224
+franky
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+177105
+
+case_tankers.png
+file
+
+
+
+
+2010-05-25T03:52:42.000000Z
+0a001c8024dccfbdd67e7ca925f577a2
+2010-05-25T03:13:38.084990Z
+224
+franky
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+25330
+
+h_choosetank.png
+file
+
+
+
+
+2010-05-25T03:52:42.000000Z
+9da71a17ce8c8eeafc69bc629a854913
+2010-05-25T03:13:38.084990Z
+224
+franky
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10106
+
+Cocos2d
+dir
+
+ibtn_save.png
+file
+
+
+
+
+2010-05-25T03:52:42.000000Z
+3b9f03f180bbe86aad650d2e32db801f
+2010-05-25T03:13:38.084990Z
+224
+franky
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4483
+
+MainWindow.xib
+file
+
+
+
+
+2010-05-15T05:31:18.000000Z
+5411f8f8cf07e11760feae2d2fbfaf05
+2010-05-15T06:53:20.863540Z
+212
 brad
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+18998
+
+Classes
+dir
+
+newgame_tablebg_connect.png
+file
+
+
+
+
+2010-05-25T03:30:23.000000Z
+33fee9001cab9d4b3cdb7ff0cbdbae50
+2010-05-25T03:53:27.530256Z
+230
+brad
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+32543
+
+_screen_newgame.png
+file
+
+
+
+
+2010-05-25T03:11:55.000000Z
+af22b067b50226919629e64a48142783
+2010-05-25T03:53:27.530256Z
+230
+brad
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+425780
+
+newgame_light_connect.png
+file
+
+
+
+
+2010-05-25T03:21:31.000000Z
+d8efb68ad4ecd22534bbd912f137a340
+2010-05-25T05:38:50.184973Z
+232
+brad
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1030
+
+MainWindow-iPad.xib
+file
+
+
+
+
+2010-05-05T05:32:06.000000Z
+1d3e09b781c26248650b20d9432e7d2c
+2010-05-05T05:58:14.775808Z
+196
+brad
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+25139
+
+devcampipad.xcodeproj
+dir
+
+MicroPather
+dir
+
+tank_01_00.png
+file
+
+
+
+
+2010-05-25T03:52:42.000000Z
+2557b0a2f07abaf782d7fbd249b35129
+2010-05-25T03:13:38.084990Z
+224
+franky
 has-props
 
 
@@ -94,16 +412,16 @@ has-props
 
 5879
 
-tank_02.png
+btn_start.png
 file
 
 
 
 
-2010-04-18T00:47:32.000000Z
-875f17234cd77a78ca9be53f093bcf37
-2010-04-18T01:06:30.745339Z
-72
+2010-05-19T04:35:07.000000Z
+3b238797265c84fc9476a2919de3d6c4
+2010-05-25T03:53:27.530256Z
+230
 brad
 has-props
 
@@ -126,19 +444,19 @@ has-props
 
 
 
-6726
+3843
 
-tank_03.png
+ibtn_huh.png
 file
 
 
 
 
-2010-04-18T00:47:36.000000Z
-f727766f5516bc0f874cd23c5ebc6dbc
-2010-04-18T01:06:30.745339Z
-72
-brad
+2010-05-25T03:52:42.000000Z
+91b2f2d06de4d66a754a4126eb9b610f
+2010-05-25T03:13:38.084990Z
+224
+franky
 has-props
 
 
@@ -160,260 +478,22 @@ has-props
 
 
 
-6834
+2013
 
-tank_04.png
-file
-
-
-
-
-2010-04-18T00:47:40.000000Z
-7ff451f765f2efbfdfe43f3cb9eb4c85
-2010-04-18T01:06:30.745339Z
-72
-brad
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-6485
-
-tank_bullet.png
-file
-
-
-
-
-2010-04-18T02:53:40.000000Z
-3c4ddf1d95eea21c82dab3e89a6a08ee
-2010-04-18T02:45:16.952819Z
-78
-john
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-793
-
-bang0001.png
-file
-
-
-
-
-2010-04-18T02:53:40.000000Z
-d0e079023c084ad12876d9c5a65ef618
-2010-04-18T02:45:16.952819Z
-78
-john
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-6566
-
-bang0010.png
-file
-
-
-
-
-2010-04-18T02:53:40.000000Z
-e18a122c4fb3c3eb66c7af73e419ea8a
-2010-04-18T02:45:16.952819Z
-78
-john
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-7249
-
-bang0002.png
-file
-
-
-
-
-2010-04-18T02:53:40.000000Z
-405ca0fa1d27d792bf9ddbc4226fe5fd
-2010-04-18T02:45:16.952819Z
-78
-john
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-6913
-
-bang0011.png
-file
-
-
-
-
-2010-04-18T02:53:40.000000Z
-9043d4990519eaf119610566453bb8c4
-2010-04-18T02:45:16.952819Z
-78
-john
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-4197
-
-MainWindow.xib
-file
-
-
-
-
-2010-04-18T04:48:27.000000Z
-34f3c497de9260520c8ac70f7ab06c18
-2010-04-18T04:48:56.023773Z
-93
-brad
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-33135
-
-Classes
+SpaceManager
 dir
 
-bang0003.png
+ibtn_connect.png
 file
 
 
 
 
-2010-04-18T02:53:40.000000Z
-35faf49618a063126ad7022a98d0bbb8
-2010-04-18T02:45:16.952819Z
-78
-john
+2010-05-25T03:52:42.000000Z
+a33e2618459c3e7b3e4fcde9ae146299
+2010-05-25T03:13:38.084990Z
+224
+franky
 has-props
 
 
@@ -435,52 +515,18 @@ has-props
 
 
 
-6699
+5479
 
-bang0004.png
+newgame_light_idle.png
 file
 
 
 
 
-2010-04-18T02:53:40.000000Z
-02e510c4d5b06ab368d4a4289757078d
-2010-04-18T02:45:16.952819Z
-78
-john
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-8101
-
-Default-Landscape.png
-file
-
-
-
-
-2010-04-18T02:40:10.000000Z
-68603cd68e0e2e0daa18e1ccf53ff5a9
-2010-04-18T02:54:42.870540Z
-80
+2010-05-25T03:21:31.000000Z
+619ca45e93b0a2eaba4e5a336ac39793
+2010-05-25T05:38:50.184973Z
+232
 brad
 has-props
 
@@ -503,19 +549,22 @@ has-props
 
 
 
-319787
+1108
 
-bang0005.png
+Levels
+dir
+
+btn_play.png
 file
 
 
 
 
-2010-04-18T02:53:40.000000Z
-077f263db65a1dd6c19e4d35d382ec6d
-2010-04-18T02:45:16.952819Z
-78
-john
+2010-05-19T04:35:07.000000Z
+3606095e3181e50908430940a2240a76
+2010-05-25T03:53:27.530256Z
+230
+brad
 has-props
 
 
@@ -537,7 +586,7 @@ has-props
 
 
 
-9305
+3440
 
 devcampipad-Info.plist
 file
@@ -545,10 +594,10 @@ file
 
 
 
-2010-04-18T07:09:48.000000Z
-d11e7c4dded42dc5c43f0155e093b941
-2010-04-18T06:34:52.184259Z
-98
+2010-05-25T02:24:05.000000Z
+9ab0f64ed06720ea33b5605d682691d4
+2010-05-25T03:53:27.530256Z
+230
 brad
 
 
@@ -571,19 +620,22 @@ brad
 
 
 
-1202
+1331
 
-bang0006.png
+Classes-Shared
+dir
+
+ibtn_what.png
 file
 
 
 
 
-2010-04-18T02:53:40.000000Z
-fd5ff8a0bf67d1fd62ec0258d4e7e9c6
-2010-04-18T02:45:16.952819Z
-78
-john
+2010-05-25T03:52:42.000000Z
+9243b9f2afbb50c9a361341315cd58c6
+2010-05-25T03:13:38.084990Z
+224
+franky
 has-props
 
 
@@ -605,75 +657,7 @@ has-props
 
 
 
-12462
-
-bang0007.png
-file
-
-
-
-
-2010-04-18T02:53:40.000000Z
-2fd0435db7f39a9308022c60e239a7a2
-2010-04-18T02:45:16.952819Z
-78
-john
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-11594
-
-bang0008.png
-file
-
-
-
-
-2010-04-18T02:53:40.000000Z
-bab876d7ed1282ed518cee99a952e6a4
-2010-04-18T02:45:16.952819Z
-78
-john
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-12764
+2120
 
 devcampipad_Prefix.pch
 file
@@ -681,10 +665,10 @@ file
 
 
 
-2010-04-18T08:30:42.000000Z
-4d85e56c178652c399589f0e2744883b
-2010-04-18T08:29:52.521344Z
-120
+2010-05-05T04:59:01.000000Z
+e690f709e3c15ed2525c47d0eb0b8331
+2010-04-21T02:11:27.634473Z
+192
 john
 
 
@@ -709,18 +693,8 @@ john
 
 221
 
-bang0009.png
-file
-
-
-
-
-2010-04-18T02:53:40.000000Z
-c882589d8ed8483ff173f5bd19ea942f
-2010-04-18T02:45:16.952819Z
-78
-john
-has-props
+Images
+dir
 
 
 
@@ -739,162 +713,65 @@ has-props
 
 
 
-
-
-11281
+http://brad@svn.bradsmithinc.com/devcamp/devcampiphone/Images
+195
 
-tanktank_bg-1.png
-file
-
-
-
-
-2010-04-18T04:46:57.000000Z
-8875efeca6e5cc93fb5fabe885786c06
-2010-04-18T04:48:56.023773Z
-93
-brad
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-351925
-
-tanktank_bg.png
-file
-
-
-
-
-2010-04-18T00:44:42.000000Z
-f0561f1991775f6648251227d9b99c88
-2010-04-18T01:06:30.745339Z
-72
-brad
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-837742
+_sourceArt
+dir
 
 loadingSequence
 dir
 
-Default-Portrait.png
-file
-
-
-
-
-2010-04-18T02:40:13.000000Z
-9ae7001a0ffb8ddcc90604f393bf09d9
-2010-04-18T02:54:42.870540Z
-80
-brad
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-311917
-
-devcampipad.xcodeproj
+Sounds
 dir
 
-airplane.jpg
-file
-
-
-
-
-2010-04-17T22:07:20.000000Z
-8f20d6e3749492cf3aab58fe43e2895a
-2010-04-17T22:05:24.893825Z
-43
-john
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2104
+Classes-iPhone
+dir
 
-Icon.png
+make_pvr.sh
 file
 
 
 
 
-2010-04-18T06:25:47.000000Z
-54b22cbc16adae182eaefc22e7022d27
-2010-04-18T06:34:52.184259Z
-98
+2010-05-17T17:09:32.000000Z
+38d6747b60c70375e07a744ae23ee305
+2010-05-16T09:34:35.552780Z
+216
+john
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+197
+
+btn_help.png
+file
+
+
+
+
+2010-05-19T04:35:07.000000Z
+3671370106d5c8b8d63166cebd7d2a44
+2010-05-25T03:53:27.530256Z
+230
 brad
 has-props
 
@@ -917,5 +794,5 @@ has-props
 
 
 
-7656
+3076
 

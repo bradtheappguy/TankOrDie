@@ -15,6 +15,9 @@
 }
 
 
+-(id)initWithPowerUpType:(NSString *)theType;
+
+
 @property (nonatomic, retain) NSString *powerUpType;
 
 

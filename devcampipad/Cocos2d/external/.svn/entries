@@ -1,0 +1,80 @@
+10
+
+dir
+236
+http://brad@svn.bradsmithinc.com/devcamp/devcampipad/Cocos2d/external
+http://brad@svn.bradsmithinc.com/devcamp
+
+
+
+2010-05-15T00:50:43.288753Z
+207
+john
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+61661b02-504e-4f75-9890-e753a064582a
+
+FontLabel_without_warnings2.patch
+file
+
+
+
+
+2010-05-15T04:12:35.000000Z
+e8392762de82c606ddd6cdef5e950f0c
+2010-05-15T00:50:43.288753Z
+207
+john
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1920
+
+FontLabel
+dir
+
+Tremor
+dir
+
+libpng
+dir
+
+TouchJSON
+dir
+
+Box2d
+dir
+
+Chipmunk
+dir
+

@@ -1,0 +1,169 @@
+    //
+//  TDiPadMenuViewController.m
+//  devcampipad
+//
+//  Created by Brad Smith on 5/13/10.
+//  Copyright 2010 Clixtr. All rights reserved.
+//
+
+#import "TDiPadMenuViewController.h"
+#import "Player.h"
+
+@implementation TDiPadMenuViewController
+
+/*
+ // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
+        // Custom initialization
+    }
+    return self;
+}
+*/
+
+
+// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+- (void)viewDidLoad {
+	localPlayerNameLabel1.text = @"";
+	localPlayerNameLabel2.text = @"";
+	wirelessPlayerNameLabel1.text = @"";
+	wirelessPlayerNameLabel2.text = @"";
+	wirelessPlayerNameLabel3.text = @"";
+	wirelessPlayerNameLabel4.text = @"";
+    [super viewDidLoad];
+	playButton.alpha = 0;
+	helpButton.alpha = 0;
+	connectionView.alpha = 0;
+	
+}
+
+
+
+
+- (void) setButtonsVisible:(BOOL)visible animated:(BOOL)animated {
+	if (animated) {
+		[UIView beginAnimations:@"" context:nil];
+		[UIView setAnimationDuration:.33];
+	}
+	if (visible) {
+		playButton.alpha = 1;
+		helpButton.alpha = 1;
+	}
+	else {
+		playButton.alpha = 0;
+		helpButton.alpha = 0;
+	}
+	if (animated) {
+		[UIView commitAnimations];
+	}
+}
+
+
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    return interfaceOrientation==UIInterfaceOrientationLandscapeRight?YES:NO;
+}
+
+
+- (void)didReceiveMemoryWarning {
+    // Releases the view if it doesn't have a superview.
+    [super didReceiveMemoryWarning];
+    
+    // Release any cached data, images, etc that aren't in use.
+}
+
+
+- (void)viewDidUnload {
+    [super viewDidUnload];
+    // Release any retained subviews of the main view.
+    // e.g. self.myOutlet = nil;
+}
+
+
+- (void)dealloc {
+    [super dealloc];
+}
+
+-(IBAction) helpButtonPressed:(id)sender {
+	
+}
+
+-(IBAction) playButtonPressed:(id)sender {
+	[self updateConnectionScreenUI];	
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateConnectionScreenUI) name:@"PLAYER_JOINED" object:nil];																				 
+	connectionView.alpha = 1;
+}
+
+-(IBAction) startButtonPressed:(id)sender {
+	[self.view removeFromSuperview];
+	id appDel = [[UIApplication sharedApplication] delegate];
+	[appDel setGamePaused: NO];
+}
+
+
+
+-(void) updateConnectionScreenUI {
+	id appDel = [[UIApplication sharedApplication] delegate];
+	NSArray *players = [appDel connectedPeers];
+	
+	
+	
+	//	localPlayerNameLabel1.text = @"Brad";
+	//  localPlayerNameLabel2.text = @"Franky";
+	//  localConnectedTankView1.image = [UIImage imageNamed:@"tank_01_00.png"];
+	//  localConnectedTankView2.image = [UIImage imageNamed:@"tank_02.png"];
+	//  localStatusLight1.image = [UIImage imageNamed:@"newgame_light_idle.png"];
+	//  localStatusLight2.image = [UIImage imageNamed:@"newgame_light_connect.png"];
+	
+	if (players.count < 1) return;
+
+	wirelessPlayerNameLabel1.text = [(Player *)[players objectAtIndex:0] playerName];
+	wirelessConnectedTankView1.image = [(Player *)[players objectAtIndex:0] image];
+	wirelessStatusLight1.image = [UIImage imageNamed:@"newgame_light_connect.png"];
+	
+	if (players.count < 2) return;
+	wirelessPlayerNameLabel2.text = [(Player *)[players objectAtIndex:0] playerName];
+	wirelessConnectedTankView2.image = [(Player *)[players objectAtIndex:1] image];
+	wirelessStatusLight2.image = [UIImage imageNamed:@"newgame_light_connect.png"];
+	
+	if (players.count < 3) return;
+	wirelessPlayerNameLabel3.text = [(Player *)[players objectAtIndex:0] playerName];
+	wirelessConnectedTankView3.image = [(Player *)[players objectAtIndex:2] image];
+	wirelessStatusLight3.image = [UIImage imageNamed:@"newgame_light_connect.png"];
+	
+	if (players.count < 4) return;
+	wirelessPlayerNameLabel4.text = [(Player *)[players objectAtIndex:0] playerName];
+	wirelessConnectedTankView4.image = [(Player *)[players objectAtIndex:3] image];
+	wirelessStatusLight4.image = [UIImage imageNamed:@"newgame_light_connect.png"];
+
+}
+
+-(void) test___updateConnectionScreenUI {
+	localPlayerNameLabel1.text = @"Brad";
+	localPlayerNameLabel2.text = @"Franky";
+	wirelessPlayerNameLabel1.text = @"John";
+	wirelessPlayerNameLabel2.text = @"Josh";
+	wirelessPlayerNameLabel3.text = @"Homey";
+	wirelessPlayerNameLabel4.text = @"Clown";
+	
+	localConnectedTankView1.image = [UIImage imageNamed:@"tank_01_00.png"];
+	localConnectedTankView2.image = [UIImage imageNamed:@"tank_02.png"];
+	
+	wirelessConnectedTankView1.image = [UIImage imageNamed:@"tank_03.png"];
+	wirelessConnectedTankView2.image = [UIImage imageNamed:@"tank_04.png"];
+	wirelessConnectedTankView3.image = [UIImage imageNamed:@"tank_01_00.png"];
+	wirelessConnectedTankView4.image = [UIImage imageNamed:@"tank_02.png"];
+	
+	localStatusLight1.image = [UIImage imageNamed:@"newgame_light_idle.png"];
+	localStatusLight2.image = [UIImage imageNamed:@"newgame_light_connect.png"];
+	
+	wirelessStatusLight1.image = [UIImage imageNamed:@"newgame_light_idle.png"];
+	wirelessStatusLight2.image = [UIImage imageNamed:@"newgame_light_connect.png"];
+	wirelessStatusLight3.image = [UIImage imageNamed:@"newgame_light_idle.png"];
+	wirelessStatusLight4.image = [UIImage imageNamed:@"newgame_light_connect.png"];
+	
+}
+
+
+@end
